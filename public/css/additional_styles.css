@@ -1,0 +1,37 @@
+
+.sidebar-nav-sub-item{
+  display: block;
+  padding: 0.5rem 2.5rem;
+  border-top: 1px solid rgba(255,255,255,.1);
+}
+
+.sidebar-nav-sub-item.active,
+a.sidebar-nav-sub-item:hover,
+a.sidebar-nav-sub-item:focus {
+  text-decoration: none;
+  background-color: rgba(255,255,255,.1);
+  border-color: transparent;
+}
+
+@media (min-width: 48em) {
+  .sidebar-nav-sub-item {
+    padding-left:  2.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+.center-image
+{
+    margin: 0 auto;
+    display: block;
+}
+
+#spineml_logo
+{
+	float: right;
+	margin: 10px;
+}
+
+table {
+    width: auto;
+}

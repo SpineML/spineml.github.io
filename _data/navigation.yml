@@ -1,0 +1,53 @@
+- text: "Home"
+  url: "/"
+  subnav:
+
+- text: "SpineML Language"
+  url: "/spineml/"
+  subnav: 
+    - text: "Component Layer"
+      url: "/spineml/component/"
+    - text: "Network Layer"
+      url: "/spineml/network/"
+    - text: "Low Level Network Layer"
+      url: "/spineml/network_low_level/"
+    - text: "Experiment Layer"
+      url: "/spineml/experiment/"
+      
+- text: "Simulators"
+  url: "/simulators/"
+  subnav: 
+    - text: "BRAHMS"
+      url: "/simulators/BRAHMS/"
+    - text: "PyNN"
+      url: "/simulators/PyNN/"
+    - text: "DAMSON"
+      url: "/simulators/DAMSON/"
+
+- text: "Model"
+  url: "/models/"
+  subnav: 
+
+- text: "SpineCreator"
+  url: "/spinecreator/"
+  subnav:
+    - text: "Download"
+      url: "/spinecreator/Download/"
+    - text: "Source Building"
+      url: "/spinecreator/source/"
+    - text: "Tutorials"
+      url: "/spinecreator/tutorials/"
+    - text: "Annotations"
+      url: "/spinecreator/annotations/"
+
+- text: "Publications"
+  url: "/publications/"
+  subnav: 
+
+- text: "Contact"
+  url: "/contact/"
+  subnav: 
+
+- text: "Report Bugs"
+  url: "/bugs/"
+  subnav: 
