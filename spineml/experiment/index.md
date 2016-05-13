@@ -7,12 +7,6 @@ title: SpineML Language
 
 ## SpineML
 
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-```
-
 The SpineML Experiment layer describes a simulation set-up for a single (or series) of experiments. The top level SpineML element can contain only Experiment elements.
 
 |  Contains  |  Description  |
