@@ -34,4 +34,23 @@ a.sidebar-nav-sub-item:focus {
 
 table {
     width: auto;
+	font-size: 12pt;
+}
+
+#api_doc td, th{
+	padding:1px 10px 1px 10px;
+}
+
+#api_doc code{
+	background-color: transparent;
+}
+
+
+
+#TOC-display{
+    font-size: 12pt;
+}
+
+h2 {
+	border-bottom:solid gray;
 }

@@ -5,7 +5,7 @@
 
 
   
-  <body>
+  <body class="sidebar-overlay">
 
     {% include sidebar.html %}
 
@@ -31,14 +31,16 @@
 					contentsText:"Table of Contents",
 					hideText:'Collapse',
 					showText:'Expand',
-					showCollapsed:false
+					showCollapsed:true
 				  });
 			});
 			</script>
 	  
 		<div id="TOC-display"></div>
 		
+		<div id="api_doc">
         {{ content }}
+		</div>
       </div>
     </div>
 
