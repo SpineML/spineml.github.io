@@ -6,12 +6,12 @@ title: Testing your SpineCreator installation
 # Tutorials
 
 We have three tutorials to help new users get used to working with the
-idea of creating components. *Components* are used to specify the
+idea of creating components. **Components** are used to specify the
 mathematical rules for the neural elements in a model. These
 components are used as the basis for the populations which are
-connected together in a *network*. Once you have a network, you can
-then create an *experiment* which allows you to simulate the model for a
-given amount of time and with a given set of inputs.
+connected together in a **network**. Once you have a network, you can
+then create an **experiment** which allows you to simulate the model
+for a given amount of time and with a given set of inputs.
 
 [Creating a component in the component editor](spinecreator/createcomponent)
 
@@ -57,14 +57,14 @@ def connectionFunc(srclocs,dstlocs,sigma,min_w):
 ```
 
 Adding parameters to the SpineCreator GUI is performed using the
-#PARNAME comment, which gives a name used as a label for the
-parameter, and a #LOC which describes the row and column where the
+\#PARNAME comment, which gives a name used as a label for the
+parameter, and a \#LOC which describes the row and column where the
 parameter should be added in a grid for laying out the parameters. The
 order of the parameters in the code denotes the order they have in the
 corresponding Python function call, and allows the label to have a
 more descriptive name than the variable used in the function. In
-addition there are two more comments that are parsed; #HASWEIGHT and
-#HASDELAY, which inform SpineCreator if the script needs to generate a
+addition there are two more comments that are parsed; \#HASWEIGHT and
+\#HASDELAY, which inform SpineCreator if the script needs to generate a
 weight and/or a delay. If a weight is generated SpineCreator will
 provide a drop-down list of the corresponding Properties in the
 WeightUpdate Component, and the selected Property will have the weight
