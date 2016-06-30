@@ -33,8 +33,12 @@
   subnav:
     - text: "Download"
       url: "/spinecreator/Download/"
-    - text: "Source Building"
+    - text: "Build on a Mac"
       url: "/spinecreator/source/"
+    - text: "Build on Linux"
+      url: "/spinecreator/sourcelin/"
+    - text: "Build on Windows"
+      url: "/spinecreator/sourcewin/"
     - text: "Tutorials"
       url: "/spinecreator/tutorials/"
     - text: "Developer: Annotations and Project File"
