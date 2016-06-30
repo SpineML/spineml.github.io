@@ -1,4 +1,4 @@
-![] <big><big><big><big><big><big><sub>BRAHMS</sub></big></big></big></big></big></big>
+![] #BRAHMS
 BRAHMS is a Modular Execution Framework (MEF) for executing integrated systems built from component software processes (a SystemML-ready execution client). It allow the connection of processes together into systems, by linking the outputs of some processes into the inputs of others. For more details see [here].
 
 Introduction to SpineML with BRAHMS
