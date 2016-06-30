@@ -14,6 +14,7 @@ SpineCreator is built using the Qt toolkit (http://qt.io), a cross-platform libr
 To build the software, you'll need a compiler (Xcode) and some build tools including CMake, the Qt development system and the headers for a couple of necessary libraries.
 
 ### Xcode
+
 You will need to install Xcode. This is used to compile popt, graphviz-devel, as well as SpineCreator and its components.
 
 Install Xcode from the App Store, assuming you have the latest Mac OS. If you're using an older Mac OS, you'll have to find the matching version of Xcode from: https://developer.apple.com/downloads/
@@ -30,16 +31,21 @@ You will probably want to install Mac Ports. This is used to install popt and gr
 Install Mac Ports from: https://www.macports.org/install.php
 
 You can verify your installation by opening a terminal on your Mac and typing
+
 ```
  port
 ```
+
 A program should run. Type "quit" to exit.
 
 ### Libraries
+
 Once Xcode and Mac Ports is installed, you can install the prerequisite libraries popt and graphviz like this (in a terminal):
 
+```
  sudo port install popt
  sudo port install graphviz-devel
+```
 
 ### Qt
 
@@ -52,28 +58,37 @@ SpineML_PreFlight is a program which prepares a SpineML model for a simulator ba
 First make sure you installed popt, as described above in the prerequisites section.
 
 Clone a copy of SpineML_PreFlight:
+
 ```
  git clone https://github.com/SpineML/SpineML_PreFlight.git
 ```
+
 Build and install SpineML_PreFlight using cmake:
+
 ```
  cd SpineML_PreFlight
  mkdir build
 ```
+
 Now open CMake. In the CMake window, navigate to the SpineML_PreFlight directory as the "source" and for "where to build" navigate to SpineML_PreFlight/build. Press "configure" then "generate". Now go back to your terminal:
+
 ```
  make -j4
  sudo make install
 ```
+
 ## BRAHMS
 
 BRAHMS is the "execution middleware" used by SpineML_2_BRAHMS.
 
 Clone the SpineML-group-maintained version of BRAHMS (which sports a nice cmake compile and install scheme):
+
 ```
  git clone https://github.com/sebjameswml/brahms.git
 ```
+
 Build brahms in "standalone" mode and have it installed in your home directory with cmake:
+
 ```
  cd brahms
  mkdir build
@@ -83,6 +98,7 @@ Build brahms in "standalone" mode and have it installed in your home directory w
  make -j4
  make install
 ```
+
 If you're using the GUI version of CMake (which is usual on a Mac) then make sure to check "STANDALONE_INSTALL", uncheck the LICENCE_INSTALL and COMPILE_WITH_X11 and set CMAKE_INSTALL_PREFIX to /Users/yourname.
 
 ## SpineML_2_BRAHMS
@@ -90,10 +106,12 @@ If you're using the GUI version of CMake (which is usual on a Mac) then make sur
 SpineML_2_BRAHMS is the set of scripts which allows a SpineML model to be built into C++ and executed by BRAHMS.
 
 Clone a copy of SpineML_2_BRAHMS into your home directory:
+
 ```
  cd $HOME
  git clone https://github.com/SpineML/SpineML_2_BRAHMS.git
 ```
+
 We'll build the tools in SpineML_2_BRAHMS in-place (they don't have to be installed).
 
 Open CMake. For both "source" and "where to build" select the SpineML_2_BRAHMS directory. Press "configure" and "generate".
@@ -101,10 +119,12 @@ Open CMake. For both "source" and "where to build" select the SpineML_2_BRAHMS d
 (Ignore any Policy CMP0042 error you see).
 
 In the terminal:
+
 ```
  cd SpineML_2_BRAHMS
  make
 ```
+
 And that's it for SpineML_2_BRAHMS.
 
 ## SpineCreator
@@ -128,9 +148,11 @@ This will install both the library and the QtCreator build tool.
 If you completed the initial prerequisites section and installed graphviz-devel, then you're good to go.
 
 We recommend using MacPorts to install Graphviz. Follow the guide here: https://guide.macports.org/ to install MacPorts. Once installed, you should only need the following command to install Graphviz:
+
 ```
- sudo port install graphviz-devel
+sudo port install graphviz-devel
 ```
+
 This will install graphviz libraries to /opt/local/lib/graphviz and header files to /opt/local/include. 
 
 The QtCreator project file which is part of SpineCreator should contain these paths, so you can now go ahead and build SpineCreator.
@@ -138,9 +160,11 @@ The QtCreator project file which is part of SpineCreator should contain these pa
 ### Obtain and compile SpineCreator
 
 You can get a copy of the latest SpineCreator using this command in a terminal window:
+
 ```
- git clone https://github.com/SpineML/SpineCreator.git
+git clone https://github.com/SpineML/SpineCreator.git
 ```
+
 Open QtCreator, and then open the SpineCreator project. The file to open is called spinecreator.pro (on older branches it was neuralNetworks.pro). You'll find the QtCreator application in the Qt directory, wherever you installed it (and not necessarily directly in Launchpad).
 
 On opening spinecreator.pro, you'll be asked to select a "kit" to use to build the project - that means a particular version of the Qt library aimed at a particular target. You should be able to compile with Qt version 5.x (Qt 4.x no longer supported). Choose the "clang" kit which builds for desktop Mac OS (by default you'll also have installed Android and iOS targetted kits).
@@ -170,9 +194,11 @@ On Mac, you'll also need to add "/usr/local/bin" to the PATH environment variabl
 Last gotchas:
 
 In SpineML_2_BRAHMS, you should:
+
 ```
  echo "OSX" > current_os
 ```
+
 That will ensure that SpineCreator doesn't try (and fail) to re-compile the tools that you compiled in the SpineML_2_BRAHMS section earlier.
 
 Click "Apply" then "Close".
@@ -226,7 +252,9 @@ you have trouble accessing the window menus ("File", "Edit", "Help"
 etc) in Qt Creator or SpineCreator, then you can apply this
 workaround:
 
-``` sudo apt-get install appmenu-qt ```
+```
+sudo apt-get install appmenu-qt 
+```
 
 This configures all Qt programs to display their window menus in the
 window, rather than at the top of the desktop screen.
@@ -241,16 +269,16 @@ cd ~/scsrc
 git clone https://github.com/sebjameswml/brahms.git
 ```
 
- Build brahms with cmake:
+Build brahms with cmake:
  
- ``` 
- cd brahms
- mkdir build
- cd build
- cmake -DSTANDALONE_INSTALL=OFF -DCMAKE_INSTALL_PREFIX=/usr/local ..  
- make -j4 
- sudo make install
- ```
+``` 
+cd brahms
+mkdir build
+cd build
+cmake -DSTANDALONE_INSTALL=OFF -DCMAKE_INSTALL_PREFIX=/usr/local ..  
+make -j4 
+sudo make install
+```
  
 ## Compile SpineML_PreFlight on Linux
 
