@@ -5,9 +5,18 @@ title: Building SpineCreator from source on Linux
 
 # Building on Linux
 
-Because we are a small team, we do not have the resources to produce regular packages for SpineCreator and the SpineML toolchain.  For this reason, we recommend that users compile SpineCreator from source and we have some easy to follow instructions here! Please tell us when you have problems by submitting issues on the github project pages (for example https://github.com/SpineML/SpineCreator/issues)
+Because we are a small team, we do not have the resources to produce
+regular packages for SpineCreator and the SpineML toolchain.  For this
+reason, we recommend that users compile SpineCreator from source and
+we have some easy to follow instructions here! Please tell us when you
+have problems by submitting issues on the github project pages (for
+example https://github.com/SpineML/SpineCreator/issues)
 
-SpineCreator is built using the Qt toolkit (http://qt.io), a cross-platform library of C++ code for building desktop apps. To run models, SpineCreator uses a SpineML toolchain. On this page, we describe how you can compile SpineML_PreFlight, SpineML_2_BRAHMS and BRAHMS as your SpineML toolchain.
+SpineCreator is built using the Qt toolkit (http://qt.io), a
+cross-platform library of C++ code for building desktop apps. To run
+models, SpineCreator uses a SpineML toolchain. On this page, we
+describe how you can compile SpineML_PreFlight, SpineML_2_BRAHMS and
+BRAHMS as your SpineML toolchain.
 
 These build instructions have been verified on Ubuntu 14.04. Other
 Linux flavours should work just fine, but there may be slight
@@ -118,23 +127,23 @@ git clone https://github.com/SpineML/SpineCreator.git
 
 Open QtCreator:
 
-![Open_Qt](/public/images/Open_QtCreator.png "Open QtCreator"){: .center-image }
+![Open_QtCreator](/public/images/Open_QtCreator.png "Open QtCreator"){: .center-image }
 
 Now open the SpineCreator project. The file to open is called
 spinecreator.pro (in older branches it was neuralNetworks.pro):
 
-[[File:Open_spinecreator_pro.png|Open spinecreator.pro]]
+![Open_SpineCreator](/public/images/Open_spinecreator_pro.png "Open spinecreator.pro"){: .center-image }
 
 On opening spinecreator.pro, you'll be asked to "configure" the
 project. On Ubuntu you should be able to simply press the "Configure
 Project" button:
 
-[[File:QtCreator_Configure_Project.png|Press Configure Project]]
+![QtCreator_Configure_Project](/public/images/QtCreator_Configure_Project.png "Press Configure Project"){: .center-image }
 
 Compiling should now be as simple as pressing the "run" or "build"
 button in QtCreator:
 
-[[File:Run_Button.png|Press the green play button]]
+![Run_Button](/public/images/Run_Button.png "Press the green play button"){: .center-image }
 
 ## Finishing up: Configuring SpineCreator on Linux
 
@@ -155,7 +164,7 @@ Change the value for "Working directory" to
 
 I set the settings like this for my home directory (/home/seb):
 
-[[File:SC_Settings.png|SpineCreator Settings window]]
+![SC_Settings](/public/images/SC_Settings.png "SpineCreator Settings window"){: .center-image }
 
 Click "Apply" then "Close".
 
