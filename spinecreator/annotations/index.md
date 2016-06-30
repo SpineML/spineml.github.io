@@ -10,6 +10,7 @@ SpineCreator stores information about the 2D layout of networks, the 3D layout o
 
 An annotations tag within a Population stores the following information.
 
+``` xml
 `       `<LL:Annotation>
 `           `<SpineCreator>
 `               `<xPos value="-11.2353"/>
@@ -25,6 +26,7 @@ An annotations tag within a Population stores the following information.
 `               `<is_visualised value="0"/>
 `           `</SpineCreator>
 `       `</LL:Annotation>
+```
 
 #### xPos
 
@@ -92,6 +94,7 @@ An annotations tag within a Population stores the following information.
 
 An annotations tag within a Projection stores the following information.
 
+``` xml
 `           `<LL:Annotation>
 `               `<SpineCreator>
 `                   `<DrawOptions style="0" showlabel="0"/>
@@ -105,6 +108,7 @@ An annotations tag within a Projection stores the following information.
 `                   `</curves>
 `               `</SpineCreator>
 `           `</LL:Annotation>
+```
 
 #### DrawOptions
 
