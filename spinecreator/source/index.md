@@ -7,7 +7,7 @@ title: Building SpineCreator from source on a Mac
 
 Because we are a small team, we do not have the resources to produce regular packages for SpineCreator and the SpineML toolchain.  For this reason, we recommend that users compile SpineCreator from source and we have some easy to follow instructions here! Please tell us when you have problems by submitting issues on the github project pages (for example https://github.com/SpineML/SpineCreator/issues)  
 
-SpineCreator is built using the Qt toolkit (http://qt.io), a cross-platform library of C++ code for building desktop apps. This means that SpineCreator can be compiled on Mac, Linux and Windows. We only support Mac and Linux at present, again due to a lack of resource. SpineML_2_BRAHMS in particular would require some work to function on Windows, as it includes bash scripts. Microsoft have recently added bash to Windows 10, so this may now be less arduous that it once was.
+SpineCreator is built using the Qt toolkit (http://qt.io), a cross-platform library of C++ code for building desktop apps. To run models, SpineCreator uses a SpineML toolchain. On this page, we describe how you can compile SpineML_PreFlight, SpineML_2_BRAHMS and BRAHMS as your SpineML toolchain.
 
 ## Mac prerequisites
 
