@@ -1,3 +1,7 @@
+---
+layout: default
+title: Building SpineCreator from source on Windows
+---
 # Building on Windows
 
 SpineCreator is built using the Qt toolkit (http://qt.io), a cross-platform library
