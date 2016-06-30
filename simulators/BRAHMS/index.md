@@ -1,4 +1,5 @@
-![] <big><big><sub>BRAHMS</sub></big></big>
+![] 
+# BRAHMS
 
 BRAHMS is a Modular Execution Framework (MEF) for executing integrated systems built from component software processes (a SystemML-ready execution client). It allow the connection of processes together into systems, by linking the outputs of some processes into the inputs of others. For more details see [here].
 
@@ -17,6 +18,7 @@ The best way to install BRAHMS and SpineML\_2\_BRAHMS on Linux is to compile the
 You will need the following programs installed on your system:
 
 `sudo apt-get install build-essential python git gitk \`
+
 `  python-dev libpopt-dev doxygen xsltproc cmake libxaw7-dev libxv-dev`
 
 Let's create a directory to keep the source code in one place:
