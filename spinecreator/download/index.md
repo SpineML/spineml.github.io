@@ -44,4 +44,3 @@ sudo apt-get install spinecreator
 
 Unfortunately, we don't have the resources to prepare Windows builds of SpineCreator and SpineML-2-BRAHMS, although some work has been carried out towards this goal. If you're interested in making Windows builds, please contact Seb James.
 
-  [spinecreator-0.9.6.dmg](http://sebjames.zapto.org/owncloud/index.php/s/ScNR5109JQA6YzR)
