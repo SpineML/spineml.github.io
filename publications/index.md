@@ -13,8 +13,6 @@ The following poster is available describing an overview of the toolchain.
   
 The following publications use SpineML and SpineCreator:
 
-# Papers
-
 The following list of papers are user contributed resources which either give insight into multi agent simulator performance, benchmarking procedures in other domains or details of benchmark models. If you would like to contribute a paper then please [contact us](../../contact/).
 
 <ul class="list-of-papers">
