@@ -159,6 +159,7 @@ An annotations tag within a Projection stores the following information.
 
 An annotations tag within a Input stores the following information.
 
+``` xml
 `               `<LL:Annotation>
 `                   `<SpineCreator>
 `                       `<start x="9.21702" y="5.48872"/>
@@ -171,6 +172,7 @@ An annotations tag within a Input stores the following information.
 `                       `</curves>
 `                   `</SpineCreator>
 `               `</LL:Annotation>
+```
 
 For descriptions of these tags please refer to the Projection section
 
@@ -178,10 +180,12 @@ For descriptions of these tags please refer to the Projection section
 
 An annotations tag within a ConnectionList stores the following information.
 
+``` xml
 `                       `<SpineCreator>
 `                           `<Script text="#!/usr/bin/python&#10;&#10;#PARNAME=size #LOC=1,1&#10;#PARNAME=scale #LOC=2,1&#10;#PARNAME=inhib #LOC=3,1&#10;#HASWEIGHT&#10;&#10;def connectionFunc( srclocs, dstlocs, size, scale, inhib ): &#10;..."/>
 `                           `<Config weightProperty="w"/>
 `                       `</SpineCreator>
+```
 
 #### Script
 
