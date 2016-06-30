@@ -1,4 +1,7 @@
-
+---
+layout: default
+title: Annotations
+---
 
 Developer Information: SpineCreator Annotations and Project file
 ================================================================
