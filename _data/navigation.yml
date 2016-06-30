@@ -42,7 +42,7 @@
     - text: "Testing your Installation"
       url: "/spinecreator/testinginstall/"
     - text: "Tutorials"
-      url: "/spinecreator/tutorials/"
+      url: "/spinecreator/tutorial/"
     - text: "Developer: Annotations and Project File"
       url: "/spinecreator/annotations/"
 
