@@ -17,51 +17,64 @@ The best way to install BRAHMS and SpineML\_2\_BRAHMS on Linux is to compile the
 
 You will need the following programs installed on your system:
 
-`sudo apt-get install build-essential python git gitk \`
-
-`  python-dev libpopt-dev doxygen xsltproc cmake libxaw7-dev libxv-dev`
+``` bash
+sudo apt-get install build-essential python git gitk \
+  python-dev libpopt-dev doxygen xsltproc cmake libxaw7-dev libxv-dev
+```
 
 Let's create a directory to keep the source code in one place:
 
-`cd ~`
-`mkdir scsrc`
+``` bash
+cd ~
+mkdir scsrc
+```
 
 ### Compile BRAHMS on Linux
 
 Clone the SpineML-group-maintained version of BRAHMS (which sports a nice cmake compile and install scheme):
 
-`cd ~/scsrc`
-`git clone `[`https://github.com/sebjameswml/brahms.git`]
+``` bash
+cd ~/scsrc
+git clone [`https://github.com/sebjameswml/brahms.git`]
+```
 
 Build brahms with cmake:
 
-`cd brahms`
-`mkdir build`
-`cd build`
-`cmake -DSTANDALONE_INSTALL=OFF -DCMAKE_INSTALL_PREFIX=/usr/local ..`
-`make -j4`
-`sudo make install`
+``` bash
+cd brahms
+mkdir build
+cd build
+cmake -DSTANDALONE_INSTALL=OFF -DCMAKE_INSTALL_PREFIX=/usr/local ..
+make -j4
+sudo make install
+```
 
 ### Compile SpineML\_PreFlight on Linux
 
 Clone a copy of SpineML\_PreFlight:
 
-`cd ~/scsrc`
-`git clone `[`https://github.com/SpineML/SpineML_PreFlight.git`]
+``` bash
+cd ~/scsrc
+git clone [`https://github.com/SpineML/SpineML_PreFlight.git`]
+```
 
 Build and install SpineML\_PreFlight using cmake:
 
-`mkdir SpineML_PreFight-build && cd SpineML_PreFlight-build`
-`cmake -DCMAKE_INSTALL_PREFIX=/usr/local ../SpineML_PreFlight`
-`make -j4`
-`sudo make install`
+``` bash
+mkdir SpineML_PreFight-build && cd SpineML_PreFlight-build
+cmake -DCMAKE_INSTALL_PREFIX=/usr/local ../SpineML_PreFlight
+make -j4
+sudo make install
+```
 
 ### Clone SpineML\_2\_BRAHMS on Linux
 
 Clone a copy of SpineML\_2\_BRAHMS into your home directory:
 
-`cd ~`
-`git clone `[`https://github.com/SpineML/SpineML_2_BRAHMS.git`]
+``` bash
+cd ~
+git clone [`https://github.com/SpineML/SpineML_2_BRAHMS.git`]
+```
 
 There is no need to build SpineML\_2\_BRAHMS, which is a set of scripts.
 
