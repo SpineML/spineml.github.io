@@ -11,4 +11,4 @@ One way to get SpineCreator running is by building it from source. This allows y
 Although SpineCreator on its own can create and modify SpineML models, it is always installed along with the SpineML_PreFlight program, the SpineML_2_BRAHMS simulation engine and the BRAHMS program so that it can execute models as well as modify and edit them.
 Full source code for all four programs is available from github. You will need to have the Graphviz library installed on your system and you may need to modify the main Qt Creator project file with its location.
 
-Please report any issues on <a href="http://github.com/spineml/spinecreator/" target="_blank">Github</a>
+Please report any issues on [GitHub]("http://github.com/spineml/spinecreator/"){:target="_blank"}
