@@ -2,7 +2,7 @@
   author-list: "A Cope, C Sabo, K Gurney, E Vasilaki, J Marshall"
   publication: "PLOS Computational Biology, 2016"
   description: "A model of motion detection in the bee created using SpineCreator"
-  abstract: ""
+  abstract: "We present a novel neurally based model for estimating angular velocity (AV) in the bee brain, capable of quantitatively reproducing experimental observations of visual odometry and corridor-centering in free-flying honeybees, including previously unaccounted for manipulations of behaviour. The model is fitted using electrophysiological data, and tested using behavioural data. Based on our model we suggest that the AV response can be considered as an evolutionary extension to the optomotor response. The detector is tested behaviourally in silico with the corridor-centering paradigm, where bees navigate down a corridor with gratings (square wave or sinusoidal) on the walls. When combined with an existing flight control algorithm the detector reproduces the invariance of the average flight path to the spatial frequency and contrast of the gratings, including deviations from perfect centering behaviour as found in the real bee’s behaviour. In addition, the summed response of the detector to a unit distance movement along the corridor is constant for a large range of grating spatial frequencies, demonstrating that the detector can be used as a visual odometer."
   url: "http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004887" 
   keywords: "bee, spineml, spinecreator, model"
   bib: 

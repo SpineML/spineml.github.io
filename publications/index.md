@@ -32,11 +32,7 @@ The following publications use SpineML and SpineCreator, if you would like to ad
 				<a class="paper-button" href="{{paper.bib}}">cite</a>
 			{% endif %}
 		{% endif %}
-		{% if paper.abstract %}
-			<input class="abstract-toggle" type="checkbox" id="abstract-toggle-{{forloop.index}}" />
-			<label class="paper-button" for="abstract-toggle-{{forloop.index}}">Abstract</label>
-		{% endif %}
-		<p class="abstract">{{paper.abstract}}</p>
 	</li>
 	{% endfor %}
 </ul>
+
