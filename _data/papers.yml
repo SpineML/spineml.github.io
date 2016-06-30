@@ -1,0 +1,9 @@
+- title: "A Model for an Angular Velocity-Tuned Motion Detector Accounting for Deviations in the Corridor-Centering Response of the Bee"
+  author-list: "A Cope, C Sabo, K Gurney, E Vasilaki, J Marshall"
+  publication: "PLOS Computational Biology, 2016"
+  description: "A model of motion detection in the bee created using SpineCreator"
+  abstract: ""
+  url: "http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004887" 
+  keywords: "bee, spineml, spinecreator, model"
+  bib: 
+  
