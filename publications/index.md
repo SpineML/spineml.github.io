@@ -9,9 +9,9 @@ To reference the SpineML language or code generation tool-chain please use the f
 
 The following poster is available describing an overview of the toolchain.
 
-**Cope AJ, Richmond P.** “A toolchain for creation of spiking neural networks utilising NineML - a tool independent XML model description format” *Poster presentation at eFutures workshop \`Building Bridges to Building Brains\` Edinburgh 2012* - ![]
+**Cope AJ, Richmond P.** “A toolchain for creation of spiking neural networks utilising NineML - a tool independent XML model description format” *Poster presentation at eFutures workshop \`Building Bridges to Building Brains\` Edinburgh 2012*
 
-  []: pdf.png "fig:pdf.png"
+![SpineML](/public/images/e-futures_building_bridges_to_building_brains.pdf "SpineML"){: .center-image }
   
 The following publications use SpineML and SpineCreator:
 
