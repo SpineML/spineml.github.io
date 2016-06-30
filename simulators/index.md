@@ -10,4 +10,4 @@ A simulation tool-chain for the SpineML format is available using XSLT code gene
   [Brahms]: Brahms "wikilink"
   [DAMSON]: DAMSON "wikilink"
   [PyNN]: PyNN "wikilink"
-  [XSLT code generation tool-chain for the SpineML format|300px]: toolchain_v1.png "XSLT code generation tool-chain for the SpineML format|300px"
+  [XSLT code generation tool-chain for the SpineML format]: toolchain_v1.png "XSLT code generation tool-chain for the SpineML format|300px"
