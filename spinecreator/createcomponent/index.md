@@ -13,7 +13,7 @@ Linux.
 
 ## Introduction to the Component Editor
 
-![component_tab](/public/images/component_tab.png "Fig1: Tab selector"){: .center-image }
+![component_tab](/public/images/50px-Component_tab.png "Fig1: Tab selector"){: .center-image }
 
 The component editor tab is selected using the tab bar on the left
 side of the GUI window. The Fig 1 shows the tab bar with the Component
