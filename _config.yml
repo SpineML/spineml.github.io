@@ -17,4 +17,5 @@ author:
 # Custom vars
 version:             1.0.0
 
-
+#markdown type
+markdown: kramdown
