@@ -549,9 +549,15 @@ dv/dt = I_sum/C_m - v; I_sum = I_off + I_syn + I_noise
 
 Here I_sum is an Alias used to simplify the differential equation.
 
-The second use of Aliases is to derive values for Analog or Impulse Port output. An Analog or Impulse Port may wish to transmit a value derived from the Inputs, Parameters, State Variables and other Aliases of the component. In this case the output I_syn uses the voltage from the neuron_body and the reversal potential (E) to transform the conductance of the synapse into a current.
+The second use of Aliases is to derive values for Analog or Impulse
+Port output. An Analog or Impulse Port may wish to transmit a value
+derived from the Inputs, Parameters, State Variables and other Aliases
+of the component. In this case the output I_syn uses the voltage from
+the neuron_body and the reversal potential (E) to transform the
+conductance of the synapse into a current.
 
 [[File:alias_props.png|thumb|Fig 21: Alias Properties|right|200px]]
+
 To add the Alias for I_syn:
 * Select the Params, Vars & Alias box
 * Use the button on the toolbox to add an Alias (**+A**)
@@ -565,7 +571,9 @@ g*(E-v)
 
 ### Add an OnImpulse Transition
 
-Now the final step in creating this component is to take input from the Impulse Port. To do so we need to use an OnImpulse Transition, the remaining Transition type that we have not used so far.
+Now the final step in creating this component is to take input from
+the Impulse Port. To do so we need to use an OnImpulse Transition, the
+remaining Transition type that we have not used so far.
 
 [[File:sa_props_imp.png|thumb|Fig 22: State Assignment Properties|right|200px]]
 To add an OnImpulse:
@@ -577,13 +585,19 @@ To add an OnImpulse:
 g+g_in
 </syntaxhighlight>
 
-The component is now finished! validate and store and then save to hard drive if you wish. See Fig 23 for the finished component.
+The component is now finished! validate and store and then save to
+hard drive if you wish. See Fig 23 for the finished component.
 
 [[File:ps_done.png|thumb|Fig 23: Finished postsynapse component|center|500px]]
 
 ## Final remarks
 
-I hope this tutorial has introduced you to how to create components in the GUI. Finished versions of the components described here can be found below, and the [[Creating a network|second tutorial]] will instruct you how to combine components into networks consisting of neural populations connected by projections. This will also allow you to build networks to test out the components you have just created!
+I hope this tutorial has introduced you to how to create components in
+the GUI. Finished versions of the components described here can be
+found below, and the [second tutorial](/spinecreator/createnetwork) will
+instruct you how to combine components into networks consisting of
+neural populations connected by projections. This will also allow you
+to build networks to test out the components you have just created!
 
 ## Finished components for reference
 
