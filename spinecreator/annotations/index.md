@@ -179,9 +179,7 @@ For descriptions of these tags please refer to the Projection section
 An annotations tag within a ConnectionList stores the following information.
 
 `                       `<SpineCreator>
-`                           `
-
-<Script text="#!/usr/bin/python&#10;&#10;#PARNAME=size #LOC=1,1&#10;#PARNAME=scale #LOC=2,1&#10;#PARNAME=inhib #LOC=3,1&#10;#HASWEIGHT&#10;&#10;def connectionFunc( srclocs, dstlocs, size, scale, inhib ): &#10;...>
+`                           `<Script text="#!/usr/bin/python&#10;&#10;#PARNAME=size #LOC=1,1&#10;#PARNAME=scale #LOC=2,1&#10;#PARNAME=inhib #LOC=3,1&#10;#HASWEIGHT&#10;&#10;def connectionFunc( srclocs, dstlocs, size, scale, inhib ): &#10;..."/>
 `                           `<Config weightProperty="w"/>
 `                       `</SpineCreator>
 
