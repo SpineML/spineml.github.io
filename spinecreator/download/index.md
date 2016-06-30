@@ -10,7 +10,7 @@ The latest binary release of the SpineML toolchain was made in January 2016. We 
 
 ### Mac
 
-The Mac installation package is available here: [spinecreator-0.9.6.dmg]
+The Mac installation package is available here: [https://github.com/SpineML/SpineCreator/releases/]
 
 **Note:** *This is stored on a non-commercial web server which does not have a commercially signed SSL certificate; you will have to Okay some security warnings to access the file!*
 
