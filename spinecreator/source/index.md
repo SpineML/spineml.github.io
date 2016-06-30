@@ -5,7 +5,7 @@ title: Building SpineCreator from source on a Mac
 
 # Building on a Mac
 
-Because we are a small team, we do not have the resources to produce regular packages for SpineCreator and the SpineML toolchain.  For this reason, we recommend that users compile SpineCreator from source and we have some easy to follow instructions here! Please tell us when you have problems by submitting issues on the github project pages (for example https://github.com/SpineML/SpineCreator/issues)  
+Because we are a small team, we do not have the resources to produce regular packages for SpineCreator and the SpineML toolchain.  For this reason, we recommend that users compile SpineCreator from source and we have some easy to follow instructions here! Please tell us when you have problems by submitting issues on the github project pages (for example https://github.com/SpineML/SpineCreator/issues)
 
 SpineCreator is built using the Qt toolkit (http://qt.io), a cross-platform library of C++ code for building desktop apps. To run models, SpineCreator uses a SpineML toolchain. On this page, we describe how you can compile SpineML_PreFlight, SpineML_2_BRAHMS and BRAHMS as your SpineML toolchain.
 
@@ -155,7 +155,7 @@ We recommend using MacPorts to install Graphviz. Follow the guide here: https://
 sudo port install graphviz-devel
 ```
 
-This will install graphviz libraries to /opt/local/lib/graphviz and header files to /opt/local/include. 
+This will install graphviz libraries to /opt/local/lib/graphviz and header files to /opt/local/include.
 
 The QtCreator project file which is part of SpineCreator should contain these paths, so you can now go ahead and build SpineCreator.
 
@@ -187,7 +187,7 @@ Change the value for "Working directory" to "/Users/[you]/SpineML_2_BRAHMS"
 
 On Linux, I set the settings like this for my home directory (/home/seb):
 
-[[File:SC_Settings.png|SpineCreator Settings window]]
+![SC_Settings](/public/images/SC_Settings.png "SpineCreator Settings window"){: .center-image }
 
 Set a value in SYSTEMML_INSTALL_PATH to be "/Users/[you]/SystemML". That allows the component build scripts to find the BRAHMS include files.
 
