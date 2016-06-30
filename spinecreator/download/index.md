@@ -18,9 +18,9 @@ The Mac installation package is available here: [spinecreator-0.9.6.dmg]
 
 Debian packages are available for Jessie (Debian 8) and unstable (a.k.a. Debian Sid). Download the 4 .deb files for your architecture (amd64 for 64 bit; i386 for 32 bit).
 
-**Debian Jessie debs** are [here:](https://sebjames.zapto.org/owncloud/index.php/s/SKp02hTaoLy7rRh)
+**Debian Jessie debs** are [here](https://sebjames.zapto.org/owncloud/index.php/s/SKp02hTaoLy7rRh)
 
-**Unstable/sid debs** are [here:](https://sebjames.zapto.org/owncloud/index.php/s/grJuQkLUKZiUIWJ)
+**Unstable/sid debs** are [here](https://sebjames.zapto.org/owncloud/index.php/s/grJuQkLUKZiUIWJ)
 
 Now install the 4 .deb files:
 
@@ -30,7 +30,7 @@ sudo dpkg -i brahms_0.8.0-1_amd64.deb spineml-preflight_0.1.0-1_amd64.deb spinem
 
 ### Ubuntu
 
-Ubuntu packages for Ubuntu versions 14.04 (trusty) and above are available from the following Personal Package Archive: <https://launchpad.net/~sebjames/+archive/ubuntu/spineml>
+Ubuntu packages for Ubuntu versions 14.04 (trusty) and above are available from the following Personal Package Archive: [https://launchpad.net/~sebjames/+archive/ubuntu/spineml]
 
 To install, open a terminal and do the following:
 
