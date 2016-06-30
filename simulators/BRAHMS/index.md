@@ -18,6 +18,7 @@ The best way to install BRAHMS and SpineML\_2\_BRAHMS on Linux is to compile the
 You will need the following programs installed on your system:
 
 `sudo apt-get install build-essential python git gitk \`
+
 `  python-dev libpopt-dev doxygen xsltproc cmake libxaw7-dev libxv-dev`
 
 Let's create a directory to keep the source code in one place:
