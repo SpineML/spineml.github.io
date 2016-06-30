@@ -5,7 +5,7 @@ title: Publications
 
 To reference the SpineML language or code generation tool-chain please use the following publication. A further publication detailed the graphical tools is currently in development...
 
-**Richmond P, Cope A, Gurney K, Allerton DJ.** “From Model Specification to Simulation of Biologically Constrained Networks of Spiking Neurons” *Neuroinformatics. 2013 Nov 20, \[//dx.doi.org/10.1007/s12021-013-9208-z dx.doi \]*
+**Richmond P, Cope A, Gurney K, Allerton DJ.** “From Model Specification to Simulation of Biologically Constrained Networks of Spiking Neurons” *Neuroinformatics. 2013 Nov 20*
 
 The following poster is available describing an overview of the toolchain.
 
