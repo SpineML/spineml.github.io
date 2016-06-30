@@ -5,7 +5,7 @@ title: Building SpineCreator from source on Linux
 
 # Building on Linux
 
-Because we are a small team, we do not have the resources to produce regular packages for SpineCreator and the SpineML toolchain.  For this reason, we recommend that users compile SpineCreator from source and we have some easy to follow instructions here! Please tell us when you have problems by submitting issues on the github project pages (for example https://github.com/SpineML/SpineCreator/issues)  
+Because we are a small team, we do not have the resources to produce regular packages for SpineCreator and the SpineML toolchain.  For this reason, we recommend that users compile SpineCreator from source and we have some easy to follow instructions here! Please tell us when you have problems by submitting issues on the github project pages (for example https://github.com/SpineML/SpineCreator/issues)
 
 SpineCreator is built using the Qt toolkit (http://qt.io), a cross-platform library of C++ code for building desktop apps. To run models, SpineCreator uses a SpineML toolchain. On this page, we describe how you can compile SpineML_PreFlight, SpineML_2_BRAHMS and BRAHMS as your SpineML toolchain.
 
@@ -30,9 +30,9 @@ https://github.com/SpineML/SpineML_PreFlight/issues]
 You will need the following programs installed on your system:
 
 ```
-sudo apt-get install build-essential qtcreator libqt5svg5-dev libgvc6 python git gitk \ 
-python-dev libgraphviz-dev libpopt-dev doxygen xsltproc cmake libxaw7-dev libxv-dev 
-``` 
+sudo apt-get install build-essential qtcreator libqt5svg5-dev libgvc6 python git gitk \
+python-dev libgraphviz-dev libpopt-dev doxygen xsltproc cmake libxaw7-dev libxv-dev
+```
 
 Note that the Qt version needs to be 5.x; Qt 4.x is no longer supported.
 
@@ -53,7 +53,7 @@ etc) in Qt Creator or SpineCreator, then you can apply this
 workaround:
 
 ```
-sudo apt-get install appmenu-qt 
+sudo apt-get install appmenu-qt
 ```
 
 This configures all Qt programs to display their window menus in the
@@ -70,16 +70,16 @@ git clone https://github.com/sebjameswml/brahms.git
 ```
 
 Build brahms with cmake:
- 
-``` 
+
+```
 cd brahms
 mkdir build
 cd build
-cmake -DSTANDALONE_INSTALL=OFF -DCMAKE_INSTALL_PREFIX=/usr/local ..  
-make -j4 
+cmake -DSTANDALONE_INSTALL=OFF -DCMAKE_INSTALL_PREFIX=/usr/local ..
+make -j4
 sudo make install
 ```
- 
+
 ## Compile SpineML_PreFlight on Linux
 
 Clone a copy of SpineML_PreFlight:
@@ -94,13 +94,13 @@ Build and install SpineML_PreFlight using cmake:
 mkdir SpineML_PreFight-build && cd SpineML_PreFlight-build
 cmake -DCMAKE_INSTALL_PREFIX=/usr/local ../SpineML_PreFlight
 make -j4 sudo make install
-``` 
+```
 
 ## Clone SpineML_2_BRAHMS on Linux
 
 Clone a copy of SpineML_2_BRAHMS into your home directory:
 
-``` 
+```
 cd ~
 git clone https://github.com/SpineML/SpineML_2_BRAHMS.git
 ```
@@ -118,7 +118,7 @@ git clone https://github.com/SpineML/SpineCreator.git
 
 Open QtCreator:
 
-[[File:Open_QtCreator.png|Open QtCreator]]
+![Open_Qt](/public/images/Open_QtCreator.png "Open QtCreator"){: .center-image }
 
 Now open the SpineCreator project. The file to open is called
 spinecreator.pro (in older branches it was neuralNetworks.pro):
