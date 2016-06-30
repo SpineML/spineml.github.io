@@ -44,10 +44,6 @@
   url: "/publications/"
   subnav: 
 
-- text: "Contact"
+- text: "Contact and Report Bugs"
   url: "/contact/"
-  subnav: 
-
-- text: "Report Bugs"
-  url: "/bugs/"
   subnav: 
