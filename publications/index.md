@@ -11,9 +11,7 @@ The following poster is available describing an overview of the toolchain.
 
 **Cope AJ, Richmond P.** “A toolchain for creation of spiking neural networks utilising NineML - a tool independent XML model description format” *Poster presentation at eFutures workshop \`Building Bridges to Building Brains\` Edinburgh 2012* [available here](/public/images/e-futures_building_bridges_to_building_brains.pdf)
   
-The following publications use SpineML and SpineCreator:
-
-The following list of papers are user contributed resources which either give insight into multi agent simulator performance, benchmarking procedures in other domains or details of benchmark models. If you would like to contribute a paper then please [contact us](../../contact/).
+The following publications use SpineML and SpineCreator, if you would like to add a paper to this list please contact us:
 
 <ul class="list-of-papers">
 	{% for paper in site.data.papers %}
