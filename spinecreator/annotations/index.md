@@ -16,21 +16,21 @@ SpineCreator stores information about the 2D layout of networks, the 3D layout o
 An annotations tag within a Population stores the following information.
 
 ``` xml
-`       `<LL:Annotation>
-`           `<SpineCreator>
-`               `<xPos value="-11.2353"/>
-`               `<yPos value="12.5792"/>
-`               `<animSpeed value="0.2"/>
-`               `<aspectRatio value="1.66667"/>
-`               `<colour red="0" green="0" blue="0"/>
-`               `<size value="1"/>
-`               `<tag value="2"/>
-`               `<x3D value="0"/>
-`               `<y3D value="0"/>
-`               `<z3D value="0"/>
-`               `<is_visualised value="0"/>
-`           `</SpineCreator>
-`       `</LL:Annotation>
+  <LL:Annotation>
+    <SpineCreator>
+      <xPos value="-11.2353"/>
+      <yPos value="12.5792"/>
+      <animSpeed value="0.2"/>
+      <aspectRatio value="1.66667"/>
+      <colour red="0" green="0" blue="0"/>
+      <size value="1"/>
+      <tag value="2"/>
+      <x3D value="0"/>
+      <y3D value="0"/>
+      <z3D value="0"/>
+      <is_visualised value="0"/>
+    </SpineCreator>
+  </LL:Annotation>
 ```
 
 #### xPos
@@ -100,19 +100,19 @@ An annotations tag within a Population stores the following information.
 An annotations tag within a Projection stores the following information.
 
 ``` xml
-`           `<LL:Annotation>
-`               `<SpineCreator>
-`                   `<DrawOptions style="0" showlabel="0"/>
-`                   `<start x="9.27878" y="7.23497"/>
-`                   `<curves>
-`                       `<curve>
-`                           `<C1 xpos="9.4914" ypos="7.23497"/>
-`                           `<C2 xpos="9.4914" ypos="7.22533"/>
-`                           `<end xpos="9.56297" ypos="7.22533"/>
-`                       `</curve>
-`                   `</curves>
-`               `</SpineCreator>
-`           `</LL:Annotation>
+  <LL:Annotation>
+    <SpineCreator>
+      <DrawOptions style="0" showlabel="0"/>
+      <start x="9.27878" y="7.23497"/>
+      <curves>
+        <curve>
+          <C1 xpos="9.4914" ypos="7.23497"/>
+          <C2 xpos="9.4914" ypos="7.22533"/>
+          <end xpos="9.56297" ypos="7.22533"/>
+        </curve>
+      </curves>
+    </SpineCreator>
+  </LL:Annotation>
 ```
 
 #### DrawOptions
@@ -169,18 +169,18 @@ An annotations tag within a Projection stores the following information.
 An annotations tag within a Input stores the following information.
 
 ``` xml
-`               `<LL:Annotation>
-`                   `<SpineCreator>
-`                       `<start x="9.21702" y="5.48872"/>
-`                       `<curves>
-`                           `<curve>
-`                               `<C1 xpos="8.94197" ypos="6.10971"/>
-`                               `<C2 xpos="8.94197" ypos="6.10971"/>
-`                               `<end xpos="8.66691" ypos="6.7307"/>
-`                           `</curve>
-`                       `</curves>
-`                   `</SpineCreator>
-`               `</LL:Annotation>
+  <LL:Annotation>
+    <SpineCreator>
+      <start x="9.21702" y="5.48872"/>
+      <curves>
+        <curve>
+          <C1 xpos="8.94197" ypos="6.10971"/>
+          <C2 xpos="8.94197" ypos="6.10971"/>
+          <end xpos="8.66691" ypos="6.7307"/>
+        </curve>
+      </curves>
+    </SpineCreator>
+  </LL:Annotation>
 ```
 
 For descriptions of these tags please refer to the Projection section
@@ -190,10 +190,10 @@ For descriptions of these tags please refer to the Projection section
 An annotations tag within a ConnectionList stores the following information.
 
 ``` xml
-`                       `<SpineCreator>
-`                           `<Script text="#!/usr/bin/python&#10;&#10;#PARNAME=size #LOC=1,1&#10;#PARNAME=scale #LOC=2,1&#10;#PARNAME=inhib #LOC=3,1&#10;#HASWEIGHT&#10;&#10;def connectionFunc( srclocs, dstlocs, size, scale, inhib ): &#10;..."/>
-`                           `<Config weightProperty="w"/>
-`                       `</SpineCreator>
+  <SpineCreator>
+    <Script text="#!/usr/bin/python&#10;&#10;#PARNAME=size #LOC=1,1&#10;#PARNAME=scale #LOC=2,1&#10;#PARNAME=inhib #LOC=3,1&#10;#HASWEIGHT&#10;&#10;def connectionFunc( srclocs, dstlocs, size, scale, inhib ): &#10;..."/>
+    <Config weightProperty="w"/>
+  </SpineCreator>
 ```
 
 #### Script
