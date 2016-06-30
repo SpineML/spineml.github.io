@@ -24,7 +24,7 @@
     - text: "DAMSON"
       url: "/simulators/DAMSON/"
 
-- text: "Model"
+- text: "Models and Examples"
   url: "/models/"
   subnav:
 
