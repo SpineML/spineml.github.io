@@ -31,7 +31,7 @@
 - text: "SpineCreator"
   url: "/spinecreator/"
   subnav:
-    - text: "Download"
+    - text: "Prebuilt package installation"
       url: "/spinecreator/Download/"
     - text: "Build on a Mac"
       url: "/spinecreator/source/"
