@@ -54,7 +54,6 @@ def connectionFunc(srclocs,dstlocs,sigma,min_w):
       j = j + 1
     i = i + 1
   return out
-</syntaxhighlight>
 ```
 
 Adding parameters to the SpineCreator GUI is performed using the
