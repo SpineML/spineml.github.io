@@ -61,7 +61,7 @@ toolbar. The 'Ports' and 'Params, Vars & Alias' boxes can be hidden or
 shown using the toggles on the toolbar. Interacting with the component
 elements will be covered later in this tutorial.
 
-![component_editor](/public/images/700px-Component_tab.png "Fig 2: Overview of the component editor tab"){: .center-image }
+![component_editor](/public/images/700px-Component_editor.jpg "Fig 2: Overview of the component editor tab"){: .center-image }
 
 4. <span style="color: #D7DF01">Properties panel:</span> This panel is used to edit the properties of the component *elements*.
 
@@ -69,72 +69,128 @@ elements will be covered later in this tutorial.
 
 ## Example - the LIF neuron and synapse
 
-As an example we will create a [http://link.springer.com/article/10.1007%2Fs00422-006-0068-6 Leaky Integrate and Fire] (LIF) neuron with a conductance-based single exponential decaying synapse using the component editor tab. The LIF is a simple neuron model that provides a great example for demonstrating the tools. Before getting started building the model we first have a look at the equations that govern the LIF and synaptic model behaviour and show how these should be broken down for implementation.
+As an example we will create a
+[http://link.springer.com/article/10.1007%2Fs00422-006-0068-6 Leaky
+Integrate and Fire] (LIF) neuron with a conductance-based single
+exponential decaying synapse using the component editor tab. The LIF
+is a simple neuron model that provides a great example for
+demonstrating the tools. Before getting started building the model we
+first have a look at the equations that govern the LIF and synaptic
+model behaviour and show how these should be broken down for
+implementation.
 
 The equation for the membrane voltage dynamics is:
 
-[[File:iaf_memb.png|400px]]
+![iaf_memb](/public/images/400px-Iaf_memb.png){: .center-image }
 
-where v is the membrane potential, tau is the membrane time constant, I_off and I_syn are the offset and synaptic currents acting on the membrane, C_m is the membrane capacitance and v_rest is the resting membrane potential.
+where v is the membrane potential, tau is the membrane time constant,
+I_off and I_syn are the offset and synaptic currents acting on the
+membrane, C_m is the membrane capacitance and v_rest is the resting
+membrane potential.
 
-When the voltage crosses a threshold it is reset to a fixed value and the neuron enters a fixed refractory period in which there are no dynamics for the membrane.
+When the voltage crosses a threshold it is reset to a fixed value and
+the neuron enters a fixed refractory period in which there are no
+dynamics for the membrane.
 
 The equation for the synaptic current is:
 
-[[File:iaf_I.png|300px]]
+![iaf_I](/public/images/300px-Iaf_I.png){: .center-image }
 
-where g_syn is the instantaneous synaptic conductance and E_syn is the synaptic reversal potential.
+where g_syn is the instantaneous synaptic conductance and E_syn is the
+synaptic reversal potential.
 
 The instantaneous conductance is modelled as follows:
 
-[[File:iaf_g.png|400px]]
+![iaf_g](/public/images/400px-Iaf_g.png){: .center-image }
 
-where tau is the synaptic decay constant, s denotes the index in the set of action potential reaching the synapse, and g-bar is the maximal synaptic conductance. The delta function applies an instantaneous rise of g-max to the synaptic conductance each time an action potential acts on the synapse. This equation is more commonly expressed as the solution:
+where tau is the synaptic decay constant, s denotes the index in the
+set of action potential reaching the synapse, and g-bar is the maximal
+synaptic conductance. The delta function applies an instantaneous rise
+of g-max to the synaptic conductance each time an action potential
+acts on the synapse. This equation is more commonly expressed as the
+solution:
 
-[[File:iaf_g_solved.png|300px]]
+![iaf_g_solved](/public/images/300px-Iaf_g_solved.png){: .center-image }
 
-We have tried with the GUI to spare the user as much concern for the implementation of the model as possible to allow them to focus on the model itself, however in mapping these equations to SpineML components we must spare a little bit of thought to implementation.
+We have tried with the GUI to spare the user as much concern for the
+implementation of the model as possible to allow them to focus on the
+model itself, however in mapping these equations to SpineML components
+we must spare a little bit of thought to implementation.
 
-[[File:wu_vs_ps.png|thumb|Fig3:Diagram of a projection between two populations of neuron_body (blue circles) showing weight_update (green triangles and postsynapse (red squares)|300px|right]]
-SpineML has three types of neural components: weight_update, post_synapse, and neuron_body. Together the weight_update and postsynapse components form synapses, however the equations that are placed in each need consideration. Weight_updates are calculated for *every connection*, while postsynapses are calculated for *every target neuron*.
+![wu_vs_ps](/public/images/Wu_vs_ps.png "Fig3:Diagram of a projection between two populations of neuron_body (blue circles) showing weight_update (green triangles and postsynapse (red squares)"){: .right-wrapped }
 
-The diagram in Fig 3 shows this a bit better - there is a projection between the top population of blue neuron_body components and the bottom blue neuron_body components. Every source neuron_body is connected to every adjacent destination neuron_body. There are seven green weight_updates, but only three red postsynapses - one for each destination neuron_body.
+SpineML has three types of neural components: weight_update,
+post_synapse, and neuron_body. Together the weight_update and
+postsynapse components form synapses, however the equations that are
+placed in each need consideration. Weight_updates are calculated for
+*every connection*, while postsynapses are calculated for *every
+target neuron*.
 
-So what does this mean for implementation? Everything that must be done on a per connection basis must be put in the weight_update component, and everything else should go in the postsynapse - as they are fewer in number so will apply less computational overhead. For large densely connected populations unnecessary computation in the weight_update can be quite costly to performance.
+The diagram in Fig 3 shows this a bit better - there is a projection
+between the top population of blue neuron_body components and the
+bottom blue neuron_body components. Every source neuron_body is
+connected to every adjacent destination neuron_body. There are seven
+green weight_updates, but only three red postsynapses - one for each
+destination neuron_body.
+
+So what does this mean for implementation? Everything that must be
+done on a per connection basis must be put in the weight_update
+component, and everything else should go in the postsynapse - as they
+are fewer in number so will apply less computational overhead. For
+large densely connected populations unnecessary computation in the
+weight_update can be quite costly to performance.
 
 For this model this involves breaking the model down as follows:
 
 neuron_body:
 
-[[File:iaf_memb.png|400px]]
+![iaf_memb](/public/images/400px-Iaf_memb.png){: .center-image }
 
 postsynapse:
 
-[[File:iaf_I.png|300px]]
+![iaf_I](/public/images/300px-Iaf_I.png){: .center-image }
+
 and
-[[File:ps_2nd.png|300px]]
+
+![ps_2nd](/public/images/300px-Ps_2nd.png){: .center-image }
 
 weight_update:
 
-[[File:wu_eqn.png|250px]]
+![wu_eqn](/public/images/250px-Wu_eqn.png){: .center-image }
 
-where each weight_update *i* applies each input action potential *s* for that connection (redefined from earlier), and then the contributions for each weight_update *i* are summed in the postsynapse. This is possible as exponential decays are linearly separable, so can be composed into a single decay without changing the result.
+where each weight_update *i* applies each input action potential *s*
+for that connection (redefined from earlier), and then the
+contributions for each weight_update *i* are summed in the
+postsynapse. This is possible as exponential decays are linearly
+separable, so can be composed into a single decay without changing the
+result.
 
-Sorry about the slight added complexity, but we couldn't think of a method that would preserve the flexibility and performance we desired and not require this step.
+Sorry about the slight added complexity, but we couldn't think of a
+method that would preserve the flexibility and performance we desired
+and not require this step.
 
-Now that we have the equations that describe the neuron and synapse and have broken them into the correct components, we can begin building!
+Now that we have the equations that describe the neuron and synapse
+and have broken them into the correct components, we can begin
+building!
 
 ## The IAF neuron_body
 
-Add a new component using the 'New component' button at the top of the component selection panel.
+Add a new component using the 'New component' button at the top of the
+component selection panel.
 
-First we shall create a SpineML component for the neuron_body. To do that we must add *elements* to the component and set their properties to create the behaviour we require.
+First we shall create a SpineML component for the neuron_body. To do
+that we must add *elements* to the component and set their properties
+to create the behaviour we require.
 
 ### Component properties
 
 [[File:props_component.png|thumb|Fig 4: Component properties panel|300px|right]]
 
-First we configure the properties of the component as a whole. The properties panel should look as shown to the right (Fig 4). If it does not then make sure the cursor icon is selected in the toolbox and click on the background of the visualisation pane. The properties should be set as follows:
+First we configure the properties of the component as a whole. The
+properties panel should look as shown to the right (Fig 4). If it does
+not then make sure the cursor icon is selected in the toolbox and
+click on the background of the visualisation pane. The properties
+should be set as follows:
 
 * Name: this is the component name used to reference it. It should be unique and contain no underscroll (_) characters. Set this to 'IAF'.
 * Component Type: leave as neuron_body
