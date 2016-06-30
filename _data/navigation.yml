@@ -4,7 +4,7 @@
 
 - text: "SpineML Language"
   url: "/spineml/"
-  subnav: 
+  subnav:
     - text: "Component Layer"
       url: "/spineml/component/"
     - text: "Network Layer"
@@ -13,10 +13,10 @@
       url: "/spineml/network_low_level/"
     - text: "Experiment Layer"
       url: "/spineml/experiment/"
-      
+
 - text: "Simulators"
   url: "/simulators/"
-  subnav: 
+  subnav:
     - text: "BRAHMS"
       url: "/simulators/BRAHMS/"
     - text: "PyNN"
@@ -26,7 +26,7 @@
 
 - text: "Model"
   url: "/models/"
-  subnav: 
+  subnav:
 
 - text: "SpineCreator"
   url: "/spinecreator/"
@@ -39,6 +39,8 @@
       url: "/spinecreator/sourcelin/"
     - text: "Build on Windows"
       url: "/spinecreator/sourcewin/"
+    - text: "Testing your Installation"
+      url: "/spinecreator/testinginstall/"
     - text: "Tutorials"
       url: "/spinecreator/tutorials/"
     - text: "Developer: Annotations and Project File"
@@ -46,8 +48,8 @@
 
 - text: "Publications"
   url: "/publications/"
-  subnav: 
+  subnav:
 
 - text: "Contact and Report Bugs"
   url: "/contact/"
-  subnav: 
+  subnav:
