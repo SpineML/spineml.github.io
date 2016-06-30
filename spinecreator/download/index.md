@@ -30,7 +30,7 @@ sudo dpkg -i brahms_0.8.0-1_amd64.deb spineml-preflight_0.1.0-1_amd64.deb spinem
 
 ### Ubuntu
 
-Ubuntu packages for Ubuntu versions 14.04 (trusty) and above are available from the following Personal Package Archive: [https://launchpad.net/~sebjames/+archive/ubuntu/spineml]
+Ubuntu packages for Ubuntu versions 14.04 (trusty) and above are available from the following Personal Package Archive: [https://launchpad.net/~sebjames/+archive/ubuntu/spineml](https://launchpad.net/~sebjames/+archive/ubuntu/spineml)
 
 To install, open a terminal and do the following:
 
@@ -44,4 +44,4 @@ sudo apt-get install spinecreator
 
 Unfortunately, we don't have the resources to prepare Windows builds of SpineCreator and SpineML-2-BRAHMS, although some work has been carried out towards this goal. If you're interested in making Windows builds, please contact Seb James.
 
-  [spinecreator-0.9.6.dmg] (http://sebjames.zapto.org/owncloud/index.php/s/ScNR5109JQA6YzR)
+  [spinecreator-0.9.6.dmg](http://sebjames.zapto.org/owncloud/index.php/s/ScNR5109JQA6YzR)
