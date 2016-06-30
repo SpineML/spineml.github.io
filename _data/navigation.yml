@@ -32,7 +32,7 @@
   url: "/spinecreator/"
   subnav:
     - text: "Prebuilt package installation"
-      url: "/spinecreator/Download/"
+      url: "/spinecreator/download/"
     - text: "Build on a Mac"
       url: "/spinecreator/source/"
     - text: "Build on Linux"
