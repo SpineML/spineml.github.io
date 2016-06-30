@@ -9,6 +9,8 @@ Because we are a small team, we do not have the resources to produce regular pac
 
 SpineCreator is built using the Qt toolkit (http://qt.io), a cross-platform library of C++ code for building desktop apps. To run models, SpineCreator uses a SpineML toolchain. On this page, we describe how you can compile SpineML_PreFlight, SpineML_2_BRAHMS and BRAHMS as your SpineML toolchain.
 
+This build process was last tested in June 2016.
+
 ## Mac prerequisites
 
 To build the software, you'll need a compiler (Xcode) and some build tools including CMake, the Qt development system and the headers for a couple of necessary libraries.
