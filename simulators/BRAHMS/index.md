@@ -1,4 +1,9 @@
-![] 
+---
+layout: default
+title: Home
+---
+
+![b] 
 # BRAHMS
 
 BRAHMS is a Modular Execution Framework (MEF) for executing integrated systems built from component software processes (a SystemML-ready execution client). It allow the connection of processes together into systems, by linking the outputs of some processes into the inputs of others. For more details see [here].
@@ -123,7 +128,7 @@ BRAHMS is the SpineML reference simulator and there are currently no limitations
   []: deb_icon.png "fig:deb_icon.png"
   [1]: xml_icon.png "fig:xml_icon.png"
 
-  []: Brahmslogo-128.png "fig:Brahmslogo-128.png"
+  [b]: Brahmslogo-128.png "fig:Brahmslogo-128.png"
   [here]: http://brahms.sourceforge.net/docs/What%20is%20BRAHMS.html
   [`https://github.com/sebjameswml/brahms.git`]: https://github.com/sebjameswml/brahms.git
   [`https://github.com/SpineML/SpineML_PreFlight.git`]: https://github.com/SpineML/SpineML_PreFlight.git
