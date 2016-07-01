@@ -4,7 +4,7 @@ title: damson
 ---
 
 
-![http://neuralensemble.org/trac/PyNN/chrome/site/pynn_header.png]
+!["PyNN logo"](ttp://neuralensemble.org/trac/PyNN/chrome/site/pynn_header.png)
 
 [PyNN] is described as a simulator independant language for building neuronal network models. It is based on the Python programming language and has simulator support for r range of simulation engines including NEST, NEURON, PCSIM and Brian.
 
