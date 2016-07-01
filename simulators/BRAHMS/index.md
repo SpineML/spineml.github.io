@@ -114,11 +114,7 @@ The results of the model can be found in the 'SpineML\_2\_BRAHMS/temp' directory
 Downloads
 ---------
 
-These are outdated debian packages for brahms and spineml-2-brahms.
-
-**BRAHMS for use with SpineML can be downloaded for Debian-based Linux** (32bit) ![] (64bit) ![]
-
-**Archive of XSLT scripts for SpineML to BRAHMS code generation** (deb 32bit)![][1] (deb 64bit)![][1] (OSX and other Linux) ![][1]
+Releases for Debian based Linux and Mac OSX can be found on the [release page](https://github.com/SpineML/SpineML_2_BRAHMS/releases/tag/1.0.0-1), although these are currently not up to date and we recommend using the Git versions
 
 Usage and Limitations
 ---------------------
@@ -127,7 +123,6 @@ BRAHMS is the SpineML reference simulator and there are currently no limitations
 
   []: /public/images/Deb_icon.png "fig:deb_icon.png"
   [1]: /public/images/Xml_icon.png "fig:xml_icon.png"
-
   [b]: /public/images/Brahmslogo-128.png "fig:Brahmslogo-128.png"
   [here]: http://brahms.sourceforge.net/docs/What%20is%20BRAHMS.html
   [`https://github.com/sebjameswml/brahms.git`]: https://github.com/sebjameswml/brahms.git
