@@ -65,7 +65,7 @@ Spike source inputs must be described within the network as populations (using t
 Details of specifying spike sources are listed within the [experimental layer section]. The only limitation is that time varying rates are not supported in PyNN.
 
   [PyNNSpikeSource.xml]: http://bimpa.group.shef.ac.uk/SpineML/models/component/PyNNSpikeSource.xml
-  [experimental layer section]: experiment "wikilink"
+  [experimental layer section]: ../spineml/experiment "wikilink"
   [PyNN]: http://neuralensemble.org/trac/PyNN
   [PyNN installation process]: http://neuralensemble.org/trac/PyNN/wiki/Installation
   [IF\_curr\_exp.xml]: http://bimpa.group.shef.ac.uk/SpineML/models/component/IF_curr_exp.xml
