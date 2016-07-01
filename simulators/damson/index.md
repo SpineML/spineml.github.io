@@ -4,6 +4,7 @@ title: Home
 ---
 
 ![]
+
 DAMSON is a functional emulator for SpiNNaker architecture which aims to achieve 1 million low power interconnected ARM cores. DAMSON emulates both the fixed point precision and event driven operation of SpiNNaker using an event driven from of C.
 
 Simulating SpineML with DAMSON
@@ -36,9 +37,9 @@ Any log files will be saved in the local directory.
 Downloads
 ---------
 
-**DAMSON program executable for debian based Linux 32 bit only** ![][1]
+[**DAMSON program executable for debian based Linux 32 bit only**](/public/files/damson)
 
-**XSLT scripts and directory structure for SpineML to DAMSON code generation** ![][1]
+[**XSLT scripts and directory structure for SpineML to DAMSON code generation**](/public/files/spineml_2_damson.tar)
 
 Usage and Limitations
 ---------------------
