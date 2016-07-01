@@ -62,5 +62,19 @@ DAMSON currently has no support for experiment layer inputs. Any inputs must be 
 
 ### Fixed Point Arithmetic
 
+DAMSONS internal fixed point arithmetic format is able to robustly match the numerical performance for most component models. Due to the limited range (−32768 to +32767) and resolution (1.526 x 10−5) it is possible to produce overflow and underflow errors within component dynamics. In order to detect this DAMSON has underflow and overflow detection which reports errors at runtime.
+
+### WeightUpdate dynamics
+
+Currently DAMSON is not able to support WeightUpdate components which contain any dynamics or analogue inputs/output ports (i.e. only event based components are supported). This is not a limitation of DAMSON but a limitation of the SpiNNaker hardware system which DAMSON emulates.
+
+### PostSynapse dynamics
+
+Currently DAMSON is not able to support relay impulse ports from a weight update to the post synaptic neuron. This is again a limitation of the event passing within the SpiNNaker hardware system. A work around for some cases will be implemented shortly.
+
+### Experiment Layer Inputs
+
+DAMSON currently has no support for experiment layer inputs. Any inputs must be modelled instead as components and connected to the model via the network layer.
+
   [dam]: /public/images/Damson.png "fig:damson.png"
   [1]: /public/images/Xml_icon.png "fig:xml_icon.png"
