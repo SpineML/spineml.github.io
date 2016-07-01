@@ -1,4 +1,7 @@
-
+---
+layout: default
+title: Home
+---
 
 ![]
 DAMSON is a functional emulator for SpiNNaker architecture which aims to achieve 1 million low power interconnected ARM cores. DAMSON emulates both the fixed point precision and event driven operation of SpiNNaker using an event driven from of C.
@@ -58,5 +61,5 @@ DAMSON currently has no support for experiment layer inputs. Any inputs must be 
 
 ### Fixed Point Arithmetic
 
-  []: damson.png "fig:damson.png"
-  [1]: xml_icon.png "fig:xml_icon.png"
+  []: /public/images/Damson.png "fig:damson.png"
+  [1]: /public/images/Xml_icon.png "fig:xml_icon.png"
