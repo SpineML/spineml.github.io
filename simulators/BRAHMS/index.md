@@ -125,10 +125,10 @@ Usage and Limitations
 
 BRAHMS is the SpineML reference simulator and there are currently no limitations.
 
-  []: deb_icon.png "fig:deb_icon.png"
-  [1]: xml_icon.png "fig:xml_icon.png"
+  []: /public/images/deb_icon.png "fig:deb_icon.png"
+  [1]: /public/images/xml_icon.png "fig:xml_icon.png"
 
-  [b]: /images/Brahmslogo-128.png "fig:Brahmslogo-128.png"
+  [b]: /public/images/Brahmslogo-128.png "fig:Brahmslogo-128.png"
   [here]: http://brahms.sourceforge.net/docs/What%20is%20BRAHMS.html
   [`https://github.com/sebjameswml/brahms.git`]: https://github.com/sebjameswml/brahms.git
   [`https://github.com/SpineML/SpineML_PreFlight.git`]: https://github.com/SpineML/SpineML_PreFlight.git
