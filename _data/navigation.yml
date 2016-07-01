@@ -22,7 +22,7 @@
     - text: "PyNN"
       url: "/simulators/PyNN/"
     - text: "DAMSON"
-      url: "/simulators/DAMSON/"
+      url: "/simulators/damson/"
 
 - text: "Models and Examples"
   url: "/models/"
