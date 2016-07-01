@@ -1,15 +1,14 @@
 ---
 layout: default
-title: Setme
+title: SpineCreator component tutorial
 ---
 # Component tutorial
 
 This article is one of a series of tutorials designed to provide the
 new user with insight into how to create models using the
-GUI. Advanced users may find the [[Reference]] section more
+GUI. Advanced users may find the [Reference](reference) section more
 helpful. Note that the screenshots are from the Mac build of the GUI,
-so will have a different visual appearance to that on Windows and
-Linux.
+and will have a different visual appearance on other platforms.
 
 ## Introduction to the Component Editor
 
@@ -184,7 +183,7 @@ to create the behaviour we require.
 
 ### Component properties
 
-[[File:props_component.png|thumb|Fig 4: Component properties panel|300px|right]]
+![props_component](/public/images/300px-Props_component.png "Fig 4: Component properties panel"){: .right-wrapped }
 
 First we configure the properties of the component as a whole. The
 properties panel should look as shown to the right (Fig 4). If it does
@@ -200,37 +199,79 @@ should be set as follows:
 
 ### Add Regimes
 
-[[File:addregime.png|right|50px]]
-Now we add *Regimes*. These contain sets of differential equations that describe the behaviour of the component in one state.
+![addregime](/public/images/50px-Addregime.png){: .right-wrapped }
+
+Now we add *Regimes*. These contain sets of differential equations
+that describe the behaviour of the component in one state.
+
 * Click on the *Add Regime* button on the toolbox (shown right) to add a Regime.
 
-[[File:info.png|right|thumb|**Regimes:** These contain the differential equations that describe the dynamics of the component. *Regimes* can be switched between using *Conditionals* (see later).]]
+**Regimes:** These contain the differential equations that
+describe the dynamics of the component. *Regimes* can be switched
+between using *Conditionals* (see later). {: .info-popout }
 
-There should now be a new Regime named 'New_Regime_1' in the visualisation pane which is selected (note the red outline). In the Properties panel there are the properties that can be set for this Regime, which is just the name. Set the name to 'Integrating' - note that the visualisation updates to reflect the changes as you type.
+There should now be a new Regime named 'New_Regime_1' in the
+visualisation pane which is selected (note the red outline). In the
+Properties panel there are the properties that can be set for this
+Regime, which is just the name. Set the name to 'Integrating' - note
+that the visualisation updates to reflect the changes as you type.
 
-The *Add Regime* button is no longer on the toolbox as we have the Regime selected, so click on the visualisation pane to deselect the Regime and bring it back. Add another Regime and name it 'Refractory'.
+The *Add Regime* button is no longer on the toolbox as we have the
+Regime selected, so click on the visualisation pane to deselect the
+Regime and bring it back. Add another Regime and name it 'Refractory'.
 
-Click on the background of the visualisation pane to return to the Component Properties and set the 'Initial Regime' to 'Integrating'.
+Click on the background of the visualisation pane to return to the
+Component Properties and set the 'Initial Regime' to 'Integrating'.
 
 ### Add a Time Derivative
 
-[[File:addde.png|right|50px]]
-We now need to add a differential equation element (called a **Time Derivatives**), which will contain the differential equation for the neuron membrane potential, to the Integrating Regime:
-* Select that Regime by clicking on it. The toolbar will now have a new button as shown to the right (Fig 5).
-[[File:depanel.png|thumb|Fig 5: Time derivative properties panel|210px|right]]
-* Click this button to add a new Time derivative element to the Regime. The new Time Derivative element will appear with a warning as it is not configured yet.
+![addde](/public/images/50px-Addde.png){: .right-wrapped }
 
-Select the new Time Derivative element by clicking on it. Note the dotted outline denoting selection of a sub-element. The context sensitive Properties panel now shows the properties of the Time Derivative. The drop down box 'Variable' is empty and there are no options to select. We need to add a **State Variable** for voltage, which will show up here.
+We now need to add a differential equation element (called a **Time
+Derivatives**), which will contain the differential equation for the
+neuron membrane potential, to the Integrating Regime:
+
+* Select that Regime by clicking on it. The toolbar will now have a
+  new button as shown to the right (Fig 5).
+
+![depanel](/public/images/210px-Depanel.png "Fig 5: Time derivative properties panel"){: .right-wrapped }
+
+* Click this button to add a new Time derivative element to the
+  Regime. The new Time Derivative element will appear with a warning
+  as it is not configured yet.
+
+Select the new Time Derivative element by clicking on it. Note the
+dotted outline denoting selection of a sub-element. The context
+sensitive Properties panel now shows the properties of the Time
+Derivative. The drop down box 'Variable' is empty and there are no
+options to select. We need to add a **State Variable** for voltage,
+which will show up here.
 
 ### Add a State Variable
 
 To add the voltage State Variable:
-* First select the red box titled 'Params, Vars & Alias' (**Note:** if the box is out of view click on the visualisation pane and drag to pan the view).
-* Note the three new buttons on the toolbar. These buttons allow **Parameters** (+P), **State Variables** (+SV) and **Aliases** (+A) to be added to the system.
 
-[[File:info.png|right|thumb|**State Variables and Parameters:** There are two types of *Properties* of a component - *Parameters* and *State Variables*. *Parameters* represent numbers that are static during the simulation of a model, while *State Variables* can change, thus they represent the current *state* of the system.]]
+* First select the red box titled 'Params, Vars & Alias' (**Note:** if
+  the box is out of view click on the visualisation pane and drag to
+  pan the view).
+* Note the three new buttons on the toolbar. These buttons allow
+  **Parameters** (+P), **State Variables** (+SV) and **Aliases** (+A)
+  to be added to the system.
 
-[[File:pars_sv.png|center|thumb|Fig 6: Right: the toolbar buttons for adding Parameters, State Variables and Aliases. Left: The Params, Vars & Alias box|300px]]
+**State Variables and Parameters:** There are two types of
+  *Properties* of a component - *Parameters* and *State
+  Variables*. *Parameters* represent numbers that are static during
+  the simulation of a model, while *State Variables* can change, thus
+  they represent the current *state* of the system. {: .info-popout }
+
+[[File:pars_sv.png|center|thumb|Fig 6: Right: the toolbar buttons for
+adding Parameters, State Variables and Aliases. Left: The Params, Vars
+& Alias box|300px]]
+
+![pars_sv](/public/images/300px-Pars_sv.png "Fig 6: Right: the toolbar
+buttons for adding Parameters, State Variables and Aliases. Left: The
+Params, Vars & Alias box"){: .right-wrapped }
+
 * Click to add a State Variable using the centre toolbar button (+SV)
 * Select the new State Variable and change the name to 'v'. The Params, Vars & Alias box should now look like in the above diagram.
 * Set the Dimensions to milliVolts by selecting 'Dimensional Prefix' of 'm' and 'Dimensional Unit' of 'V'.
@@ -243,19 +284,29 @@ Now we are in a position to finish the Time Derivative we added earlier:
 * From the drop-down box for 'Variable' select the new 'v' State Variable.
 * The text in the visulisation pane should update to dv/dt =
 
-Now we add the equation for the membrane potential dynamics. This must be in the form of C-style code (for details see [http://software.incf.org/software/nineml/wiki/nineml-specification here section A.1.16 MathInline]). As an example here is the membrane potential equation:
+Now we add the equation for the membrane potential dynamics. This must
+be in the form of C-style code (for details see (here section A.1.16
+MathInline)[http://software.incf.org/software/nineml/wiki/nineml-specification]
+). As an example here is the membrane potential equation:
 
-<syntaxhighlight lang="C" >
+```c
 (I_off+I_syn)/C_m+(v_rest-v)/tau_m
-</syntaxhighlight>
+```
 
 where the tau_m has been moved across to the other side of the equation.
 
-Note that there are several names that we use here that represent values that are fixed for the duration of the simulation (I_off, C_m, v_rest, tau_m), or inputs into the component (I_syn), but we have not defined them. Consequently the text background is red - showing that there is an error in the text string. To solve this we must add *Parameters* for the fixed values, and an *Analog Input Port* for I_syn.
+Note that there are several names that we use here that represent
+values that are fixed for the duration of the simulation (I_off, C_m,
+v_rest, tau_m), or inputs into the component (I_syn), but we have not
+defined them. Consequently the text background is red - showing that
+there is an error in the text string. To solve this we must add
+*Parameters* for the fixed values, and an *Analog Input Port* for
+I_syn.
 
 Your component should now look as below:
 
 [[File:stage1_ce.png|center|700px]]
+![stage1_ce](/public/images/700px-Stage1_ce.png){: .center-image }
 
 ### Add the Parameters
 
@@ -265,26 +316,47 @@ To add a Parameter:
 * Select the red box titled 'Params, Vars & Alias' as in [[#Add a State Variable| adding a State Variable]].
 * Click to add a Parameter using the top toolbar button (+P)
 
-Click to add **four** Parameters, and name these Parameters 'I_off', 'C_m', 'v_rest' and 'tau_m'.
+Click to add **four** Parameters, and name these Parameters 'I_off',
+'C_m', 'v_rest' and 'tau_m'.
 
-The Parameters can be re-ordered by selecting one and using the up and down buttons on the toolbar.
+The Parameters can be re-ordered by selecting one and using the up and
+down buttons on the toolbar.
 
-Set the Dimensions of the Parameters to physiological units (current = nA, capacitance = pF, voltage = mV, time = ms).
+Set the Dimensions of the Parameters to physiological units (current =
+nA, capacitance = pF, voltage = mV, time = ms).
 
 ### Add the Analog Input Port
 
-[[File:info.png|right|thumb|**Ports:** There are three types of *Port* which carry different types of data between components - *Analog Ports* carry continuous variable data every timestep of the simulation; *Event Ports* are analogous to action potential spikes, and trigger discrete events in components; *Impulse Ports* are event ports that, along with the discrete event, carry a value which can be set by the source component.]]
-Ports describe the communications of the component with other components. We need to add an **Analog Input Port** for the incoming current from the synapses, I_syn.
+**Ports:** There are three types of *Port* which carry different types
+  of data between components - *Analog Ports* carry continuous
+  variable data every timestep of the simulation; *Event Ports* are
+  analogous to action potential spikes, and trigger discrete events in
+  components; *Impulse Ports* are event ports that, along with the
+  discrete event, carry a value which can be set by the source
+  component. {: .info-popout }
+
+Ports describe the communications of the component with other
+components. We need to add an **Analog Input Port** for the incoming
+current from the synapses, I_syn.
 
 To add an Analog Port:
+
 * Select the blue box titled 'Ports' (**Note:** if the box is out of view click on the visualisation pane and drag to pan the view).
 * Note the three new buttons on the toolbar. These buttons allow **Analog Ports** (**a**), **Event Ports** (**e**) and **Impulse Ports** (**I**) to be added to the system.
 * Add an Analog Port, there will be a warning to 'Select a port variable' as the port is not configured yet.
 * Select the new Port, note the dotted line surrounding it.
 
-The Port is currently configured as an output, or *Send* port by the 'Analog Mode' drop-down box. We want to reconfigure it so that it is an input Port. there are two types of input port: *Receive Ports* take input from a single source, and connecting multiple sources is not possible; *Reduce Ports* take input from multiple sources and combine them using a *Reduce Operator*. Since our neuron may receive currents from multiple synapses, we require a Reduce Port. To configure the Port see Fig 7:
+The Port is currently configured as an output, or *Send* port by the
+'Analog Mode' drop-down box. We want to reconfigure it so that it is
+an input Port. there are two types of input port: *Receive Ports* take
+input from a single source, and connecting multiple sources is not
+possible; *Reduce Ports* take input from multiple sources and combine
+them using a *Reduce Operator*. Since our neuron may receive currents
+from multiple synapses, we require a Reduce Port. To configure the
+Port see Fig 7:
 
-[[File:reduce_props.png|thumb|Fig 7: Reduce Port properties panel|250px|right]]
+![reduce_props](/public/images/250px-Reduce_props.png "Fig 7: Reduce Port properties panel"){: .right-wrapped }
+
 * Change the 'Analog Mode' drop-down box to 'Reduce'
 * Set the 'Name' to 'I_syn'
 * Leave the 'Reduce Operation' as 'Addition'
@@ -292,15 +364,23 @@ The Port is currently configured as an output, or *Send* port by the 'Analog Mod
 
 The Properties panel should now look as the image to the right.
 
-Now select the Time Derivative, note that the background to the text is white. If this is not the case then recheck the Parameters and Port for errors.
+Now select the Time Derivative, note that the background to the text
+is white. If this is not the case then recheck the Parameters and Port
+for errors.
 
 ### Add output Ports
 
-We now have a component with membrane dynamics and current input, but we are still lacking any way for the component to communicate to the outside world, and to enter the refractory period. First we consider communication.
+We now have a component with membrane dynamics and current input, but
+we are still lacking any way for the component to communicate to the
+outside world, and to enter the refractory period. First we consider
+communication.
 
-The IAF neuron_body needs **two** outputs. One is an *Event Port* to transmit spikes, and the other an *Analog Port* to send voltage for use in a conductance-based synapse.
+The IAF neuron_body needs **two** outputs. One is an *Event Port* to
+transmit spikes, and the other an *Analog Port* to send voltage for
+use in a conductance-based synapse.
 
-[[File:iaf_v_port.png|thumb|Fig 8: Properties for the voltage Port|right|200px]]
+![iaf_v_port](/public/images/200px-Iaf_v_port.png "Fig 8: Properties for the voltage Port"){: .right-wrapped }
+
 To add and configure the Analog Port (Fig 8):
 
 * Select the 'Ports' box.
@@ -310,7 +390,7 @@ To add and configure the Analog Port (Fig 8):
 
 This Port will now transmit the value of the voltage State Variable.
 
-[[File:iaf_spike_port.png|thumb|Fig 9:Properties for the Event Port|right|250px]]
+![iaf_spike_port](/public/images/250px-Iaf_spike_port.png "Fig 9:Properties for the Event Port"){: .right-wrapped }
 
 To add and configure the Event Port (Fig 9):
 
@@ -318,42 +398,73 @@ To add and configure the Event Port (Fig 9):
 * Click the toolbar button to add an Event Port (**e**).
 * Set the 'Name' in the Properties Panel to 'spike'.
 
-This Port will send Events when triggered, but we still need to add a mechanism to trigger this Port.
+This Port will send Events when triggered, but we still need to add a
+mechanism to trigger this Port.
 
 ### Introduction to Transitions
 
-In order to move between Regimes, or perform actions within the component that depend upon conditions being met, we use *Transitions*.
+In order to move between Regimes, or perform actions within the
+component that depend upon conditions being met, we use *Transitions*.
 
 There are three types of Transition:
 
-* *OnCondition*: This contains a conditional statement, and if this is satisfied then a set of procedures is followed (a traditional if-then statement)
-* *OnEvent*: This is triggered in response to an event on a set Event Port, and contains a set of procedures.
-* *OnImpulse*: This is triggered in response to an impulse on a set Impulse Port, and contains a set of procedures.
+* *OnCondition*: This contains a conditional statement, and if this is
+   satisfied then a set of procedures is followed (a traditional
+   if-then statement)
+* *OnEvent*: This is triggered in response to an event on a set Event
+   Port, and contains a set of procedures.
+* *OnImpulse*: This is triggered in response to an impulse on a set
+   Impulse Port, and contains a set of procedures.
 
-For this component we only require OnCondition Transitions. The remaining two Transition types will be described when [[#The synapse weight_update |creating the weight_update  component]].
+For this component we only require OnCondition Transitions. The
+remaining two Transition types will be described when creating the
+weight_update component.
 
-All Transition types can contain *State Assignments* which can update State Variables by assignment - i.e.: <syntaxhighlight lang="C" >sv1 = sv1+(var1-sv2*exp(var2))</syntaxhighlight>
+All Transition types can contain *State Assignments* which can update
+State Variables by assignment - i.e.:
 
-They can also contain *EventOut* and *ImpulseOut* which trigger Events and Impulses to be transmitted on set Ports.
+```c
+sv1 = sv1+(var1-sv2*exp(var2))
+```
+
+They can also contain *EventOut* and *ImpulseOut* which trigger Events
+and Impulses to be transmitted on set Ports.
 
 ### Adding an OnCondition for the spike
 
-The three types of Transition are added using the three toolbox buttons below the cursor arrow button (**C**: OnCondition; **E**: OnEvent; **I**: OnImpulse). Clicking these buttons exits the selection mode (denoted by the cursor arrow) and enters a creation mode for the respective Transition. To add an OnCondition Transition (see Fig 10):
+The three types of Transition are added using the three toolbox
+buttons below the cursor arrow button (**C**: OnCondition; **E**:
+OnEvent; **I**: OnImpulse). Clicking these buttons exits the selection
+mode (denoted by the cursor arrow) and enters a creation mode for the
+respective Transition. To add an OnCondition Transition (see Fig 10):
 
-[[File:added_oc.png|thumb|Fig 10: The new OnCondition|right|400px]]
+![added_oc](/public/images/400px-Added_oc.png "Fig 10: The new OnCondition"){: .center-image }
+
 * Click to activate OnCondition creation mode (**C** button).
-* Click and drag from the 'Integrating' Regime to the 'Refractory' Regime - a green arrow shows a valid Transition can be made. Note that Transitions **can** return to the same Regime they originated from.
-* The visualisation pane will update to show the new OnCondition (see right).
+* Click and drag from the 'Integrating' Regime to the 'Refractory'
+  Regime - a green arrow shows a valid Transition can be made. Note
+  that Transitions **can** return to the same Regime they originated
+  from.
+* The visualisation pane will update to show the new OnCondition (see
+  right).
 
-Selecting the OnCondition brings three new buttons to the context sensitive toolbar: add *State Assignment* (**=**), add *EventOut* (**e^**), and add *ImpulseOut* (**I^**).
+Selecting the OnCondition brings three new buttons to the context
+sensitive toolbar: add *State Assignment* (**=**), add *EventOut*
+(**e^**), and add *ImpulseOut* (**I^**).
 
-We now need to configure this OnCondition to activate when the neuron reaches a set threshold, then reset the voltage to zero and note the time of the spike (which will be used to return to the 'Integrating' Regime after the refractory time period).
+We now need to configure this OnCondition to activate when the neuron
+reaches a set threshold, then reset the voltage to zero and note the
+time of the spike (which will be used to return to the 'Integrating'
+Regime after the refractory time period).
 
 ### Configuring the OnCondition
 
 #### OnCondition Properties
 
-We now need to apply some of the lessons learned so far to set up the OnCondition, as we need new Parameters for the threshold and reset voltages, a new State Variable to store the spike time, and a new Parameter for the refractory time period:
+We now need to apply some of the lessons learned so far to set up the
+OnCondition, as we need new Parameters for the threshold and reset
+voltages, a new State Variable to store the spike time, and a new
+Parameter for the refractory time period:
 
 * Add a Parameter named v_thresh (dims = mV)
 * Add a Parameter named v_reset (dims = mV)
@@ -362,19 +473,23 @@ We now need to apply some of the lessons learned so far to set up the OnConditio
 
 These can then be used to configure the OnCondition:
 
-* Select the OnCondition. The Property 'Maths' is the conditional **if** - set this to:
-<syntaxhighlight lang='C'>
+* Select the OnCondition. The Property 'Maths' is the conditional
+  **if** - set this to:
+
+```c
 v > v_thresh
-</syntaxhighlight>
+```
 
 Your component should now look similar to that is Fig 11.
 
-[[File:iaf_screenshot_2.png|thumb|Fig 11: Overview of the component at this stage|center|700px]]
+![iaf_screenshot_2](/public/images/700px-Iaf_screenshot_2.png "Fig 11: Overview of the component at this stage"){: .center-image }
 
 #### Adding a State Assignment
 
-[[File:state_ass_props.png|thumb|Fig 12: State Assignment Properties|right|200px]]
-We need two *State Assignments* in this OnCondition. These will reset the voltage to v_reset and log the spike time in t_spike.
+![state_ass_props](/public/images/200px-State_ass_props.png "Fig 12: State Assignment Properties"){: .right-wrapped }
+
+We need two *State Assignments* in this OnCondition. These will reset
+the voltage to v_reset and log the spike time in t_spike.
 
 * Select the OnCondition by clicking on its title bar.
 * Click on the toolbar to add a *State Assignment* (**=**).
@@ -382,12 +497,18 @@ We need two *State Assignments* in this OnCondition. These will reset the voltag
 * Select the first State Assignment.
 * Configure as shown to the right (Fig 12).
 
-[[File:math_t.png|thumb|Fig 13: 't_spike' State Assignment Properties|right|200px]]
-We now configure the second State Assignment with 'Variable' set to 't_spike'. We wish to store the current simulation time, so we use the reserved variable **t** to do so, setting 'Maths' to 't', as shown to the right (Fig 13).
+![math_t](/public/images/200px-Math_t.png "Fig 13: 't_spike' State Assignment Properties"){: .right-wrapped }
+
+We now configure the second State Assignment with 'Variable' set to
+'t_spike'. We wish to store the current simulation time, so we use the
+reserved variable **t** to do so, setting 'Maths' to 't', as shown to
+the right (Fig 13).
 
 #### Adding an EventOut
 
-The final thing that the component must do when the voltage threshold is crossed is emit an action potential, or spike. To do this we add an EventOut to the OnCondition.
+The final thing that the component must do when the voltage threshold
+is crossed is emit an action potential, or spike. To do this we add an
+EventOut to the OnCondition.
 
 * Select the OnCondition.
 * Click the toolbar button to add an EventOut (**e^**).
@@ -395,35 +516,51 @@ The final thing that the component must do when the voltage threshold is crossed
 
 ### Add an OnCondition to return from the Refractory Regime
 
-While in the 'Refractory' Regime there are no Time Derivative and the system does not update. We therefore need to add a means of returning to the 'Integrating' Regime after the refractory time period has elapsed to allow the component to function again. We do this using another OnCondition Transition.
+While in the 'Refractory' Regime there are no Time Derivative and the
+system does not update. We therefore need to add a means of returning
+to the 'Integrating' Regime after the refractory time period has
+elapsed to allow the component to function again. We do this using
+another OnCondition Transition.
 
 * Add an OnCondition from the 'Refractory' Regime to the 'Integrating' Regime.
 * Select the OnCondition and set the 'Maths' to:
-<syntaxhighlight lang='C'>
-t > t_spike+t_refrac
-</syntaxhighlight>
 
-Now when **t** has progressed past t_spike by t_refrac (i.e. the current time is the spike time + the refractory time period) the component will transition back into the 'Integrating' Regime.
+```c
+t > t_spike+t_refrac
+```
+
+Now when **t** has progressed past t_spike by t_refrac (i.e. the
+current time is the spike time + the refractory time period) the
+component will transition back into the 'Integrating' Regime.
 
 ### Storing the finished component for use and saving
 
-The component is now complete. However in order to use it in models we must first validate and store the model. To do this:
+The component is now complete. However in order to use it in models we
+must first validate and store the model. To do this:
 
-* Click on the visualisation pane background and click 'Validate for use' in the Properties Panel.
+* Click on the visualisation pane background and click 'Validate for
+  use' in the Properties Panel.
 
 or
 
 * In the 'Component' menu select 'Validate component for use'.
 
-To save the model to a file use the 'Save component' and 'Save component as...' items in the 'File' menu. The component will be stored as a SpineML xml file. The model does not have to be stored to be saved, but will be validated before saving.
+To save the model to a file use the 'Save component' and 'Save
+component as...' items in the 'File' menu. The component will be
+stored as a SpineML xml file. The model does not have to be stored to
+be saved, but will be validated before saving.
 
-**If there are any validation problems with the model these will be reported and the model will not be stored or saved! Only correctly formed models can be stored or saved**
+**If there are any validation problems with the model these will be
+  reported and the model will not be stored or saved! Only correctly
+  formed models can be stored or saved**
 
-[[File:iaf_done.png|thumb|Fig 14: The finished component|center|800px]]
+![iaf_done](/public/images/800px-Iaf_done.png "Fig 14: The finished component"){: .center-image }
 
 ### Test the component
 
-We will now quickly run through the steps to test this neuron - note that no explanation will be given here as these are subjects for the remaining tutorials.
+We will now quickly run through the steps to test this neuron - note
+that no explanation will be given here as these are subjects for the
+remaining tutorials.
 
 * Click on the 'Network' tab
 * Click 'Add Population' from the toolbar (you can find it using the tooltips)
@@ -450,39 +587,68 @@ We will now quickly run through the steps to test this neuron - note that no exp
 * Click 'Add plot'
 You should see regular spiking.
 
-Note: if you play with the parameter and run the experiment again the plot will update with the new results!
+Note: if you play with the parameter and run the experiment again the
+plot will update with the new results!
 
 ## The synapse weight_update
 
-[[File:info.png|thumb|It is worth noting that this weight_update component contains no Time Derivatives or Analog Ports. This means that everything in the component acts in response to Events or Impulses - it is **Event Driven**. By making the weight_update Event Driven the simulation can calculate synapses much faster. You should always aim to make your weight_updates Event Driven for this reason. That said, if it is necessary to add Time Derivatives or Analog Ports then this is possible, however you models will take a significant performance hit for doing so.|right|300px]]
-The synapse weight_update component is simple, but introduces several new component elements - OnEvent Transitions, Impulse Ports and ImpulseOut elements. This section of the tutorial assumes that you have read the [[#The IAF neuron_body|previous section]].
+It is worth noting that this weight_update component contains no Time
+Derivatives or Analog Ports. This means that everything in the
+component acts in response to Events or Impulses - it is **Event
+Driven**. By making the weight_update Event Driven the simulation can
+calculate synapses much faster. You should always aim to make your
+weight_updates Event Driven for this reason. That said, if it is
+necessary to add Time Derivatives or Analog Ports then this is
+possible, however you models will take a significant performance hit
+for doing so. {: .info-popout }
 
-This component takes a spike from a neuron_body and sends on an Impulse of the connection weight to the postsynapse. It converts an Event into an Event with a value (an Impulse) with the value being the weight of the connection.
+The synapse weight_update component is simple, but introduces several
+new component elements - OnEvent Transitions, Impulse Ports and
+ImpulseOut elements. This section of the tutorial assumes that you
+have read the previous section.
+
+This component takes a spike from a neuron_body and sends on an
+Impulse of the connection weight to the postsynapse. It converts an
+Event into an Event with a value (an Impulse) with the value being the
+weight of the connection.
 
 ### Initial setup
 
-* If you have an existing component then select 'New component'  from the 'Component' menu.
+* If you have an existing component then select 'New component' from
+  the 'Component' menu.
 * Name the component 'Static Weight'
 * Select a Component Type of 'weight_update'
 * Add a new Regime, Name it 'default' and set it as the Initial Regime.
-* Add a Parameter named 'g' with dimensions nS - nanoSiemens. (**Note: this is g_max from the equations, but we call it g here for brevity**)
+* Add a Parameter named 'g' with dimensions nS - nanoSiemens. (**Note:
+  this is g_max from the equations, but we call it g here for
+  brevity**)
 
 ### Adding the Event Port
 
-[[File:wu_event_props.png|thumb|Fig 15: Event Port properties|right|200px]]
-We first add the input to the component, which is an Event Port (this will be connected to the Event Send Port of the neuron_body):
+![wu_event_props](/public/images/200px-Wu_event_props.png "Fig 15: Event Port properties"){: .right-wrapped }
+
+We first add the input to the component, which is an Event Port (this
+will be connected to the Event Send Port of the neuron_body):
+
 * Add a new Event Port and select it
 * Change the 'Event Mode' to Receive
 * Name the port 'spike'
 
-Currently this event port cannot affect the component behaviour, and requires an OnEvent to trigger when an event is received. First, however, it is useful to add the output port for the component - an *Impulse Port*.
+Currently this event port cannot affect the component behaviour, and
+requires an OnEvent to trigger when an event is received. First,
+however, it is useful to add the output port for the component - an
+*Impulse Port*.
 
 ### Adding the Impulse Port
 
-[[File:wu_imp_props.png|thumb|Fig 16: Impulse Port properties|right|200px]]
+![wu_imp_props](/public/images/200px-Wu_imp_props.png "Fig 16: Impulse Port properties"){: .right-wrapped }
+
 Now we add an Impulse port that will be the output of the component:
+
 * Select the 'Ports' box by clicking its title bar
-* Add an Impulse Port using the toolbar button that has appeared (**I** - hover to check the tooltip if you are not sure you have the right one)
+* Add an Impulse Port using the toolbar button that has appeared
+  (**I** - hover to check the tooltip if you are not sure you have the
+  right one)
 * Select the Impulse Port
 * Set the 'Par/Var' to 'g'
 * Leave the 'Impulse mode' as 'send'
@@ -493,32 +659,45 @@ This configures the Impulse port to send the value 'g' when it is triggered - no
 
 We must now connect the input to the output, which we do using a type of Transition we have not previously used - an *OnEvent*. The OnEvent is triggered when an Event arrives on the specified Event Port, and can then execute a set of State assignments, EventOuts and ImpulseOuts. We will use the OnEvent to trigger an ImpulseOut and pass on the weight to the postsynapse component.
 
-[[File:onevent_props.png|thumb|Fig 17: OnEvent Properties|right|200px]]
+![onevent_props](/public/images/200px-onevent_props.png "Fig 17: OnEvent properties"){: .right-wrapped }
+
 * Click the button in the toolbar to select 'Add OnEvent' mode (**E**) - use tooltips if you aren't sure.
 * Click and drag within the 'default' Regime to add an OnEvent.
 * Set the OnEvent Property 'Event Port' to 'spike'
 
-This will be triggered every time the neuron_body connected to the Port 'spike' sends an Event.
+This will be triggered every time the neuron_body connected to the
+Port 'spike' sends an Event.
 
 ### Adding an ImpulseOut
 
 Now we need to get the OnEvent to send an Impulse.
 
-[[File:impout_props.png|thumb|Fig 18: ImpulseOut Properties|right|200px]]
+![impout_props](/public/images/200px-Impout_props.png "Fig 18: ImpulseOut Properties"){: .right-wrapped }
+
 * Select the OnEvent
-* In the toolbar buttons that appear click to add an ImpulseOut (**I^**) - as always, use tooltips to check the button if you aren't sure
+* In the toolbar buttons that appear click to add an ImpulseOut
+  (**I^**) - as always, use tooltips to check the button if you aren't
+  sure
 * Select the new ImpulseOut and set 'Impulse' Property to 'g'.
 
-Now every time the component receives an Event on Port 'spike' it will send an Impulse on Port 'g'. This completes the component! Now validate and store the component and save to hard drive if you wish. Fig 19 shows the finished component.
+Now every time the component receives an Event on Port 'spike' it will
+send an Impulse on Port 'g'. This completes the component! Now
+validate and store the component and save to hard drive if you
+wish. Fig 19 shows the finished component.
 
-[[File:complete_wu.png|thumb|Fig 19: Complete weight_update component|right|800px]]
+![complete_wu](/public/images/800px-Complete_wu.png "Fig 19: Complete weight_update component"){: .center-image }
 
 ## The synapse postsynapse
 
-The final component in this tutorial is the exponential decaying postsynapse. This mainly uses the techniques described in the [[#The IAF neuron_body|previous]] [[#The synapse weight_update|sections]], so detail will only be provided for the new elements - the Alias and the OnImpulse.
-[[File:ps_so_far.png|thumb|Fig 20: Postsynapse component after Initial setup|right|400px]]
+The final component in this tutorial is the exponential decaying
+postsynapse. This mainly uses the techniques described in the previous
+sections, so detail will only be provided for the new elements - the
+Alias and the OnImpulse.
+
+![ps_so_far](/public/images/400px-Ps_so_far.png "Fig 20: Postsynapse component after Initial setup"){: .right-wrapped }
 
 ### Initial setup
+
 * Name the component 'Exp decay'
 * Set the Component Type to 'postsynapse'
 * Add a Regime named 'default' and set as the Initial regime
@@ -528,24 +707,34 @@ The final component in this tutorial is the exponential decaying postsynapse. Th
 * Add a Parameter named 'E' (dims = mv)
 * Add a State Variable 'g' (dims = nS)
 * Add a Time Derivative to 'default' for the equation:
-<syntaxhighlight lang='C'>
+
+```c
 dg/dt = -g/tau_syn
-</syntaxhighlight>
+```
 
 The component should now look like shown to the right (Fig 20).
 
-**Note: we have added an input Port g_in, which is not the same name as the output Port g of the weight_update. This is not an issue as the Network Editor will allow differently named Ports to be joined as long as the type and dimensions (if Analog) are consistent, or if Analog one of the Analog Ports has no dimensionality.**
+**Note: we have added an input Port g_in, which is not the same name
+  as the output Port g of the weight_update. This is not an issue as
+  the Network Editor will allow differently named Ports to be joined
+  as long as the type and dimensions (if Analog) are consistent, or if
+  Analog one of the Analog Ports has no dimensionality.**
 
-**Note2: The 'v' Port that we have added will need to be connected to the postsynapsic neuron body, this will be covered in the [[Creating a network|Network Editor]] tutorial.**
+**Note2: The 'v' Port that we have added will need to be connected to
+  the postsynapsic neuron body, this will be covered in the (Network
+  Editor)[/spinecreator/createnetwork] tutorial.**
 
 Now we will investigate adding an Alias.
 
 ### Adding an Alias
 
-Aliases are used for two purposes. One is to reduce the length of mathematical expressions by allowing the use of variables which represent a vlaue derived in a separate equation:
-<syntaxhighlight lang='C'>
+Aliases are used for two purposes. One is to reduce the length of
+mathematical expressions by allowing the use of variables which
+represent a vlaue derived in a separate equation:
+
+```c
 dv/dt = I_sum/C_m - v; I_sum = I_off + I_syn + I_noise
-</syntaxhighlight>
+```
 
 Here I_sum is an Alias used to simplify the differential equation.
 
@@ -556,17 +745,17 @@ of the component. In this case the output I_syn uses the voltage from
 the neuron_body and the reversal potential (E) to transform the
 conductance of the synapse into a current.
 
-[[File:alias_props.png|thumb|Fig 21: Alias Properties|right|200px]]
+![alias_props](/public/images/200px-Alias_props.png "Fig 21: Alias Properties"){: .right-wrapped }
 
 To add the Alias for I_syn:
 * Select the Params, Vars & Alias box
 * Use the button on the toolbox to add an Alias (**+A**)
 * Select the new Alias
 * Set the 'Name' Property to 'I_syn' and the 'Maths' Property to:
-<syntaxhighlight lang='C'>
-g*(E-v)
-</syntaxhighlight>
 
+```c
+g*(E-v)
+```
 * Now add an Analog Output Port that transmits I_syn.
 
 ### Add an OnImpulse Transition
@@ -575,20 +764,26 @@ Now the final step in creating this component is to take input from
 the Impulse Port. To do so we need to use an OnImpulse Transition, the
 remaining Transition type that we have not used so far.
 
-[[File:sa_props_imp.png|thumb|Fig 22: State Assignment Properties|right|200px]]
+![sa_props_imp](/public/images/200px-Sa_props_imp.png "Fig 22: State Assignment Properties"){: .right-wrapped }
+
 To add an OnImpulse:
-* Click the button in the toolbar to select 'Add OnImpulse' mode (I) - use tooltips if you aren't sure.
+
+* Click the button in the toolbar to select 'Add OnImpulse' mode (I) -
+  use tooltips if you aren't sure.
 * Select the OnImpulse
 * Set the 'Impulse Port' Property to 'g_in'
-* Add a State Assignment using the toolbar button (**=**) and set 'Variable' to 'g' and 'Maths' to:
-<syntaxhighlight lang='C'>
+
+* Add a State Assignment using the toolbar button (**=**) and set
+  'Variable' to 'g' and 'Maths' to:
+
+```c
 g+g_in
-</syntaxhighlight>
+```
 
 The component is now finished! validate and store and then save to
 hard drive if you wish. See Fig 23 for the finished component.
 
-[[File:ps_done.png|thumb|Fig 23: Finished postsynapse component|center|500px]]
+![ps_done](/public/images/500px-Ps_done.png "Fig 23: Finished postsynapse component"){: .center-image }
 
 ## Final remarks
 
