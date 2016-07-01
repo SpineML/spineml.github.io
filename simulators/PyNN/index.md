@@ -4,7 +4,7 @@ title: damson
 ---
 
 
-!["PyNN logo"](ttp://neuralensemble.org/trac/PyNN/chrome/site/pynn_header.png)
+!["PyNN logo"](http://neuralensemble.org/trac/PyNN/chrome/site/pynn_header.png)
 
 [PyNN] is described as a simulator independant language for building neuronal network models. It is based on the Python programming language and has simulator support for r range of simulation engines including NEST, NEURON, PCSIM and Brian.
 
@@ -28,7 +28,7 @@ Any log files will be saved in the local directory.
 Downloads
 ---------
 
-**SpineML to PyNN XSLT Template** ![]
+[**SpineML to PyNN XSLT Template**](http://bimpa.group.shef.ac.uk/SpineML/simulators/PyNN/PyNN.xsl)
 
 Usage and Limitations
 ---------------------
@@ -68,7 +68,6 @@ Details of specifying spike sources are listed within the [experimental layer se
   [experimental layer section]: Experiment_layer "wikilink"
   [PyNN]: http://neuralensemble.org/trac/PyNN
   [PyNN installation process]: http://neuralensemble.org/trac/PyNN/wiki/Installation
-  []: /public/images/Xml_icon.png "fig:xml_icon.png"
   [IF\_curr\_exp.xml]: http://bimpa.group.shef.ac.uk/SpineML/models/component/IF_curr_exp.xml
   [PyNN\_WeightUpdate.xml]: http://bimpa.group.shef.ac.uk/SpineML/models/component/PyNN_WeightUpdate.xml
   [PyNN\_PostSynapse.xml]: http://bimpa.group.shef.ac.uk/SpineML/models/component/PyNN_PostSynapse.xml
