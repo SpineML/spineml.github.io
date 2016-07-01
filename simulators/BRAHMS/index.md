@@ -124,4 +124,4 @@ Usage and Limitations
 BRAHMS is the SpineML reference simulator and there are currently no limitations.
 
   [b]: /public/images/Brahmslogo-128.png "fig:Brahmslogo-128.png"
-
+  [here]: http://brahms.sourceforge.net/home/
