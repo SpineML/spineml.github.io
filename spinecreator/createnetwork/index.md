@@ -247,7 +247,7 @@ project' from the 'File' menu. This will prompt for a path and project
 file name to save to. Models are saved as a collection of files in a
 directory in the following format:
 
-* **<project_name>.proj** This is the main project file and lists the components, network and experiments that make up the spineCreator project
+* **&lt;project_name&gt;.proj** This is the main project file and lists the components, network and experiments that make up the spineCreator project
 * **model.xml** This is the network file containing the description of the network.
 * **experiment.xml** These are the experiments (if any) for the model.
 * **component.xml** Other xml files in the directory are the components and are named as per the component name.
