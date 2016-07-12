@@ -6,7 +6,7 @@ title: SpineCreator component tutorial
 
 This article is one of a series of tutorials designed to provide the
 new user with insight into how to create models using the
-GUI. Advanced users may find the [Reference](reference) section more
+GUI. Advanced users may find the [Reference](/spineml) section more
 helpful. Note that the screenshots are from the Mac build of the GUI,
 and will have a different visual appearance on other platforms.
 
@@ -25,11 +25,11 @@ Once the tab is selected, the component editor is laid out as in Fig
 to change between the different tabs of the GUI. Each tab focuses on a
 different aspect of model creation.
 
-* Component - Create and edit SpineML [components](spineml/components).
+* Component - Create and edit SpineML [components](/spineml/components).
 * Visualisation - OpenGL visualisations of populations and projections
   for model analysis and the creation of complex connectivity
   patterns.
-* Network - Create SpineML [networks](spineml/networks).
+* Network - Create SpineML [networks](/spineml/networks).
 * Expt - Create and edit experimental procedures for the current model.
 
 The current tab is highlighted with a grey background.
@@ -69,8 +69,7 @@ elements will be covered later in this tutorial.
 ## Example - the LIF neuron and synapse
 
 As an example we will create a
-[http://link.springer.com/article/10.1007%2Fs00422-006-0068-6 Leaky
-Integrate and Fire] (LIF) neuron with a conductance-based single
+[Leaky Integrate and Fire](http://link.springer.com/article/10.1007%2Fs00422-006-0068-6)  (LIF) neuron with a conductance-based single
 exponential decaying synapse using the component editor tab. The LIF
 is a simple neuron model that provides a great example for
 demonstrating the tools. Before getting started building the model we
@@ -264,10 +263,6 @@ To add the voltage State Variable:
   the simulation of a model, while *State Variables* can change, thus
   they represent the current *state* of the system. {: .info-popout }
 
-[[File:pars_sv.png|center|thumb|Fig 6: Right: the toolbar buttons for
-adding Parameters, State Variables and Aliases. Left: The Params, Vars
-& Alias box|300px]]
-
 ![pars_sv](/public/images/300px-Pars_sv.png "Fig 6: Right: the toolbar
 buttons for adding Parameters, State Variables and Aliases. Left: The
 Params, Vars & Alias box"){: .right-wrapped }
@@ -305,7 +300,6 @@ I_syn.
 
 Your component should now look as below:
 
-[[File:stage1_ce.png|center|700px]]
 ![stage1_ce](/public/images/700px-Stage1_ce.png){: .center-image }
 
 ### Add the Parameters
@@ -566,16 +560,16 @@ remaining tutorials.
 * Click 'Add Population' from the toolbar (you can find it using the tooltips)
 * In the 'Properties' pane for the population select 'Neuron Type' as your component
 * Set the Parameters as follows (Tip - select 'Fixed' button for all, then use the tab key to move through them):
-** C_m = 1.0
-** i_offset = 1.5
-** v_thresh = -50
-** v_rest = -70
-** v_reset = -80
-** tau_m = 20
-** t_refrac = 5
+  * C_m = 1.0
+  * i_offset = 1.5
+  * v_thresh = -50
+  * v_rest = -70
+  * v_reset = -80
+  * tau_m = 20
+  * t_refrac = 5
 * And the State Variables to:
-** v = -70
-** t_spike = 0
+  * v = -70
+  * t_spike = 0
 * Click on the 'Expts' tab
 * Click 'Add experiment'
 * Click 'Add output'
@@ -721,8 +715,8 @@ The component should now look like shown to the right (Fig 20).
   Analog one of the Analog Ports has no dimensionality.**
 
 **Note2: The 'v' Port that we have added will need to be connected to
-  the postsynapsic neuron body, this will be covered in the (Network
-  Editor)[/spinecreator/createnetwork] tutorial.**
+  the postsynapsic neuron body, this will be covered in the [Network
+  Editor](/spinecreator/createnetwork) tutorial.**
 
 Now we will investigate adding an Alias.
 
@@ -730,7 +724,7 @@ Now we will investigate adding an Alias.
 
 Aliases are used for two purposes. One is to reduce the length of
 mathematical expressions by allowing the use of variables which
-represent a vlaue derived in a separate equation:
+represent a value derived in a separate equation:
 
 ```c
 dv/dt = I_sum/C_m - v; I_sum = I_off + I_syn + I_noise
@@ -796,4 +790,4 @@ to build networks to test out the components you have just created!
 
 ## Finished components for reference
 
-**FINISHED COMPONENTS HERE**
+**Note to selves: ADD FINISHED COMPONENTS HERE**
