@@ -10,29 +10,32 @@ regular packages for SpineCreator and the SpineML toolchain.  For this
 reason, we recommend that users compile SpineCreator from source and
 we have some easy to follow instructions here! Please tell us when you
 have problems by submitting issues on the github project pages (for
-example https://github.com/SpineML/SpineCreator/issues)
+example
+[https://github.com/SpineML/SpineCreator/issues](https://github.com/SpineML/SpineCreator/issues))
 
-SpineCreator is built using the Qt toolkit (http://qt.io), a
-cross-platform library of C++ code for building desktop apps. To run
-models, SpineCreator uses a SpineML toolchain. On this page, we
-describe how you can compile SpineML_PreFlight, SpineML_2_BRAHMS and
-BRAHMS as your SpineML toolchain.
+SpineCreator is built using the Qt toolkit
+[http://qt.io](http://qt.io), a cross-platform library of C++ code for
+building desktop apps. To run models, SpineCreator uses a SpineML
+toolchain. On this page, we describe how you can compile
+SpineML_PreFlight, SpineML_2_BRAHMS and BRAHMS as your SpineML
+toolchain.
 
 These build instructions have been verified on Ubuntu 14.04. Other
 Linux flavours should work just fine, but there may be slight
 differences in the names of some of the prerequisites. If your distro
 does not provide Qt 5.x, then you will need to install that separately
-from http://www.qt.io/download-open-source/. If your distro provides a
-version of Graphviz older than 2.32, then you'll have to install a
-more recent version of that (which is outside the scope of these
-instructions). If I recall correctly, Ubuntu 13.04+ will provide an
-out-of-the-box working platform for SpineCreator, as will Debian 7+.
+from
+[http://www.qt.io/download-open-source/](http://www.qt.io/download-open-source/). If
+your distro provides a version of Graphviz older than 2.32, then
+you'll have to install a more recent version of that (which is outside
+the scope of these instructions). If I recall correctly, Ubuntu 13.04+
+will provide an out-of-the-box working platform for SpineCreator, as
+will Debian 7+.
 
 If the build process for any of the four components fails, please let
 us know by creating an issue on Github. For example, if you can't
 build SpineML_PreFlight, then create an issue here:
-[https://github.com/SpineML/SpineML_PreFlight/issues
-https://github.com/SpineML/SpineML_PreFlight/issues]
+[https://github.com/SpineML/SpineML_PreFlight/issues](https://github.com/SpineML/SpineML_PreFlight/issues)
 
 ## Linux Prerequisites
 
