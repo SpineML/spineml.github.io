@@ -2,7 +2,6 @@
 layout: default
 title: SpineCreator network tutorial
 ---
-NOTE: this article is currently in development, figure numbers will be added at the end!
 
 This article is one of a series of tutorials designed to provide the
 new user with insight into how to create models using the GUI. There
@@ -19,8 +18,9 @@ Once the tab is selected, the network editor is laid out as shown
 below. The colours highlight the following sections:
 
 1. <span style="color: green">Tab selector:</span> This panel is used to change between the different tabs of the GUI. Each tab focuses on a different aspect of model creation.
-* Component - Create and edit SpineML [Component_layer](spinecreator/createcomponent).
-* Network - Create SpineML [Network_layer](spinecreator/createnetwork).
+* Component - Create and edit SpineML
+  [Component layer](/spinecreator/createcomponent) items.
+* Network - Create the SpineML [Network layer](/spinecreator/createnetwork).
 * Expt - Create and edit experimental procedures for the current model. The current tab is highlighted with a grey background.
 * Graphing - Plot graphs of outputs from the model
 * Visualisation - OpenGL visualisations of populations and projections for model analysis and the creation of complex connectivity patterns.
@@ -35,7 +35,7 @@ below. The colours highlight the following sections:
 
 # Example 1 - A Current-Based Vogels-Abbott network
 
-[http://www.jneurosci.org/content/25/46/10786.short](Vogels-Abbott networks)
+[Vogels-Abbott networks](http://www.jneurosci.org/content/25/46/10786.short)
 provide a good test model for simulators, being both simple and
 exhibiting of complex yet statistically stable behaviour. Here will
 will create a single layer Vogels-Abbott network consisting of a
@@ -46,28 +46,11 @@ synapses, then one using conductance-based synapses (COBA).
 
 Here are the components needed to complete this tutorial, right click to save:
 
-{| class="wikitable"
-|-
-! Name
-! Description
-! XML
-! PNG
-|-
-| IAF
-| Leaky Integrate and Fire Neuron Body
-| style="text-align: center" | [[File:xml_icon.png|link=http://bimpa.group.shef.ac.uk/SpineML/models/component/IAF.xml]]
-| style="text-align: center" |[[File:png_icon.png|link=http://bimpa.group.shef.ac.uk/SpineML/models/component/LIF.png]]
-|-
-| FixedWeight
-| Fixed Weight Synaptic Update
-| style="text-align: center" |[[File:xml_icon.png|link=http://bimpa.group.shef.ac.uk/SpineML/models/component/FixedWeight.xml]]
-| style="text-align: center" |[[File:png_icon.png|link=http://bimpa.group.shef.ac.uk/SpineML/models/component/FixedWeight.png]]
-|-
-| CUBA_exp
-| Exponentially Decaying Post-Synaptic Current
-| style="text-align: center" |[[File:xml_icon.png|link=http://bimpa.group.shef.ac.uk/SpineML/models/component/CUBA_exp.xml]]
-| style="text-align: center" |[[File:png_icon.png|link=http://bimpa.group.shef.ac.uk/SpineML/models/component/Curr_exp.png]]
-|}
+| Name | Description | XML | PNG |
+| ---- | ----------- | --- | --- |
+| IAF  | Leaky Integrate and Fire Neuron Body | [IAF.xml](http://bimpa.group.shef.ac.uk/SpineML/models/component/IAF.xml)| [LIF.png](http://bimpa.group.shef.ac.uk/SpineML/models/component/LIF.png)|
+| FixedWeight  | Fixed Weight Synaptic Update | [FixedWeight.xml](http://bimpa.group.shef.ac.uk/SpineML/models/component/IAF.xml)| [FixedWeight.png](http://bimpa.group.shef.ac.uk/SpineML/models/component/FixedWeight.png)|
+| CUBA_exp  | Exponentially Decaying Post-Synaptic Current | [CUBA_exp.xml](http://bimpa.group.shef.ac.uk/SpineML/models/component/IAF.xml)| [Curr_exp.png](http://bimpa.group.shef.ac.uk/SpineML/models/component/Curr_exp.png)|
 
 
 ## Introduction to Populations and Projections
