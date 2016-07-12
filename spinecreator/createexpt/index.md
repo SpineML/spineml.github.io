@@ -39,7 +39,7 @@ button deletes the selected experiment. The **RUN** button at the
 top of the panel runs the current experiment using the selected
 simulator.
 
-[[File:expt_overview.jpg|center|thumb|Overview of the network editor tab|700px]]
+![expt_overview](/public/images/createexpt/1050px-Expt_overview.jpg "Fig 1: Overview of the experiment editor"){: .center-image }
 
 <span style="color: blue">Simulator setup:</span> This panel allows
 the settings for the simulator used to run the model to be configured.
@@ -80,9 +80,9 @@ This panel contains the following settings:
 
 ## Adding an input
 
-[[File:add_input1.png|thumb|Initial input editing|right|250px]]
-[[File:add_input2.png|thumb|Initial input editing|right|250px]]
-[[File:add_input3.png|thumb|Initial input editing|right|250px]]
+![add_input1](/public/images/createexpt/375px-Add_input1.png "Fig 2: Initial input editing"){: .inline-image }
+![add_input2](/public/images/createexpt/375px-Add_input2.png "Fig 3: Initial input editing"){: .inline-image }
+![add_input3](/public/images/createexpt/375px-Add_input3.png "Fig 4: Initial input editing"){: .inline-image }
 
 Inputs are added to a model using the 'Add input' panel of the experiment editor tab.
 
@@ -155,7 +155,7 @@ File:input_atv.png|Array of time varying inputs
 File:input_e.png|External input
 </gallery>
 
-[[File:input_complete.png|thumb|Completed input|right|250px]]
+![input_complete](/public/images/createexpt/375px-Input_complete.png "Fig 10: Completed input"){: .center-image }
 
 The 'tick' button confirms the settings for the input, and the 'cross'
 button removes the input.
@@ -168,7 +168,7 @@ button to change the input's settings, as shown in Fig XX.
 
 ## Adding an output
 
-[[File:output_edit.png|thumb|Completed input|right|250px]]
+![output_edit](/public/images/createexpt/375px-Output_edit.png "Fig 11: Editing an output"){: .center-image }
 
 * Click 'Add Output' to add a new output to the model. The new output
   starts in 'edit mode', allowing the output to be configured. The
@@ -186,7 +186,7 @@ button to change the input's settings, as shown in Fig XX.
   of writing BRAHMS does not support limited list and will always log
   all indices).
 
-[[File:output_completed.png|thumb|Completed input|right|250px]]
+![output_completed](/public/images/createexpt/375px-Output_completed.png "Fig 12: Completed output"){: .center-image }
 
 The 'tick' button confirms the settings for the output, and the
 'cross' button removes the output.
@@ -254,4 +254,4 @@ You can add new plots, save plots as PDF or PNG,tile the plots, open
 data for plotting manually and manually refresh the loaded data using
 the toolbar items.
 
-[[File:COBA_graphs.png|center|thumb|The membrane potentials of the first few neurons of each Population in the COBA example|700px]]
+![COBA_graphs](/public/images/createexpt/1050px-COBA_graphs.png "Fig 13: The membrane potentials of the first few neurons of each Population in the COBA example"){: .center-image }
