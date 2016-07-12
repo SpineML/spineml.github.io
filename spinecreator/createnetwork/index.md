@@ -167,8 +167,6 @@ properties will be as shown below (Fig X):
 
 The Vogels-Abbott network is sparsely connected with a fixed probability of connection between any two neurons. To create this we need to add four projections:
 
-[[File:beziers.png|thumb|An example of a projection with convoluted Beziers!|right|250px]]
-
 ![beziers](/public/images/createnetwork/375px-Beziers.png" Fig 10: An example of a projection with convoluted Beziers!"){: .right-wrapped }
 
 * <span style="color: red">Excitatory</span> -> <span style="color: red">Excitatory</span>
@@ -193,8 +191,6 @@ be added and removed by right-clicking on the projection line where
 they are desired.
 
 * Add the four Projections, resulting in a Network similar to below:
-
-[[File:connections.png|thumb|The network|center|400px]]
 
 ![connections](/public/images/createnetwork/600px-Connections.png" Fig 11: The network"){: .center-image }
 
@@ -273,23 +269,31 @@ directory in the following format:
 
 Add a new folder using the dialog button and save the model in a new folder named 'CUBA'.
 
-[[File:save_model.png|thumb|The save dialog on a Mac - Windows and Linux versions may differ.|center|500px]]
+![save_model](/public/images/createnetwork/750px-Save_model.png" Fig 16: The save dialog on a Mac - Windows and Linux versions may differ."){: .center-image }
 
-# Example 2 - Modifying Example 1 to make a Conductance-Based network #
+# Example 2 - Modifying Example 1 to make a Conductance-Based network
 
-Now we have saved the CUBA model we will build on it by modifying the network as a COBA model. This is a simple demonstration of the flexibility of the component-based approach to network building. We will also introduce *generic inputs* to components, which allow connections between components without using synapses.
+Now we have saved the CUBA model we will build on it by modifying the
+network as a COBA model. This is a simple demonstration of the
+flexibility of the component-based approach to network building. We
+will also introduce *generic inputs* to components, which allow
+connections between components without using synapses.
 
-## Changing the neuron_body properties ##
+## Changing the neuron_body properties
 
-The new neuron_body properties are shown below. **Note: you can enter the new properties for one neuron_body then copy them to the second.**
+The new neuron_body properties are shown below. **Note: you can enter
+the new properties for one neuron_body then copy them to the second.**
 
-[[File:coba_nrn_props.png|thumb|The properties for the COBA neuron_body|center|300px]]
+![coba_nrn_props](/public/images/createnetwork/450px-Coba_nrn_props.png" Fig 17: The properties for the COBA neuron_body"){: .center-image }
 
-## Changing the weight_update ##
+## Changing the weight_update
 
-The COBA network using different weights than the CUBA network. In addition we should use a weight_update process that includes the correct dimensions for the weight.
+The COBA network using different weights than the CUBA network. In
+addition we should use a weight_update process that includes the
+correct dimensions for the weight.
 
-* Switch the 'Weight Update' type to FixedWeightg.
+* Switch the 'Weight Update' type to FixedWeight.
+
 * Set the weights as follows:
 
 * <span style="color: red">Excitatory</span> -> <span style="color: red">Excitatory</span> g=0.004
@@ -297,54 +301,94 @@ The COBA network using different weights than the CUBA network. In addition we s
 * <span style="color: blue">Inhibitory</span> -> <span style="color: blue">Inhibitory</span> g=0.051
 * <span style="color: blue">Inhibitory</span> -> <span style="color: red">Excitatory</span> g=0.051
 
-Note that all weights are positive as the sign of the postsynaptic current will be set by the reversal potentials on the postsynapses.
+Note that all weights are positive as the sign of the postsynaptic
+current will be set by the reversal potentials on the postsynapses.
 
-## Changing the postsynapse ##
+## Changing the postsynapse
 
-The COBA postsynapse is the 'COBA exp' component. In the 'Postsynapse' tab of the projections select this component. **Note: the Properties that match between the components are copied across for you.**
+The COBA postsynapse is the 'COBA exp' component. In the 'Postsynapse'
+tab of the projections select this component. **Note: the Properties
+that match between the components are copied across for you.**
 
-Now we need to set the reversal potential (E) for each of the projections. The values are as follows:
+Now we need to set the reversal potential (E) for each of the
+projections. The values are as follows:
 
 * <span style="color: red">Excitatory</span> -> <span style="color: red">Excitatory</span> E=0
 * <span style="color: red">Excitatory</span> -> <span style="color: blue">Inhibitory</span> E=0
 * <span style="color: blue">Inhibitory</span> -> <span style="color: blue">Inhibitory</span> E=-80
 * <span style="color: blue">Inhibitory</span> -> <span style="color: red">Excitatory</span> E=-80
 
-## Adding a Generic Input for voltage ##
+## Adding a Generic Input for voltage
 
-[[File:coba_port.png|thumb|COBA voltage port|right|200px]]
-[[File:coba_alias.png|thumb|COBA current alias|right|200px]]
-The COBA postsynapse is the one created in the '[[Creating a component]]' tutorial. Remember that this component has an input port for voltage that is required to calculate the current (see Fig and Fig). We need now to add a connection that will take the output from the voltage output port of the neuron_body, and input it into the postsynapse 'v' port. This is a *generic input*.
+![coba_port](/public/images/createnetwork/Coba_port.png" Fig 18: COBA voltage port"){: .right-wrapped }
+
+![coba_alias](/public/images/createnetwork/300px-Coba_alias.png" Fig 19: COBA current alias"){: .right-wrapped }
+
+## Changing the weight_update
+
+The COBA network using different weights than t
+
+The COBA postsynapse is the one created in the
+[Creating a component](spinecreator/createcomponent)
+tutorial. Remember that this component has an input port for voltage
+that is required to calculate the current (see Fig and Fig). We need
+now to add a connection that will take the output from the voltage
+output port of the neuron_body, and input it into the postsynapse 'v'
+port. This is a *generic input*.
 
 To add a generic input:
+
 * Select the Excitatory to Excitatory Projection.
 * Select the 'Postsynapse' tab
 * At the bottom in the **Inputs** section there is a box labeled 'Add from'.
 * Begin typing 'Excitatory', note the autocompletion
 * Select 'Excitatory' from the list
-[[File:ginput.png|thumb|Generic input|right|200px]]
-[[File:ginput_vis.png|thumb|Generic input visulisation|right|200px]]
 
-Note that a new entry appears under **Inputs**, the port matching has already detected that the only possible connection between these components in the voltage and selected 'v->v' as the Ports to connect. Additionally a green loop connects the Population to the Projection.
+![ginput](/public/images/createnetwork/300px-Ginput.png" Fig 20: Generic input"){: .right-wrapped }
 
-## Configuring the Generic Input ##
+![ginput_vis](/public/images/createnetwork/300px-Ginput_vis.png" Fig 20: Generic input visualisation"){: .right-wrapped }
 
-To configure the generic input select it as you would a Projection. Note that like Projections you can add and remove Bezier points using the right mouse button and change Bezier points using the left mouse button.
+Note that a new entry appears under **Inputs**, the port matching has
+already detected that the only possible connection between these
+components in the voltage and selected 'v->v' as the Ports to
+connect. Additionally a green loop connects the Population to the
+Projection.
 
-When selected the Properties panel changes to allow you to edit the generic input's properties. These are:
+## Configuring the Generic Input
+
+To configure the generic input select it as you would a
+Projection. Note that like Projections you can add and remove Bezier
+points using the right mouse button and change Bezier points using the
+left mouse button.
+
+When selected the Properties panel changes to allow you to edit the
+generic input's properties. These are:
 
 * **Connectivity** This is the connectivity type between the source and destination Ports. One to one is selected and should be left as is.
 * **Ports** The drop-down box allows the valid port combinations to be selected from, as in the component tab of the Projection.
 
-[[File:input-props.png|thumb|Generic input properties|center|400px]]
+![input-props](/public/images/createnetwork/600px-Input-props.png" Fig 21: Generic input properties"){: .center-image }
 
 Now add generic inputs for the remaining Projections.
 
-## Add a Spike Input ##
+## Add a Spike Input
 
-The aim of the Network Layer / Experiment Layer divide in SpineML is to have a 'Network as animal' approach. The Network and Components define an experimental subject and the Experiment is the protocol to be run, including duration, simulation methods, changes to Properties (chemical alterations) and Lesions (physical alterations), outputs (where and what to record from the animal), and inputs (external stimulation to the animal).
+The aim of the Network Layer / Experiment Layer divide in SpineML is
+to have a 'Network as animal' approach. The Network and Components
+define an experimental subject and the Experiment is the protocol to
+be run, including duration, simulation methods, changes to Properties
+(chemical alterations) and Lesions (physical alterations), outputs
+(where and what to record from the animal), and inputs (external
+stimulation to the animal).
 
-It is the final category, inputs, that require further explanation. Inputs can be Analog or Events (including Impulses), with Analog inputs being things like current injection, and Events being spikes. These spikes will arise from brain regions outside the Network, and as such are still part of the animal. For this reason spiking inputs currently require an Object to be added to the Network to act as a conduit, with Projections from this Object channeling the spikes to their targets.
+It is the final category, inputs, that require further
+explanation. Inputs can be Analog or Events (including Impulses), with
+Analog inputs being things like current injection, and Events being
+spikes. These spikes will arise from brain regions outside the
+Network, and as such are still part of the animal. For this reason
+spiking inputs currently require an Object to be added to the Network
+to act as a conduit, with Projections from this Object channeling the
+spikes to their targets.
 
 The procedure to add a Spike Source is as follows:
 
@@ -352,17 +396,20 @@ The procedure to add a Spike Source is as follows:
 * Change the size of the Spike Source to 20
 * Connect the Spike Source as in the Figure below.
 
-[[File:ss.png|thumb|Spike Source Properties|center|600px]]
+![ss](/public/images/createnetwork/900px-Ss.png" Fig 22: Spike source properties"){: .center-image }
 
-Add COBA Synapses to the Excitatory and Inhibitory Populations configured with:
+Add COBA Synapses to the Excitatory and Inhibitory Populations
+configured with:
 
 * g=0.1
 * tau_syn=5
 * E = 0
 * Fixed Probability Connection with Probability=0.01 and delay=0
 
-This completes the COBA model, save the model to a new directory named 'COBA'.
+This completes the COBA model, save the model to a new directory named
+'COBA'.
 
 # Simulating the networks
 
-The [[Creating an experiment|next tutorial]] will show you how to add an experiment and simulate these Networks.
+The [next tutorial](/spinecreator/createexpt) will show you how to add
+an experiment and simulate these Networks.
