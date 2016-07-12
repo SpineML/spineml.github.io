@@ -27,7 +27,9 @@ below. The colours highlight the following sections:
 
 2. <span style="color: red">Network visualisation:</span> This section of the network editor tab provides a visual overview of the current network. The display region can be panned by clicking and dragging the background and zoomed using the mousewheel. Interacting with and adding objects will be covered later in this tutorial.
 
-![ne_overview](/public/images/createnetwork/1050px-Ne_overview.jpg "Fig 1: Overview of the network editor tab"){: .center-image }
+![ne_overview](/public/images/createnetwork/1050px-Ne_overview.jpg
+ "Fig 1: Overview of the network editor tab"){: .center-image }
+*Fig 1: Overview of the network editor tab*
 
 3. <span style="color: #D7DF01">Properties panel:</span> This panel is used to edit the properties of objects.
 
@@ -87,6 +89,7 @@ within the SpineML framework to avoid any confusion:
 We shall first add the Excitatory population of neurons.
 
 ![add_pop](/public/images/createnetwork/195px-Add_pop.png "Fig 2: Add population"){: .right-wrapped }
+*Fig 2: Add population*
 
 The visualisation pane contains a cursor consisting of a circled
 cross. This cursor denotes where new populations are added in the
@@ -99,6 +102,7 @@ Populations are added using the 'Add Population' button on the toolbar
 * Add a population
 
 ![pop_props](/public/images/createnetwork/375px-Pop_props.png "Fig 3: Population properties"){: .right-wrapped }
+*Fig 3: Population properties*
 
 The new Population is selected and the Properties panel now updates to
 show the properties of that population. These are:
@@ -112,26 +116,31 @@ The Neuron tab will now contain a list of the Parameters, State
 Variables and Inputs for this component.
 
 ![props_sel](/public/images/createnetwork/450px-Props_sel.png "Fig 4: Property selection"){: .center-image }
+*Fig 4: Property selection*
 
 Each Parameter of State Variable will have a set of buttons as shown above. These allow the type of value to be set:
 
 * Fixed: All neurons in the population will have the same value, in this case 0.0nA
 
 ![fixed_val](/public/images/createnetwork/450px-Fixed_val.png "Fig 5: Fixed value"){: .center-image }
+*Fig 5: Fixed value*
 
 * Random: All neurons will have a value drawn from a statistical distribution - currently Uniform or Normal. In this case a Uniform distributed value from 0.0 to 4.0.
 
 ![rand_val](/public/images/createnetwork/450px-Rand_val.png "Fig 6: Random value"){: .center-image }
+*Fig 6: Random value*
 
 * List: All neurons have a unique value. This is set by clicking the 'Edit' button and adding values or importing from a comma separated data file.
 
 ![list_val](/public/images/createnetwork/450px-List_val.png "Fig 7: Explicit values"){: .center-image }
+*Fig 7: Explicit values*
 
 The **x** button cancels the current value type choice and allows reselection. Values not set will be assumed to be Fixed Values of 0.0.
 
 For this model we do not require any Lists, and the values should be set as follows:
 
 ![param_vals](/public/images/createnetwork/450px-Param_vals.png "Fig 8: Values for Excitatory population"){: .center-image }
+*Fig 8: Values for Excitatory population*
 
 **Tip:** *Hold down Ctrl (Cmd on Mac) while moving Populations and Projections to snap them to the grid and create more pleasing layouts!*
 
@@ -147,12 +156,14 @@ Population Properties and then changing the Inhibitory Population
 properties will be as shown below (Fig X):
 
 ![inh_props](/public/images/createnetwork/750px-Inh_props.png "Fig 9: Configuration for Inhibitory population"){: .center-image }
+*Fig 9: Configuration for Inhibitory population*
 
 ## Creating the projections
 
 The Vogels-Abbott network is sparsely connected with a fixed probability of connection between any two neurons. To create this we need to add four projections:
 
 ![beziers](/public/images/createnetwork/375px-Beziers.png "Fig 10: An example of a projection with convoluted Beziers!"){: .right-wrapped }
+*Fig 10: An example of a projection with convoluted Beziers!*
 
 * <span style="color: red">Excitatory</span> -> <span style="color: red">Excitatory</span>
 * <span style="color: red">Excitatory</span> -> <span style="color: blue">Inhibitory</span>
@@ -178,6 +189,7 @@ they are desired.
 * Add the four Projections, resulting in a Network similar to below:
 
 ![connections](/public/images/createnetwork/600px-Connections.png "Fig 11: The network"){: .center-image }
+*Fig 11: The network*
 
 ### Configuring the projections
 
@@ -193,12 +205,14 @@ properties for this Projection:
 * Connectivity tab: Allows the current Synapse connectivity pattern to be selected and configured.
 
 ![proj_props](/public/images/createnetwork/600px-Proj_props.png "Fig 12: Projection properties"){: .center-image }
+*Fig 12: Projection properties*
 
 #### Weight update
 
 Configure as follows:
 
 ![wu_config](/public/images/createnetwork/450px-Wu_config.png "Fig 13: Configuration for the weight update"){: .center-image }
+*Fig 13: Configuration for the weight update*
 
 Note the Inputs has a entry under it. It you hover the mouse over the name 'Excitatory to...' you will get the full text, showing that there is a connection from the Excitatory Population to this Weight Update. The drop-down contains the list of all allowed Port matches (taking dimensionality and data type into account), which in this case is the 'spike' output port of the IAF neuron to the 'spike' input port of the weight_update. **Note: in more complex models this selection may have to be changed.**
 
@@ -207,6 +221,7 @@ Note the Inputs has a entry under it. It you hover the mouse over the name 'Exci
 Configure as follows:
 
 ![ps_config](/public/images/createnetwork/450px-Ps_config.png "Fig 14: Configuration for the postsynapse"){: .center-image }
+*Fig 14: Configuration for the postsynapse*
 
 #### Connectivity
 
@@ -223,6 +238,7 @@ For this model we need sparse connectivity with a probability of connection betw
 To configure the connectivity set the properties as follows:
 
 ![conn_config](/public/images/createnetwork/450px-Conn_config.png "Fig 15: Configuration for the connectivity"){: .center-image }
+*Fig 15: Configuration for the connectivity*
 
 #### Configure the other Projections
 
@@ -255,6 +271,8 @@ directory in the following format:
 Add a new folder using the dialog button and save the model in a new folder named 'CUBA'.
 
 ![save_model](/public/images/createnetwork/750px-Save_model.png "Fig 16: The save dialog on a Mac - Windows and Linux versions may differ."){: .center-image }
+*Fig 16: The save dialog on a Mac - Windows and Linux versions may
+differ.*
 
 # Example 2 - Modifying Example 1 to make a Conductance-Based network
 
@@ -270,6 +288,7 @@ The new neuron_body properties are shown below. **Note: you can enter
 the new properties for one neuron_body then copy them to the second.**
 
 ![coba_nrn_props](/public/images/createnetwork/450px-Coba_nrn_props.png "Fig 17: The properties for the COBA neuron_body"){: .center-image }
+*Fig 17: The properties for the COBA neuron_body*
 
 ## Changing the weight_update
 
@@ -306,8 +325,10 @@ projections. The values are as follows:
 ## Adding a Generic Input for voltage
 
 ![coba_port](/public/images/createnetwork/Coba_port.png "Fig 18: COBA voltage port"){: .right-wrapped }
+*Fig 18: COBA voltage port*
 
 ![coba_alias](/public/images/createnetwork/300px-Coba_alias.png "Fig 19: COBA current alias"){: .right-wrapped }
+*Fig 19: COBA current alias*
 
 ## Changing the weight_update
 
@@ -330,8 +351,10 @@ To add a generic input:
 * Select 'Excitatory' from the list
 
 ![ginput](/public/images/createnetwork/300px-Ginput.png "Fig 20: Generic input"){: .right-wrapped }
+*Fig 20: Generic input*
 
 ![ginput_vis](/public/images/createnetwork/300px-Ginput_vis.png "Fig 20: Generic input visualisation"){: .right-wrapped }
+*Fig 20: Generic input visualisation*
 
 Note that a new entry appears under **Inputs**, the port matching has
 already detected that the only possible connection between these
@@ -353,6 +376,7 @@ generic input's properties. These are:
 * **Ports** The drop-down box allows the valid port combinations to be selected from, as in the component tab of the Projection.
 
 ![input-props](/public/images/createnetwork/600px-Input-props.png "Fig 21: Generic input properties"){: .center-image }
+*Fig 21: Generic input properties*
 
 Now add generic inputs for the remaining Projections.
 
@@ -382,6 +406,7 @@ The procedure to add a Spike Source is as follows:
 * Connect the Spike Source as in the Figure below.
 
 ![ss](/public/images/createnetwork/900px-Ss.png "Fig 22: Spike source properties"){: .center-image }
+*Fig 22: Spike source properties*
 
 Add COBA Synapses to the Excitatory and Inhibitory Populations
 configured with:
