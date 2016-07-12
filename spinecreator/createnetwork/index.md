@@ -44,7 +44,9 @@ neurons with all neurons connected by sparse connection patterns. Here
 we demonstrate a Vogels-Abbott network using current-based (CUBA)
 synapses, then one using conductance-based synapses (COBA).
 
-Here are the components needed to complete this tutorial, right click to save:
+Here are the components needed to complete this tutorial. Use right
+click to save each XML file. The PNG files show what the component
+should look like in SpineCreator:
 
 | Name | Description | XML | PNG |
 | ---- | ----------- | --- | --- |
@@ -150,7 +152,7 @@ properties will be as shown below (Fig X):
 
 The Vogels-Abbott network is sparsely connected with a fixed probability of connection between any two neurons. To create this we need to add four projections:
 
-![beziers](/public/images/createnetwork/375px-Beziers.png" Fig 10: An example of a projection with convoluted Beziers!"){: .right-wrapped }
+![beziers](/public/images/createnetwork/375px-Beziers.png "Fig 10: An example of a projection with convoluted Beziers!"){: .right-wrapped }
 
 * <span style="color: red">Excitatory</span> -> <span style="color: red">Excitatory</span>
 * <span style="color: red">Excitatory</span> -> <span style="color: blue">Inhibitory</span>
