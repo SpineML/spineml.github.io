@@ -281,10 +281,10 @@ correct dimensions for the weight.
 
 * Set the weights as follows:
 
-* <span style="color: red">Excitatory</span> -> <span style="color: red">Excitatory</span> g=0.004
-* <span style="color: red">Excitatory</span> -> <span style="color: blue">Inhibitory</span> g=0.004
-* <span style="color: blue">Inhibitory</span> -> <span style="color: blue">Inhibitory</span> g=0.051
-* <span style="color: blue">Inhibitory</span> -> <span style="color: red">Excitatory</span> g=0.051
+ * <span style="color: red">Excitatory</span> -> <span style="color: red">Excitatory</span> g=0.004
+ * <span style="color: red">Excitatory</span> -> <span style="color: blue">Inhibitory</span> g=0.004
+ * <span style="color: blue">Inhibitory</span> -> <span style="color: blue">Inhibitory</span> g=0.051
+ * <span style="color: blue">Inhibitory</span> -> <span style="color: red">Excitatory</span> g=0.051
 
 Note that all weights are positive as the sign of the postsynaptic
 current will be set by the reversal potentials on the postsynapses.
