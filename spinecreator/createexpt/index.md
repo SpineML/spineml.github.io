@@ -151,12 +151,6 @@ A new drop-down will appear, giving a choice of input types:
      of the target of the input (**NOTE**: This is used for validation
      and will probably be automated in the future...).
 
-File:input_c.png|Constant input
-File:input_ac.png|Array of constant inputs
-File:input_tv.png|Time varying input
-File:input_atv.png|Array of time varying inputs
-File:input_e.png|External input
-
 ![input_ac](/public/images/createexpt/210px-Input_c.png "Fig 5: Constant input"){: .inline-image }
 *Fig 5: Constant input*
 
