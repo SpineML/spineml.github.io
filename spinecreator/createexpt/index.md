@@ -41,6 +41,8 @@ simulator.
 
 ![expt_overview](/public/images/createexpt/1050px-Expt_overview.jpg "Fig 1: Overview of the experiment editor"){: .center-image }
 
+*Fig 1: Overview of the experiment editor*
+
 <span style="color: blue">Simulator setup:</span> This panel allows
 the settings for the simulator used to run the model to be configured.
 
@@ -83,6 +85,8 @@ This panel contains the following settings:
 ![add_input1](/public/images/createexpt/375px-Add_input1.png "Fig 2: Initial input editing"){: .inline-image }
 ![add_input2](/public/images/createexpt/375px-Add_input2.png "Fig 3: Initial input editing"){: .inline-image }
 ![add_input3](/public/images/createexpt/375px-Add_input3.png "Fig 4: Initial input editing"){: .inline-image }
+
+*Figs 2-4: Initial input editing*
 
 Inputs are added to a model using the 'Add input' panel of the experiment editor tab.
 
@@ -147,15 +151,32 @@ A new drop-down will appear, giving a choice of input types:
      of the target of the input (**NOTE**: This is used for validation
      and will probably be automated in the future...).
 
-<gallery widths=210px heights=200px caption="Fig XX: Input type configuration panels">
 File:input_c.png|Constant input
 File:input_ac.png|Array of constant inputs
 File:input_tv.png|Time varying input
 File:input_atv.png|Array of time varying inputs
 File:input_e.png|External input
-</gallery>
+
+![input_ac](/public/images/createexpt/210px-Input_c.png "Fig 5: Constant input"){: .inline-image }
+*Fig 5: Constant input*
+
+![input_ac](/public/images/createexpt/210px-Input_ac.png "Fig 6: Array of constant inputs"){: .inline-image }
+*Fig 6: Array of constant inputs*
+
+![input_ac](/public/images/createexpt/210px-Input_tv.png "Fig 7: Time varying input"){: .inline-image }
+*Fig 7: Time varying input*
+
+![input_ac](/public/images/createexpt/210px-Input_atv.png "Fig 8: Array of time varying inputs"){: .inline-image }
+*Fig 8: Array of time varying inputs*
+
+![input_ac](/public/images/createexpt/210px-Input_e.png "Fig 9: External input"){: .inline-image }
+*Fig 9: External input*
+
+*Figs 5-9: Input type configuration panels*
 
 ![input_complete](/public/images/createexpt/375px-Input_complete.png "Fig 10: Completed input"){: .center-image }
+
+*Fig 10: Completed input*
 
 The 'tick' button confirms the settings for the input, and the 'cross'
 button removes the input.
@@ -169,6 +190,8 @@ button to change the input's settings, as shown in Fig XX.
 ## Adding an output
 
 ![output_edit](/public/images/createexpt/375px-Output_edit.png "Fig 11: Editing an output"){: .center-image }
+
+*Fig 11: Editing an output*
 
 * Click 'Add Output' to add a new output to the model. The new output
   starts in 'edit mode', allowing the output to be configured. The
@@ -187,6 +210,8 @@ button to change the input's settings, as shown in Fig XX.
   all indices).
 
 ![output_completed](/public/images/createexpt/375px-Output_completed.png "Fig 12: Completed output"){: .center-image }
+
+*Fig 12: Completed output*
 
 The 'tick' button confirms the settings for the output, and the
 'cross' button removes the output.
@@ -255,3 +280,5 @@ data for plotting manually and manually refresh the loaded data using
 the toolbar items.
 
 ![COBA_graphs](/public/images/createexpt/1050px-COBA_graphs.png "Fig 13: The membrane potentials of the first few neurons of each Population in the COBA example"){: .center-image }
+
+*Fig 13: The membrane potentials of the first few neurons of each Population in the COBA example*
