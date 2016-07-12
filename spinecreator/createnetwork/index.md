@@ -177,7 +177,7 @@ they are desired.
 
 * Add the four Projections, resulting in a Network similar to below:
 
-![connections](/public/images/createnetwork/600px-Connections.png" Fig 11: The network"){: .center-image }
+![connections](/public/images/createnetwork/600px-Connections.png "Fig 11: The network"){: .center-image }
 
 ### Configuring the projections
 
@@ -192,13 +192,13 @@ properties for this Projection:
 * PostSynapse tab: Allows the current Synapse postsynapse component to be selected and configured.
 * Connectivity tab: Allows the current Synapse connectivity pattern to be selected and configured.
 
-![proj_props](/public/images/createnetwork/600px-Proj_props.png" Fig 12: Projection properties"){: .center-image }
+![proj_props](/public/images/createnetwork/600px-Proj_props.png "Fig 12: Projection properties"){: .center-image }
 
 #### Weight update
 
 Configure as follows:
 
-![wu_config](/public/images/createnetwork/450px-Wu_config.png" Fig 13: Configuration for the weight update"){: .center-image }
+![wu_config](/public/images/createnetwork/450px-Wu_config.png "Fig 13: Configuration for the weight update"){: .center-image }
 
 Note the Inputs has a entry under it. It you hover the mouse over the name 'Excitatory to...' you will get the full text, showing that there is a connection from the Excitatory Population to this Weight Update. The drop-down contains the list of all allowed Port matches (taking dimensionality and data type into account), which in this case is the 'spike' output port of the IAF neuron to the 'spike' input port of the weight_update. **Note: in more complex models this selection may have to be changed.**
 
@@ -206,7 +206,7 @@ Note the Inputs has a entry under it. It you hover the mouse over the name 'Exci
 
 Configure as follows:
 
-![ps_config](/public/images/createnetwork/450px-Ps_config.png" Fig 14: Configuration for the postsynapse"){: .center-image }
+![ps_config](/public/images/createnetwork/450px-Ps_config.png "Fig 14: Configuration for the postsynapse"){: .center-image }
 
 #### Connectivity
 
@@ -222,7 +222,7 @@ For this model we need sparse connectivity with a probability of connection betw
 
 To configure the connectivity set the properties as follows:
 
-![conn_config](/public/images/createnetwork/450px-Conn_config.png" Fig 15: Configuration for the connectivity"){: .center-image }
+![conn_config](/public/images/createnetwork/450px-Conn_config.png "Fig 15: Configuration for the connectivity"){: .center-image }
 
 #### Configure the other Projections
 
@@ -254,7 +254,7 @@ directory in the following format:
 
 Add a new folder using the dialog button and save the model in a new folder named 'CUBA'.
 
-![save_model](/public/images/createnetwork/750px-Save_model.png" Fig 16: The save dialog on a Mac - Windows and Linux versions may differ."){: .center-image }
+![save_model](/public/images/createnetwork/750px-Save_model.png "Fig 16: The save dialog on a Mac - Windows and Linux versions may differ."){: .center-image }
 
 # Example 2 - Modifying Example 1 to make a Conductance-Based network
 
@@ -269,7 +269,7 @@ connections between components without using synapses.
 The new neuron_body properties are shown below. **Note: you can enter
 the new properties for one neuron_body then copy them to the second.**
 
-![coba_nrn_props](/public/images/createnetwork/450px-Coba_nrn_props.png" Fig 17: The properties for the COBA neuron_body"){: .center-image }
+![coba_nrn_props](/public/images/createnetwork/450px-Coba_nrn_props.png "Fig 17: The properties for the COBA neuron_body"){: .center-image }
 
 ## Changing the weight_update
 
@@ -305,9 +305,9 @@ projections. The values are as follows:
 
 ## Adding a Generic Input for voltage
 
-![coba_port](/public/images/createnetwork/Coba_port.png" Fig 18: COBA voltage port"){: .right-wrapped }
+![coba_port](/public/images/createnetwork/Coba_port.png "Fig 18: COBA voltage port"){: .right-wrapped }
 
-![coba_alias](/public/images/createnetwork/300px-Coba_alias.png" Fig 19: COBA current alias"){: .right-wrapped }
+![coba_alias](/public/images/createnetwork/300px-Coba_alias.png "Fig 19: COBA current alias"){: .right-wrapped }
 
 ## Changing the weight_update
 
@@ -329,9 +329,9 @@ To add a generic input:
 * Begin typing 'Excitatory', note the autocompletion
 * Select 'Excitatory' from the list
 
-![ginput](/public/images/createnetwork/300px-Ginput.png" Fig 20: Generic input"){: .right-wrapped }
+![ginput](/public/images/createnetwork/300px-Ginput.png "Fig 20: Generic input"){: .right-wrapped }
 
-![ginput_vis](/public/images/createnetwork/300px-Ginput_vis.png" Fig 20: Generic input visualisation"){: .right-wrapped }
+![ginput_vis](/public/images/createnetwork/300px-Ginput_vis.png "Fig 20: Generic input visualisation"){: .right-wrapped }
 
 Note that a new entry appears under **Inputs**, the port matching has
 already detected that the only possible connection between these
@@ -352,7 +352,7 @@ generic input's properties. These are:
 * **Connectivity** This is the connectivity type between the source and destination Ports. One to one is selected and should be left as is.
 * **Ports** The drop-down box allows the valid port combinations to be selected from, as in the component tab of the Projection.
 
-![input-props](/public/images/createnetwork/600px-Input-props.png" Fig 21: Generic input properties"){: .center-image }
+![input-props](/public/images/createnetwork/600px-Input-props.png "Fig 21: Generic input properties"){: .center-image }
 
 Now add generic inputs for the remaining Projections.
 
@@ -381,7 +381,7 @@ The procedure to add a Spike Source is as follows:
 * Change the size of the Spike Source to 20
 * Connect the Spike Source as in the Figure below.
 
-![ss](/public/images/createnetwork/900px-Ss.png" Fig 22: Spike source properties"){: .center-image }
+![ss](/public/images/createnetwork/900px-Ss.png "Fig 22: Spike source properties"){: .center-image }
 
 Add COBA Synapses to the Excitatory and Inhibitory Populations
 configured with:
