@@ -56,6 +56,10 @@ In SpineML we use W3C shemas for validation. This means that the port tags requi
 |  `@dimension`  |  port dimensionality  |
 |  `@post`  |  for weightupdates remaps the input into connections as though it were a postsynaptic input  |
 
+## Impulses
+
+We have added a new communication port type: Impulse. Impulses transfer an event with a value. The tags associated with these ports align with the event port tags, with the following form.
+
 ### ImpulseSendPort
 
 |  Contains  |  Description  |
@@ -70,6 +74,22 @@ In SpineML we use W3C shemas for validation. This means that the port tags requi
 |  `@name`  |  port identifying name  |
 |  `@dimension`  |  port dimensionality  |
 |  `@post`  |  for weightupdates remaps the input into connections as though it were a postsynaptic input  |
+
+### ImpulseOut
+
+As EventOut
+
+### OnImpulse
+
+As OnEvent, however the ImpulseRecievePort name can be used in the contained MathinLine tags as a variable.
+
+## Small differences
+
+`ComponentClass` contains an attribute `type`, which can take the values `neuron_body`,`postsynapse` or `weight_update`.
+
+`Dynamics` contains an attribute `initial_regime` which denotes the starting Regime.
+
+`NineML` is replaced as the root tag by `SpineML`.
 
 ## Dimensionality
 
