@@ -21,40 +21,40 @@ In SpineML we use W3C shemas for validation. This means that the port tags requi
 
 |  Contains  |  Description  |
 | ----- |
-|  `@name`  |  state variable or alias for output  |
-|  `@is_per_connection`  |  for weightupdates sends an output for each connection, instead of each destination neuron  |
+|  `@name::String`  |  state variable or alias for output  |
+|  `@is_per_connection::bool`  |  for weightupdates sends an output for each connection, instead of each destination neuron  |
 
 ### AnalogReceivePort
 
 |  Contains  |  Description  |
 | ----- |
-|  `@name`  |  port identifying name  |
-|  `@dimension`  |  port dimensionality  |
-|  `@post`  |  for weightupdates remaps the input into connections as though it were a postsynaptic input  |
+|  `@name::String`  |  port identifying name  |
+|  `@dimension::String`  |  port dimensionality  |
+|  `@post::bool [optional]`  |  for weightupdates remaps the input into connections as though it were a postsynaptic input  |
 
 ### AnalogReducePort
 
 |  Contains  |  Description  |
 | ----- |
-|  `@name`  |  port identifting name  |
-|  `@dimension`  |  port dimensionality  |
-|  `@reduce_op`  |  operation used to combine multiple inputs  |
-|  `@post`  |  for weightupdates remaps the input into connections as though it were a postsynaptic input  |
+|  `@name::String`  |  port identifting name  |
+|  `@dimension::String`  |  port dimensionality  |
+|  `@reduce_op::String`  |  operation used to combine multiple inputs  |
+|  `@post::bool [optional]`  |  for weightupdates remaps the input into connections as though it were a postsynaptic input  |
 
 ### EventSendPort
 
 |  Contains  |  Description  |
 | ----- |
-|  `@name`  |  port identifying name  |
-|  `@is_per_connection`  |  for weightupdates sends an output for each connection, instead of each destination neuron  |
+|  `@name::String`  |  port identifying name  |
+|  `@is_per_connection::bool [optional]`  |  for weightupdates sends an output for each connection, instead of each destination neuron  |
 
 ### EventReceivePort
 
 |  Contains  |  Description  |
 | ----- |
-|  `@name`  |  port identifying name  |
-|  `@dimension`  |  port dimensionality  |
-|  `@post`  |  for weightupdates remaps the input into connections as though it were a postsynaptic input  |
+|  `@name::String`  |  port identifying name  |
+|  `@dimension::String`  |  port dimensionality  |
+|  `@post::bool [optional]`  |  for weightupdates remaps the input into connections as though it were a postsynaptic input  |
 
 ## Impulses
 
@@ -64,16 +64,16 @@ We have added a new communication port type: Impulse. Impulses transfer an event
 
 |  Contains  |  Description  |
 | ----- |
-|  `@name`  |  statevariable, parameter or alias for output  |
-|  `@is_per_connection`  |  for weightupdates sends an output for each connection, instead of each destination neuron  |
+|  `@name::String`  |  statevariable, parameter or alias for output  |
+|  `@is_per_connection::bool [optional]`  |  for weightupdates sends an output for each connection, instead of each destination neuron  |
 
 ### ImpulseReceivePort
 
 |  Contains  |  Description  |
 | ----- |
-|  `@name`  |  port identifying name  |
-|  `@dimension`  |  port dimensionality  |
-|  `@post`  |  for weightupdates remaps the input into connections as though it were a postsynaptic input  |
+|  `@name::String`  |  port identifying name  |
+|  `@dimension::Stirng`  |  port dimensionality  |
+|  `@post::bool [optional]`  |  for weightupdates remaps the input into connections as though it were a postsynaptic input  |
 
 ### ImpulseOut
 
