@@ -28,14 +28,14 @@ biologically constrained models consisting of non standard components
 * Biological complexity
 * Graphical modelling tools (with integrated simulator interface)
 
-# [SpineML Simulators](/simulators/)
+# SpineML Simulators
 
 A model described in a declarative format needs a simulator to run
 it. This site provides information about the simulators which have
 been used to execute SpineML models, including the reference SpineML
 simulator, [SpineML_2_BRAHMS](/simulators/BRAHMS).
 
-# [SpineCreator](/spinecreator/)
+# SpineCreator
 
 Manually creating XML in a text editor is one way to create your
 SpineML model, but we think you'll prefer
