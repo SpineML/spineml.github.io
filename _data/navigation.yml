@@ -19,6 +19,8 @@
   subnav:
     - text: "BRAHMS"
       url: "/simulators/BRAHMS/"
+    - text: "GeNN"
+      url: "/simulators/GeNN/"
     - text: "PyNN"
       url: "/simulators/PyNN/"
     - text: "DAMSON"
