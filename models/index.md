@@ -65,19 +65,15 @@ These example consist of pure SpineML with no SpineCreator project files or meta
 
 A network of two populations of Excitatory and Inhibitory neurons. Based upon the model described in; [Romain Brette et al. "Simulation of networks of spiking neurons: A review of tools and strategies", 2007.](http://www.ncbi.nlm.nih.gov/pubmed/17629781)
 
-**High Level Network Layer Model** [![/public/images/Xml_icon.png](/public/images/Xml_icon.png)](http://bimpa.group.shef.ac.uk/SpineML/models/network/Brette_Benchmark.xml)
+**High Level Network Layer Model** [![/public/images/Xml_icon.png](/public/images/Xml_icon.png)](https://github.com/SpineML/spineml/blob/master/examples/Brette%20Benchmark/Brette_Benchmark_Network.xml)
 
-**High Level Network Layer Model (split version with maximum population size 100)** [![/public/images/Xml_icon.png](/public/images/Xml_icon.png)](http://bimpa.group.shef.ac.uk/SpineML/models/network/split_Brette_Benchmark.xml) (1.9MB)
+**High Level Network Layer Model (split version with maximum population size 100)** [![/public/images/Xml_icon.png](/public/images/Xml_icon.png)](https://github.com/SpineML/spineml/blob/master/examples/Brette%20Benchmark/Brette_Benchmark_Network_Split100.xml) (1.9MB)
 
 ### Experiment
 
 Experiment file which runs the Brett benchmark for a period of 1 second recording all spike and voltage values.
 
-**Experiment Layer Model** [![/public/images/Xml_icon.png](/public/images/Xml_icon.png)](http://bimpa.group.shef.ac.uk/SpineML/models/experiment/brette/experiment.xml)
-
-### Simulator Compatibility
-
-This model can be executed in Brahms and DAMSON. DAMSON requires both the split and un-split version of the model to generate code. As DAMSON Alias creation is slow a pre transformed download is available [here].
+**Experiment Layer Model** [![/public/images/Xml_icon.png](/public/images/Xml_icon.png)](https://github.com/SpineML/spineml/blob/master/examples/Brette%20Benchmark/Brette_Benchmark_Experiment.xml)
 
 ## Brette Benchmark Model (Using PyNN Neurons)
 
@@ -86,23 +82,18 @@ This is the same as above however the synapse model is integrated into the neuro
 ### Components
 
 | Name | Description | XML | PNG |
-| IF_curr_exp | Leaky Integrate and Fire Neuron Body with Exponentially Decaying Post-Synaptic Current | [![/public/images/Xml_icon.png](/public/images/Xml_icon.png)](http://bimpa.group.shef.ac.uk/SpineML/models/component/IF_curr_exp.xml) | [![Png icon.png](/public/images/Png_icon.png)](http://bimpa.group.shef.ac.uk/SpineML/models/component/IF_curr_exp.png) |
-| PyNN_WeightUpdate | A Fixed Weight Synaptic Update | [![/public/images/Xml_icon.png](/public/images/Xml_icon.png)](http://bimpa.group.shef.ac.uk/SpineML/models/component/PyNN_WeightUpdate.xml) | [![Png icon.png](/public/images/Png_icon.png)](http://bimpa.group.shef.ac.uk/SpineML/models/component/PyNN_WeightUpdate.png) |
-| PyNN_PostSynapse | A Pass-through Post-Synapse (Relays Impulses to the Post-Synaptic Neuron) | [![/public/images/Xml_icon.png](/public/images/Xml_icon.png)](http://bimpa.group.shef.ac.uk/SpineML/models/component/PyNN_PostSynapse.xml) | [![Png icon.png](/public/images/Png_icon.png)](http://bimpa.group.shef.ac.uk/SpineML/models/component/PyNN_PostSynapse.png) |
+| IF_curr_exp | Leaky Integrate and Fire Neuron Body with Exponentially Decaying Post-Synaptic Current | [![/public/images/Xml_icon.png](/public/images/Xml_icon.png)]https://github.com/SpineML/spineml/tree/master/examples/Brette%20Benchmark%20(PyNN%20Neurons)/IF_curr_exp.xml) | [![Png icon.png](/public/images/Png_icon.png)](https://github.com/SpineML/spineml/tree/master/examples/Brette%20Benchmark%20(PyNN%20Neurons)/IF_curr_exp.png) |
+| PyNN_WeightUpdate | A Fixed Weight Synaptic Update | [![/public/images/Xml_icon.png](/public/images/Xml_icon.png)](https://github.com/SpineML/spineml/tree/master/examples/Brette%20Benchmark%20(PyNN%20Neurons)/PyNN_WeightUpdate.xml) | [![Png icon.png](/public/images/Png_icon.png)](https://github.com/SpineML/spineml/tree/master/examples/Brette%20Benchmark%20(PyNN%20Neurons)/PyNN_WeightUpdate.png) |
+| PyNN_PostSynapse | A Pass-through Post-Synapse (Relays Impulses to the Post-Synaptic Neuron) | [![/public/images/Xml_icon.png](/public/images/Xml_icon.png)](https://github.com/SpineML/spineml/tree/master/examples/Brette%20Benchmark%20(PyNN%20Neurons)/PyNN_PostSynapse.xml) | [![Png icon.png](/public/images/Png_icon.png)](https://github.com/SpineML/spineml/tree/master/examples/Brette%20Benchmark%20(PyNN%20Neurons)/PyNN_PostSynapse.png) |
 
 ### Network
 
 A network of two populations of Excitatory and Inhibitory neurons. Based upon the model described in; [Romain Brette et al. "Simulation of networks of spiking neurons: A review of tools and strategies", 2007.](http://www.ncbi.nlm.nih.gov/pubmed/17629781). Replicates the standard Brett Benchmark model however the PyNN_PostSynpases redirects any impulse events to the post synaptic neuron body which models the dynamics. PyNN uses separate synaptic currents for excitatory and inhibitory synapses and as such negative synaptic weights are not required.
 
-**High Level Network Layer Model** [![/public/images/Xml_icon.png](/public/images/Xml_icon.png)](http://bimpa.group.shef.ac.uk/SpineML/models/network/PyNN_Brette_Benchmark.xml)
+**High Level Network Layer Model** [![/public/images/Xml_icon.png](/public/images/Xml_icon.png)](https://github.com/SpineML/spineml/blob/master/examples/Brette%20Benchmark%20(PyNN%20Neurons)/Brette_Benchmark_PyNN_Network.xml)
 
 ### Experiment
 
 Experiment file which runs the Brett benchmark for a period of 1 second recording all spike and voltage values.
 
-**Experiment Layer Model** [![/public/images/Xml_icon.png](/public/images/Xml_icon.png)](http://bimpa.group.shef.ac.uk/SpineML/models/experiment/brette_pynn/experiment.xml)
-
-### Simulator Compatibility
-
-This model can be executed in Brahms and PyNN. DAMSON is currently not able to simulate this model due to the large number of impulse events used within post synapse models (a work around for this will be available shortly).
-
+**Experiment Layer Model** [![/public/images/Xml_icon.png](/public/images/Xml_icon.png)](https://github.com/SpineML/spineml/blob/master/examples/Brette%20Benchmark%20(PyNN%20Neurons)/Brette_Benchmassrk_PyNN_Experiment.xml)
