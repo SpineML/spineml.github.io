@@ -14,22 +14,6 @@
     - text: "Experiment Layer"
       url: "/spineml/experiment/"
 
-- text: "Simulators"
-  url: "/simulators/"
-  subnav:
-    - text: "BRAHMS"
-      url: "/simulators/BRAHMS/"
-    - text: "GeNN"
-      url: "/simulators/GeNN/"
-    - text: "PyNN"
-      url: "/simulators/PyNN/"
-    - text: "DAMSON"
-      url: "/simulators/damson/"
-
-- text: "Models and Examples"
-  url: "/models/"
-  subnav:
-
 - text: "SpineCreator"
   url: "/spinecreator/"
   subnav:
@@ -47,6 +31,22 @@
       url: "/spinecreator/tutorial/"
     - text: "Developer: Annotations and Project File"
       url: "/spinecreator/annotations/"
+
+- text: "Simulators"
+  url: "/simulators/"
+  subnav:
+    - text: "BRAHMS"
+      url: "/simulators/BRAHMS/"
+    - text: "GeNN"
+      url: "/simulators/GeNN/"
+    - text: "PyNN"
+      url: "/simulators/PyNN/"
+    - text: "DAMSON"
+      url: "/simulators/damson/"
+
+- text: "Models and Examples"
+  url: "/models/"
+  subnav:
 
 - text: "Publications"
   url: "/publications/"
