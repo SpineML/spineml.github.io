@@ -9,9 +9,71 @@ The SpineML component layer syntax describes the functional entities, i.e. neuro
 
 A technical description of the NineML Abstraction layer is available [here](http://software.incf.org/software/nineml/wiki/nineml-specification/nineml-specifications#SECTION01030).
 
+# Differences from NineML Abstraction Layer
+
+We now describe the differences between the NineML Abstraction layer and the SpineML Component layer explicitly.
+
+## Ports
+
+In SpineML we use W3C shemas for validation. This means that the port tags require seperation into several types.
+
+### AnalogSendPort
+
+|  Contains  |  Description  |
+| ----- |
+|  `@name`  |  state variable or alias for output  |
+|  `@is_per_connection`  |  for weightupdates sends an output for each connection, instead of each destination neuron  |
+
+### AnalogReceivePort
+
+|  Contains  |  Description  |
+| ----- |
+|  `@name`  |  port identifying name  |
+|  `@dimension`  |  port dimensionality  |
+|  `@post`  |  for weightupdates remaps the input into connections as though it were a postsynaptic input  |
+
+### AnalogReducePort
+
+|  Contains  |  Description  |
+| ----- |
+|  `@name`  |  port identifting name  |
+|  `@dimension`  |  port dimensionality  |
+|  `@reduce_op`  |  operation used to combine multiple inputs  |
+|  `@post`  |  for weightupdates remaps the input into connections as though it were a postsynaptic input  |
+
+### EventSendPort
+
+|  Contains  |  Description  |
+| ----- |
+|  `@name`  |  port identifying name  |
+|  `@is_per_connection`  |  for weightupdates sends an output for each connection, instead of each destination neuron  |
+
+### EventReceivePort
+
+|  Contains  |  Description  |
+| ----- |
+|  `@name`  |  port identifying name  |
+|  `@dimension`  |  port dimensionality  |
+|  `@post`  |  for weightupdates remaps the input into connections as though it were a postsynaptic input  |
+
+### ImpulseSendPort
+
+|  Contains  |  Description  |
+| ----- |
+|  `@name`  |  statevariable, parameter or alias for output  |
+|  `@is_per_connection`  |  for weightupdates sends an output for each connection, instead of each destination neuron  |
+
+### ImpulseReceivePort
+
+|  Contains  |  Description  |
+| ----- |
+|  `@name`  |  port identifying name  |
+|  `@dimension`  |  port dimensionality  |
+|  `@post`  |  for weightupdates remaps the input into connections as though it were a postsynaptic input  |
+
 ## Dimensionality
 
-The units and dimensions of components parameters and analogue/impulse input ports are specified within a component description. A single ```@dimension``` attribute is used for this purpose and consists of a value derived from, a Si unit described by using a prefix and unit from the following tables. E.g. millivolts (mV) is prefix=m, unit=V.
+The units and dimensions of components parameters and analog/impulse input ports are specified within a component description. A single ```@dimension``` attribute is used for this purpose and consists of a value derived from, a Si unit described by using a prefix and unit from the following tables. E.g. millivolts (mV) is prefix=m, unit=V.
 
 | Prefix | Description |
 | --- | --- |
