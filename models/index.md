@@ -65,15 +65,21 @@ These example consist of pure SpineML with no SpineCreator project files or meta
 
 A network of two populations of Excitatory and Inhibitory neurons. Based upon the model described in; [Romain Brette et al. "Simulation of networks of spiking neurons: A review of tools and strategies", 2007.](http://www.ncbi.nlm.nih.gov/pubmed/17629781)
 
-**High Level Network Layer Model** [![/public/images/Xml_icon.png](/public/images/Xml_icon.png)](https://github.com/SpineML/spineml/blob/master/examples/Brette%20Benchmark/Brette_Benchmark_Network.xml)
+**High Level Network Layer Model**
 
-**High Level Network Layer Model (split version with maximum population size 100)** [![/public/images/Xml_icon.png](/public/images/Xml_icon.png)](https://github.com/SpineML/spineml/blob/master/examples/Brette%20Benchmark/Brette_Benchmark_Network_Split100.xml) (1.9MB)
+[![/public/images/Xml_icon.png](/public/images/Xml_icon.png)](https://github.com/SpineML/spineml/blob/master/examples/Brette%20Benchmark/Brette_Benchmark_Network.xml)
+
+**High Level Network Layer Model (split version with maximum population size 100)**
+
+[![/public/images/Xml_icon.png](/public/images/Xml_icon.png)](https://github.com/SpineML/spineml/blob/master/examples/Brette%20Benchmark/Brette_Benchmark_Network_Split100.xml) (1.9MB)
 
 ### Experiment
 
 Experiment file which runs the Brett benchmark for a period of 1 second recording all spike and voltage values.
 
-**Experiment Layer Model** [![/public/images/Xml_icon.png](/public/images/Xml_icon.png)](https://github.com/SpineML/spineml/blob/master/examples/Brette%20Benchmark/Brette_Benchmark_Experiment.xml)
+**Experiment Layer Model** 
+
+[![/public/images/Xml_icon.png](/public/images/Xml_icon.png)](https://github.com/SpineML/spineml/blob/master/examples/Brette%20Benchmark/Brette_Benchmark_Experiment.xml)
 
 ## Brette Benchmark Model (Using PyNN Neurons)
 
@@ -90,10 +96,14 @@ This is the same as above however the synapse model is integrated into the neuro
 
 A network of two populations of Excitatory and Inhibitory neurons. Based upon the model described in; [Romain Brette et al. "Simulation of networks of spiking neurons: A review of tools and strategies", 2007.](http://www.ncbi.nlm.nih.gov/pubmed/17629781). Replicates the standard Brett Benchmark model however the PyNN_PostSynpases redirects any impulse events to the post synaptic neuron body which models the dynamics. PyNN uses separate synaptic currents for excitatory and inhibitory synapses and as such negative synaptic weights are not required.
 
-**High Level Network Layer Model** [![/public/images/Xml_icon.png](/public/images/Xml_icon.png)](https://github.com/SpineML/spineml/blob/master/examples/Brette%20Benchmark%20(PyNN%20Neurons)/Brette_Benchmark_PyNN_Network.xml)
+**High Level Network Layer Model**
+
+[![/public/images/Xml_icon.png](/public/images/Xml_icon.png)](https://github.com/SpineML/spineml/blob/master/examples/Brette%20Benchmark%20(PyNN%20Neurons)/Brette_Benchmark_PyNN_Network.xml)
 
 ### Experiment
 
 Experiment file which runs the Brett benchmark for a period of 1 second recording all spike and voltage values.
 
-**Experiment Layer Model** [![/public/images/Xml_icon.png](/public/images/Xml_icon.png)](https://github.com/SpineML/spineml/blob/master/examples/Brette%20Benchmark%20(PyNN%20Neurons)/Brette_Benchmassrk_PyNN_Experiment.xml)
+**Experiment Layer Model** 
+
+[![/public/images/Xml_icon.png](/public/images/Xml_icon.png)](https://github.com/SpineML/spineml/blob/master/examples/Brette%20Benchmark%20(PyNN%20Neurons)/Brette_Benchmassrk_PyNN_Experiment.xml)
