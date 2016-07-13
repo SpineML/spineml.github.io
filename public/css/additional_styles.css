@@ -11,6 +11,9 @@ body {
   font-size: 30px;
 }
 
+.sidebar {
+  font-size: 18px; /* 14px */
+}
 
 .sidebar-nav-sub-item{
   display: block;
