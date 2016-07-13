@@ -5,7 +5,7 @@ title: Home
 
 ![dam]
 
-DAMSON is a functional emulator for SpiNNaker architecture which aims to achieve 1 million low power interconnected ARM cores. DAMSON emulates both the fixed point precision and event driven operation of SpiNNaker using an event driven from of C.
+DAMSON is a functional emulator for SpiNNaker architecture which aims to achieve 1 million low power interconnected ARM cores. DAMSON emulates both the fixed point precision and event driven operation of SpiNNaker using an event driven form of C.
 
 Simulating SpineML with DAMSON
 ------------------------------
