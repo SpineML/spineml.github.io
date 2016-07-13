@@ -31,12 +31,13 @@ biologically constrained models consisting of non standard components
 # SpineML Simulators
 
 A model described in a declarative format needs a simulator to run
-it. This site provides information about the simulators which have
+it. Information about the simulators which have
 been used to execute SpineML models, including the reference SpineML
-simulator, [SpineML_2_BRAHMS](/simulators/BRAHMS).
+simulator, [SpineML_2_BRAHMS](/simulators/BRAHMS), is provided on the
+[simulators](/simulators/) page.
 
-# SpineCreator
+# The SpineML Editor: SpineCreator
 
 Manually creating XML in a text editor is one way to create your
-SpineML model, but we think you'll prefer
-[SpineCreator](/spinecreator/); a graphical editor for SpineML.
+SpineML model, but it's much easier to use a dedicated graphical editor.
+[SpineCreator](/spinecreator/) is the graphical editor for SpineML.
