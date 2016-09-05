@@ -5,6 +5,8 @@
 - text: "SpineML Language"
   url: "/spineml/"
   subnav:
+    - text: "History"
+      url: "/spineml/provenance/"
     - text: "Component Layer"
       url: "/spineml/component/"
     - text: "Network Layer"
