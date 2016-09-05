@@ -12,7 +12,7 @@ Paul Richmond, Alex Cope, Dave Allerton and Kevin Gurney wished to implement a s
 for models encoded in NineML. They found that some details were missing from the NineML
 specification, preventing them from implementing their models. Taking a pragmatic approach, they made
 necessary additions to the NineML spec to suit their needs. It is hoped that in the future, SpineML
-will become and officially recognised extension to NineML.
+will become an officially recognised extension to NineML.
 
 You can read about SpineML in the following paper:
 
