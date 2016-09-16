@@ -18,4 +18,4 @@ You can read about SpineML in the following paper:
 
 **Richmond P, Cope A, Gurney K, Allerton DJ.** “From Model Specification to Simulation of Biologically Constrained Networks of Spiking Neurons” *Neuroinformatics. 2013 Nov 20*
 
-For the full detail, refer to the [SpineML schemas](https://github.com/SpineML/spineml/tree/master/schemas]).
+For the full detail, refer to the [SpineML schemas](https://github.com/SpineML/spineml/tree/master/schemas).
