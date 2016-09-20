@@ -8,7 +8,7 @@ use:
 
 **Cope, A.J., Richmond, P., James, S.S. et al.** “SpineCreator: a
   Graphical User Interface for the Creation of Layered Neural Models”
-  *Neuroinformatics (2016). doi:10.1007/s12021-016-9311-z* [available online](http://link.springer.com/article/10.1007/s12021-016-9311-z)
+  [*Neuroinformatics (2016). doi:10.1007/s12021-016-9311-z*](http://link.springer.com/article/10.1007/s12021-016-9311-z)
 
 To reference the SpineML language please use this publication:
 
