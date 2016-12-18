@@ -42,7 +42,7 @@ build SpineML_PreFlight, then create an issue here:
 You will need the following programs installed on your system:
 
 ```
-sudo apt-get install build-essential qtcreator libqt5svg5-dev libgvc6 python git gitk \
+sudo apt-get install build-essential qtcreator libqt5svg5-dev qtbase5-dev libgvc6 python git gitk \
 python-dev libgraphviz-dev libpopt-dev doxygen xsltproc cmake libxaw7-dev libxv-dev
 ```
 
