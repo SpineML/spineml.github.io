@@ -103,7 +103,7 @@ cd ~/scsrc git clone https://github.com/SpineML/SpineML_PreFlight.git
 Build and install SpineML_PreFlight using cmake:
 
 ```
-mkdir SpineML_PreFight-build && cd SpineML_PreFlight-build
+mkdir SpineML_PreFlight-build && cd SpineML_PreFlight-build
 cmake -DCMAKE_INSTALL_PREFIX=/usr/local ../SpineML_PreFlight
 make -j4 sudo make install
 ```
