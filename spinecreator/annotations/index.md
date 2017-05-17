@@ -233,6 +233,10 @@ SpineCreator stores the details of the xml files that compose the current Projec
   <File name="experiment0.xml"/>
   <File name="experiment1.xml"/>
  </Experiments>
+ <AdditionalFiles>
+  <File name="luminances.json"/>
+  <File name="external.xsl"/>
+ </AdditionalFiles>
 </SpineCreatorProject>
 ```
 
@@ -244,6 +248,8 @@ SpineCreator stores the details of the xml files that compose the current Projec
 | Conponents \[1\]  | Contains the SpineML Components for the project  |
 | Layouts \[1\]     | Contains the SpineML Layouts for the project     |
 | Experiments \[1\] | Contains the SpineML Experiments for the project |
+| AdditionalFiles \[1\] | List of non-SpineML files for the project |
+
 
 #### Network
 
@@ -268,6 +274,12 @@ SpineCreator stores the details of the xml files that compose the current Projec
 | Contains       | Description               |
 |----------------|---------------------------|
 | File \[1:...\] | The experiment file names |
+
+#### AdditionalFiles
+
+| Contains       | Description               |
+|----------------|---------------------------|
+| File \[1:...\] | Additional file name      |
 
 #### File
 
