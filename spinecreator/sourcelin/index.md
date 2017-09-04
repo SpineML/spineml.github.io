@@ -73,12 +73,13 @@ window, rather than at the top of the desktop screen.
 
 ## Compile BRAHMS on Linux
 
-Clone the SpineML-group-maintained version of BRAHMS (which sports a
-nice cmake compile and install scheme):
+Clone the official version of BRAHMS (which sports a
+nice cmake compile and install scheme and supercedes any code
+available on sourceforce):
 
 ```
 cd ~/scsrc
-git clone https://github.com/sebjameswml/brahms.git
+git clone https://github.com/BRAHMS-SystemML/brahms.git
 ```
 
 Build brahms with cmake:

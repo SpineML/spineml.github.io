@@ -116,11 +116,12 @@ back to your terminal:
 
 BRAHMS is the "execution middleware" used by SpineML_2_BRAHMS.
 
-Clone the SpineML-group-maintained version of BRAHMS (which sports a
-nice cmake compile and install scheme):
+Clone the official version of BRAHMS (which sports a
+nice cmake compile and install scheme and supercedes any code
+available from sourceforce):
 
 ```
- git clone https://github.com/sebjameswml/brahms.git
+ git clone https://github.com/BRAHMS-SystemML/brahms.git
 ```
 
 Build brahms in "standalone" mode and have it installed in your home
