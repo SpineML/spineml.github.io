@@ -7,7 +7,9 @@ Download/Install
 ----------------
 
 The latest binary release of the SpineML toolchain was made in January
-2016. We provide packages for Mac, Debian and Ubuntu.
+2016. We provide packages for Mac, Debian and Ubuntu. 
+
+NOTE: we recommend compiling from the GitHub source rather than using the packages
 
 ### Mac
 
