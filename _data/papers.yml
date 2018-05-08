@@ -7,6 +7,38 @@
   keywords: "bee, spineml, spinecreator, model"
   bib:
 
+- title: "Building a Spiking Neural Network Model of the Basal Ganglia
+  on SpiNNaker"
+  author-list: "B Sen-Bhattacharya, S James, O Rhodes, I Sugiarto,
+  A Rowley, A Stokes, K Gurney, S Furber"
+  publication: "IEEE Transactions on Cognitive and Developmental
+  Systems, 2018"
+  description: "Compares implementations of the samebasal ganglia model in
+  SpiNNaker and SpineCreator"
+  abstract: "We present a biologically-inspired and scalable model of
+  the Basal Ganglia (BG) simulated on the SpiNNaker machine, a
+  biologically-inspired low-power hardware platform allowing parallel,
+  asynchronous computing. Our BG model consists of six cell
+  populations, where the neuro-computational unit is a
+  conductance-based Izhikevich spiking neuron; the number of neurons
+  in each population is proportional to that reported in anatomical
+  literature. This model is treated as a single-channel of
+  action-selection in the BG, and is scaled-up to three channels with
+  lateral cross-channel connections. When tested with two competing
+  inputs, this three-channel model demonstrates action-selection
+  behaviour. The SpiNNaker-based model is mapped exactly on to SpineML
+  running on a conventional computer; both model responses show
+  functional and qualitative similarity, thus validating the usability
+  of SpiNNaker for simulating biologically-plausible
+  networks. Furthermore, the SpiNNaker-based model simulates in real
+  time for time-steps > 1 ms; power dissipated during model execution
+  is approx 1.8 W."
+  url: "https://ieeexplore.ieee.org/document/8309360/"
+  keywords: "spinecreator, spiking neurons, basal ganglia, spinnaker,
+  comparative study"
+  bib:
+
+
 - title: "Integrating Brain and Biomechanical Models-A New Paradigm
   for Understanding Neuro-muscular Control"
   author-list: "S James, C Papapavlou, A Blenkinsop, A Cope, S
