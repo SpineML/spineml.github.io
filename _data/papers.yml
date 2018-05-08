@@ -3,7 +3,53 @@
   publication: "PLOS Computational Biology, 2016"
   description: "A model of motion detection in the bee created using SpineCreator"
   abstract: "We present a novel neurally based model for estimating angular velocity (AV) in the bee brain, capable of quantitatively reproducing experimental observations of visual odometry and corridor-centering in free-flying honeybees, including previously unaccounted for manipulations of behaviour. The model is fitted using electrophysiological data, and tested using behavioural data. Based on our model we suggest that the AV response can be considered as an evolutionary extension to the optomotor response. The detector is tested behaviourally in silico with the corridor-centering paradigm, where bees navigate down a corridor with gratings (square wave or sinusoidal) on the walls. When combined with an existing flight control algorithm the detector reproduces the invariance of the average flight path to the spatial frequency and contrast of the gratings, including deviations from perfect centering behaviour as found in the real bee’s behaviour. In addition, the summed response of the detector to a unit distance movement along the corridor is constant for a large range of grating spatial frequencies, demonstrating that the detector can be used as a visual odometer."
-  url: "http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004887" 
+  url: "http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004887"
   keywords: "bee, spineml, spinecreator, model"
-  bib: 
-  
+  bib:
+
+- title: "Integrating Brain and Biomechanical Models-A New Paradigm
+  for Understanding Neuro-muscular Control"
+  author-list: "S James, C Papapavlou, A Blenkinsop, A Cope, S
+  Anderson, K Moustakas, K Gurney"
+  publication: "Frontiers in Neuroscience"
+  description: "A biophysically accurate oculomotor model which moves
+  a biomechanical eye"
+  abstract: "To date, realistic models of how the central nervous
+  system governs behaviour have been restricted in scope to the brain,
+  brainstem or spinal column, as if these existed as disembodied
+  organs. Further, the model is often exercised in relation to an in
+  vivo physiological experiment with input comprising an impulse, a
+  periodic signal or constant activation, and output as a pattern of
+  neural activity in one or more neural populations. Any link to
+  behaviour is inferred only indirectly via these activity
+  patterns. We argue that to discover the principles of operation of
+  neural systems, it is necessary to express their behaviour in terms
+  of physical movements of a realistic motor system, and to supply
+  inputs that mimic sensory experience. To do this with confidence, we
+  must connect our brain models to neuro-muscular models and provide
+  relevant visual and proprioceptive feedback signals, thereby closing
+  the loop of the simulation. This paper describes an effort to
+  develop just such an integrated brain and biomechanical system using
+  a number of pre-existing models. It describes a model of the
+  saccadic oculomotor system incorporating a neuromuscular model of
+  the eye and its six extraocular muscles. The position of the eye
+  determines how illumination of a retinotopic input population
+  projects information about the location of a saccade target into the
+  system. A pre-existing saccadic burst generator model was
+  incorporated into the system, which generated motoneuron activity
+  patterns suitable for driving the biomechanical eye. The model was
+  demonstrated to make accurate saccades to a target luminance under a
+  set of environmental constraints. Challenges encountered in the
+  development of this model showed the importance of this integrated
+  modelling approach. Thus, we exposed shortcomings in individual
+  model components which were only apparent when these were supplied
+  with the more plausible inputs available in a closed loop
+  design. Consequently we were able to suggest missing functionality
+  which the system would require to reproduce more realistic
+  behaviour. The construction of such closed-loop animal models
+  constitutes a new paradigm of computational neurobehaviour and
+  promises a more thoroughgoing approach to our understanding of the
+  brain's function as a controller for movement and behaviour."
+  url: "https://www.frontiersin.org/articles/10.3389/fnins.2018.00039/full"
+  keywords: "Oculomotor Muscles, Saccades, Biomechanics, Basal Ganglia, integrated brain and biomechanics, Neuromuscular Junction"
+  bib:
