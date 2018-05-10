@@ -210,6 +210,7 @@ An annotations tag within a ConnectionList stores the following information.
 
 SpineCreator Project file
 -------------------------
+<a name="spf"></a>
 
 SpineCreator stores the details of the xml files that compose the current Project in a file with the .proj extension. The format of this files is as follows:
 

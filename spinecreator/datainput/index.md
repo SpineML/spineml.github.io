@@ -155,7 +155,9 @@ You can run the example:
 # Data input with a BRAHMS component using external.xsl
 
 If you place an external.xsl file into your SpineCreator project, and
-you're using SpineML_2_BRAHMS as the simulator backend,
+you're using SpineML_2_BRAHMS as the simulator backend, and you've
+included external.xsl in the <AdditionalFiles> section of the
+[SpineCreator project file](spinecreator/annotations#spf)
 SpineML_2_BRAHMS will read external.xsl. That means you can write a
 BRAHMS component to generate input data, and specify in external.xsl
 how to connect that data to inputs in your SpineML model. Contact Seb
