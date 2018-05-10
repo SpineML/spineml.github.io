@@ -31,27 +31,41 @@ To allow non-programmers to use and configure extended connectivity
 types a set of formatted comments is added to the top of the Python
 script: these specify parameters to pass to the script, and define how
 SpineCreator should provide a graphical interface for these
-parameters. For example:
+parameters. For example, this connectionFunc gives a 2-D Gaussian
+connection like the one shown in
+[James et al. 2018, Fig 1(c)](https://www.frontiersin.org/articles/10.3389/fnins.2018.00039/full):
 
 ```python
 #PARNAME=sigma #LOC=1,1
-#PARNAME=minimum_weight #LOC=2,1
+#PARNAME=min_w #LOC=2,1
 #HASWEIGHT
+
+# sigma is the 2-D Gaussian width
+# min_w is the minimum weight for which to add a connection to 'out'
+# which is returned by connectionFunc
 
 def connectionFunc(srclocs,dstlocs,sigma,min_w):
   import math
+  # normterm is a normalisation term used in the loop.
   normterm = 1/(sigma*math.sqrt(2*math.pi))
-  i = 0
+  # out is a list in which to return the connection weights.
   out = []
+  # Iterate through the source and destination locations:
+  i = 0
   for srcloc in srclocs:
     j = 0
     for dstloc in dstlocs:
+      # Compute the Euclidean distance between src and dst:
       dist = math.sqrt(math.pow((srcloc[0] - dstloc[0]),2) + \
         math.pow((srcloc[1] - dstloc[1]),2) + \
         math.pow((srcloc[2] - dstloc[2]),2))
-      gauss = normterm*math.exp(-0.5*math.pow(dist/sigma,2))
-      if gauss > min_w:
-        conn = (i,j,0,gauss)
+      # Compute the Gaussian weight:
+      gauss_weight = normterm*math.exp(-0.5*math.pow(dist/sigma,2))
+      # If the weight exceeds the min_w cutoff weight, then add to
+      # out. Having a cutoff means that we keep out fairly small; without
+      # this, it would contain many infinitessimally small weights
+      if gauss_weight > min_w:
+        conn = (i,j,0,gauss_weight)
         out.append(conn)
       j = j + 1
     i = i + 1
@@ -76,8 +90,9 @@ The function itself has arguments srclocs and dstlocs, which are Lists
 of Tuples, each Tuple containing the x, y, and z co-ordinates of the
 neuron at that index in the List.
 
-I usually develop my connectionFunc externally, using matplotlib to
-look at the connection patterns. Here's an example, called gabor.py:
+Because the error feedback within SpineCreator is very limited, I
+usually develop my connectionFunc externally, using matplotlib to look
+at the connection patterns. Here's an example, called gabor.py:
 
 ```python
 #
@@ -221,3 +236,5 @@ ax = fig.add_subplot(111, projection='3d')
 ax.scatter(xs,ys,ws)
 plt.show()
 ```
+Once this works, I copy and paste connectionFunc into SpineCreator for
+use in my model.
