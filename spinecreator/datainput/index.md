@@ -138,7 +138,7 @@ spinemlnetQuery() - Check up on the progress of the simulation; has the
 
 spinemlnetStop() - Stop the spinemlnet server.
 
-Consule spinemlnet_run.m and spinemlnet_test.m to see how to use these
+Consult spinemlnet_run.m and spinemlnet_test.m to see how to use these
 mex functions.
 
 You can run the example:
