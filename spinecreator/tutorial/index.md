@@ -41,29 +41,32 @@ connection like the one shown in
 #HASWEIGHT
 
 # sigma is the 2-D Gaussian width
-# min_w is the minimum weight for which to add a connection to 'out'
-# which is returned by connectionFunc
+# min_w is the minimum weight for which to add a
+# connection to 'out' which is returned by
+# connectionFunc
 
 def connectionFunc(srclocs,dstlocs,sigma,min_w):
   import math
   # normterm is a normalisation term used in the loop.
   normterm = 1/(sigma*math.sqrt(2*math.pi))
-  # out is a list in which to return the connection weights.
+  # out is a list in which to return the connection
+  # weights.
   out = []
   # Iterate through the source and destination locations:
   i = 0
   for srcloc in srclocs:
     j = 0
     for dstloc in dstlocs:
-      # Compute the Euclidean distance between src and dst:
+      # Compute Euclidean distance between src and dst:
       dist = math.sqrt(math.pow((srcloc[0] - dstloc[0]),2) + \
         math.pow((srcloc[1] - dstloc[1]),2) + \
         math.pow((srcloc[2] - dstloc[2]),2))
       # Compute the Gaussian weight:
       gauss_weight = normterm*math.exp(-0.5*math.pow(dist/sigma,2))
-      # If the weight exceeds the min_w cutoff weight, then add to
-      # out. Having a cutoff means that we keep out fairly small; without
-      # this, it would contain many infinitessimally small weights
+      # If the weight exceeds the min_w cutoff weight,
+      # then add to out. Having a cutoff means that we
+      # keep out fairly small; without this, it would
+      # contain many infinitessimally small weights.
       if gauss_weight > min_w:
         conn = (i,j,0,gauss_weight)
         out.append(conn)
