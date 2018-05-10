@@ -19,6 +19,8 @@ for a given amount of time and with a given set of inputs.
 
 [Creating experiments and graphing](/spinecreator/createexpt)
 
+[More about data input to a model](/spinecreator/datainput)
+
 ## Creating a new connectivity using a Python Script
 
 Python scripts for generating connectivity are added to SpineCreator
