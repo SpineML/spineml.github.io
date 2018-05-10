@@ -33,7 +33,7 @@ script: these specify parameters to pass to the script, and define how
 SpineCreator should provide a graphical interface for these
 parameters. For example, this connectionFunc gives a 2-D Gaussian
 connection like the one shown in
-[James et al. 2018, Fig 1(c)](https://www.frontiersin.org/articles/10.3389/fnins.2018.00039/full):
+[James et al. 2018, Fig 1(c)](https://www.frontiersin.org/articles/10.3389/fnins.2018.00039/full#F1):
 
 ```python
 #PARNAME=sigma #LOC=1,1
