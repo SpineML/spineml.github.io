@@ -6,8 +6,11 @@ title: Prebuilt package installation
 Download/Install
 ----------------
 
+*NOTE: We recommend you build SpineCreator yourself; we don't have the
+ resource to provide binary packages. It's not too hard, see [here](spinecreator/sourcelin)*
+
 The latest binary release of the SpineML toolchain was made in January
-2016. We provide packages for Mac, Debian and Ubuntu. 
+2016. We provide packages for Mac, Debian and Ubuntu.
 
 NOTE: we recommend compiling from the GitHub source rather than using the packages
 
