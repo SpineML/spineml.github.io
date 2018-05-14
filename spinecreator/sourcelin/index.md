@@ -91,7 +91,7 @@ Build brahms with cmake:
 cd brahms
 mkdir build
 cd build
-cmake -DSTANDALONE_INSTALL=OFF -DCMAKE_INSTALL_PREFIX=/usr/local ..
+cmake -DSTANDALONE_INSTALL=OFF -DCOMPILE_WITH_X11=OFF -DCMAKE_INSTALL_PREFIX=/usr/local ..
 make -j4
 sudo make install
 ```
