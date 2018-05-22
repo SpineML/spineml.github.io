@@ -60,8 +60,8 @@
   A Rowley, A Stokes, K Gurney, S Furber"
   publication: "IEEE Transactions on Cognitive and Developmental
   Systems, 2018"
-  description: "Compares implementations of the samebasal ganglia model in
-  SpiNNaker and SpineCreator"
+  description: "Compares implementations of the same basal ganglia model in
+  SpiNNaker and SpineCreator."
   abstract: "We present a biologically-inspired and scalable model of
   the Basal Ganglia (BG) simulated on the SpiNNaker machine, a
   biologically-inspired low-power hardware platform allowing parallel,
@@ -91,8 +91,8 @@
   author-list: "S James, C Papapavlou, A Blenkinsop, A Cope, S
   Anderson, K Moustakas, K Gurney"
   publication: "Frontiers in Neuroscience, 2018"
-  description: "A biophysically accurate oculomotor model which moves
-  a biomechanical eye"
+  description: "This paper presents a biophysically accurate
+  oculomotor brain model which moves a virtual, biomechanical eye."
   abstract: "To date, realistic models of how the central nervous
   system governs behaviour have been restricted in scope to the brain,
   brainstem or spinal column, as if these existed as disembodied
