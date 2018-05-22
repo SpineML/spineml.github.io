@@ -7,6 +7,53 @@
   keywords: "bee, spineml, spinecreator, model"
   bib:
 
+
+- title: "Striatal Neuropeptides Enhance Selection and Rejection of Sequential Actions"
+  author-list: "D Buxton, E Bracci, P Overton, K Gurney"
+  publication: "Frontiers in Neuroscience, 2017"
+  description: "Describes a hybrid spiking/rate coded model of the
+  striatal microcircuit"
+  abstract: "The striatum is the primary input nucleus for the basal
+  ganglia, and receives glutamatergic afferents from the cortex. Under
+  the hypothesis that basal ganglia perform action selection, these
+  cortical afferents encode potential “action requests.” Previous
+  studies have suggested the striatum may utilize a mutually
+  inhibitory network of medium spiny neurons (MSNs) to filter these
+  requests so that only those of high salience are selected. However,
+  the mechanisms enabling the striatum to perform clean, rapid
+  switching between distinct actions that form part of a learned
+  action sequence are still poorly understood. Substance P (SP) and
+  enkephalin are neuropeptides co-released with GABA in MSNs
+  preferentially expressing D1 or D2 dopamine receptors
+  respectively. SP has a facilitatory effect on subsequent
+  glutamatergic inputs to target MSNs, while enkephalin has an
+  inhibitory effect. Blocking the action of SP in the striatum is also
+  known to affect behavioral transitions. We constructed
+  phenomenological models of the effects of SP and enkephalin, and
+  integrated these into a hybrid model of basal ganglia comprising a
+  spiking striatal microcircuit and rate–coded populations
+  representing other major structures. We demonstrated that diffuse
+  neuropeptide connectivity enhanced the selection of unordered action
+  requests, and that for true action sequences, where action semantics
+  define a fixed structure, a patterning of the SP connectivity
+  reflecting this ordering enhanced selection of actions presented in
+  the correct sequential order and suppressed incorrect ordering. We
+  also showed that selective pruning of SP connections allowed
+  context–sensitive inhibition of specific undesirable requests that
+  otherwise interfered with selection of an action group. Our model
+  suggests that the interaction of SP and enkephalin enhances the
+  contrast between selection and rejection of action requests, and
+  that patterned SP connectivity in the striatum allows the “chunking”
+  of actions and improves selection of sequences. Efficient execution
+  of action sequences may therefore result from a combination of
+  ordered cortical inputs and patterned neuropeptide connectivity
+  within striatum."
+  url: "https://www.frontiersin.org/articles/10.3389/fncom.2017.00062/full"
+  keywords: "action selection, action sequence, basal ganglia, chunking,
+  enkephalin, neuropeptides, striatum, substance P"
+  bib:
+
+
 - title: "Building a Spiking Neural Network Model of the Basal Ganglia
   on SpiNNaker"
   author-list: "B Sen-Bhattacharya, S James, O Rhodes, I Sugiarto,
