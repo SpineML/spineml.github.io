@@ -27,7 +27,7 @@ is transferred during the handshake).
 
 Seb James, June 2014.
 
-
+```
 ----------- Alex Cope's description -----------------
 
 Note: Alex's suggestion was to use matlab's in-built tcp/ip
@@ -99,6 +99,7 @@ Here are the values of the codes that are sent:
 When the client connection is complete, it will simply hang up. This
 is seen at the server side by a fail to read any further data or
 responses.
+```
 
 ## c++ implementation of SpineMLNet
 
