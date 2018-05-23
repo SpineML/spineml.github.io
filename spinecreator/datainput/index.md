@@ -14,9 +14,11 @@ simulator backend and for SpineML_2_GeNN.
 The network protocol is described in the SpineCreator source code; see
 the file networkserver/protocol.txt.
 
-## SpineMLNet protocol
 
 ```
+SpineMLNet protocol
+-------------------
+
 Here is the network protocol for communicating data with
 SpineCreator-generated SpineML models.
 
@@ -114,9 +116,10 @@ There's also a matlab/octave option, for which you can build a set of
 mex/oct files that allow your to write your data server in matlab
 code. See networkserver/matlab/readme.spinemlnet, reproduced here:
 
-### SpineMLNet
-
 ```
+SpineMLNet on MATLAB and Octave
+-------------------------------
+
 This is a communication server which can be launched from your matlab
 (or octave) script. It can send data to and receive data from a
 SpineML model (which is probably running on Brahms).
