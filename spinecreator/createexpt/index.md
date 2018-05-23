@@ -141,7 +141,7 @@ A new drop-down will appear, giving a choice of input types:
 
 * **External input:** Allows an external source to input values to the
     model via a TCP/IP connection. The network protocol is described
-    elsewhere on this site (well, will be). Fields are:
+    [elsewhere on this site](/spinecreator/datainput/). Fields are:
   * *Command*: The path of a command to launch if required to start
      the source.
   * *Port*: The TCP/IP Port to use to connect (**NOTE:** do not use
