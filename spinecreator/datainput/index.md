@@ -16,6 +16,7 @@ the file networkserver/protocol.txt.
 
 ## SpineMLNet protocol
 
+```
 Here is the network protocol for communicating data with
 SpineCreator-generated SpineML models.
 
@@ -27,7 +28,6 @@ is transferred during the handshake).
 
 Seb James, June 2014.
 
-```
 ----------- Alex Cope's description -----------------
 
 Note: Alex's suggestion was to use matlab's in-built tcp/ip
@@ -116,6 +116,7 @@ code. See networkserver/matlab/readme.spinemlnet, reproduced here:
 
 ### SpineMLNet
 
+```
 This is a communication server which can be launched from your matlab
 (or octave) script. It can send data to and receive data from a
 SpineML model (which is probably running on Brahms).
@@ -152,13 +153,14 @@ You can run the example:
 
 3) Open the SpineCreator project spinemlnet_test and run the experiment
    "Simple1"
+```
 
 # Data input with a BRAHMS component using external.xsl
 
 If you place an external.xsl file into your SpineCreator project, and
 you're using SpineML_2_BRAHMS as the simulator backend, and you've
-included external.xsl in the <AdditionalFiles> section of the
-[SpineCreator project file](spinecreator/annotations#spf)
+included external.xsl in the &lt;AdditionalFiles&gt; section of the
+[SpineCreator project file](/spinecreator/annotations#spf)
 SpineML_2_BRAHMS will read external.xsl. That means you can write a
 BRAHMS component to generate input data, and specify in external.xsl
 how to connect that data to inputs in your SpineML model. Contact Seb
