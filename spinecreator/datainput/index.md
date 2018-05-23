@@ -3,9 +3,13 @@ layout: default
 title: SpineCreator data input
 ---
 
-More about getting data into your model.
+More about getting data into your model. If you need either to: a) dynamically
+generate data or b) generate more complex static data input than is possible from
+within the SpineCreator experiments interface, you'll need to use one
+of the methods described here to get the data into your running
+SpineML model.
 
-# TCP/IP data input
+# SpineMLNet: TCP/IP data input
 
 You can write a program to send data via a network connection to your
 SpineML model. This is implemented both for the SpineML_2_BRAHMS
