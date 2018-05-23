@@ -60,9 +60,10 @@ values in the model.
 # Loading up an example
 
 The following example model will be used to illustrate configuring an
-experiment.
+experiment: [Tutorial model](/spinecreator/createexpt/Tutorial.zip)
 
-** INSERT EXAMPLE LINKS HERE **
+Download this zip file and unpack it - it contains a folder called
+Tutorial, inside which is a SpineCreator project file Tutorial.proj.
 
 # Setting up the simulator
 
