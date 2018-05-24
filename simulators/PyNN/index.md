@@ -66,7 +66,7 @@ Details of specifying spike sources are listed within the [experimental layer se
 
   [PyNNSpikeSource.xml]: /simulators/PyNN/spineml/PyNNSpikeSource.xml
   [experimental layer section]: /spineml/experiment/
-  [PyNN]: http://neuralensemble.org/PyNN
+  [PyNN]: http://neuralensemble.org/PyNN/
   [PyNN installation process]: https://pypi.org/project/PyNN/
   [IF\_curr\_exp.xml]: /simulators/PyNN/spineml/IF_curr_exp.xml
   [PyNN\_WeightUpdate.xml]: /simulators/PyNN/spineml/PyNN_WeightUpdate.xml
