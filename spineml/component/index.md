@@ -7,7 +7,7 @@ title: Component Layer
 
 The SpineML component layer syntax describes the functional entities, i.e. neurons and synapses, that are used as building blocks from a model. The syntax is derived from the NineML abstraction layer and LEMS common object model specification with some very minor changes requiring the specification of an initial regime and some minor syntax changes to the specification of ports.
 
-A technical description of the NineML Abstraction layer is available [here](http://software.incf.org/software/nineml/wiki/nineml-specification/nineml-specifications#SECTION01030).
+A technical description of the NineML Abstraction layer is available [here](http://incf.github.io/nineml-spec/specification/).
 
 # Differences from NineML Abstraction Layer
 

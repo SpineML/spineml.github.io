@@ -26,11 +26,11 @@ Once the tab is selected, the component editor is laid out as in Fig
 to change between the different tabs of the GUI. Each tab focuses on a
 different aspect of model creation.
 
-* Component - Create and edit SpineML [components](/spineml/components).
+* Component - Create and edit SpineML [components](/spineml/component/).
 * Visualisation - OpenGL visualisations of populations and projections
   for model analysis and the creation of complex connectivity
   patterns.
-* Network - Create SpineML [networks](/spineml/networks).
+* Network - Create SpineML [networks](/spineml/network/).
 * Expt - Create and edit experimental procedures for the current model.
 
 The current tab is highlighted with a grey background.
@@ -304,7 +304,7 @@ Now we are in a position to finish the Time Derivative we added earlier:
 
 Now we add the equation for the membrane potential dynamics. This must
 be in the form of C-style code (for details see here: [section A.1.16
-MathInline](http://software.incf.org/software/nineml/wiki/nineml-specification)
+MathInline](http://nineml-spec.readthedocs.io/en/latest/abstraction_layer.html#mathinline)
 ). As an example here is the membrane potential equation:
 
 ```c
