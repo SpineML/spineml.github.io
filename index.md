@@ -33,7 +33,7 @@ biologically constrained models consisting of non standard components
 A model described in a declarative format needs a simulator to run
 it. Information about the simulators which have
 been used to execute SpineML models, including the reference SpineML
-simulator, [SpineML_2_BRAHMS](/simulators/BRAHMS), is provided on the
+simulator, [SpineML_2_BRAHMS](/simulators/BRAHMS/), is provided on the
 [simulators](/simulators/) page.
 
 # The SpineML Editor: SpineCreator

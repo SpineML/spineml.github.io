@@ -14,7 +14,7 @@ example
 [https://github.com/SpineML/SpineCreator/issues](https://github.com/SpineML/SpineCreator/issues))
 
 SpineCreator is built using the Qt toolkit
-[http://qt.io](http://qt.io), a cross-platform library of C++ code for
+[https://www.qt.io](https://www.qt.io), a cross-platform library of C++ code for
 building desktop apps. To run models, SpineCreator uses a SpineML
 toolchain. On this page, we describe how you can compile
 SpineML_PreFlight, SpineML_2_BRAHMS and BRAHMS as your SpineML
@@ -25,7 +25,7 @@ Linux flavours should work just fine, but there may be slight
 differences in the names of some of the prerequisites. If your distro
 does not provide Qt 5.x, then you will need to install that separately
 from
-[http://www.qt.io/download-open-source/](http://www.qt.io/download-open-source/). If
+[https://www.qt.io/download](https://www.qt.io/download). If
 your distro provides a version of Graphviz older than 2.32, then
 you'll have to install a more recent version of that (which is outside
 the scope of these instructions). If I recall correctly, Ubuntu 13.04+

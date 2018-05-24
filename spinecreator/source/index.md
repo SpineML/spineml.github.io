@@ -14,7 +14,7 @@ example
 [https://github.com/SpineML/SpineCreator/issues](https://github.com/SpineML/SpineCreator/issues))
 
 SpineCreator is built using the Qt toolkit
-[http://qt.io](http://qt.io), a cross-platform library of C++ code for
+[https://www.qt.io](https://www.qt.io), a cross-platform library of C++ code for
 building desktop apps. To run models, SpineCreator uses a SpineML
 toolchain. On this page, we describe how you can compile
 SpineML_PreFlight, SpineML_2_BRAHMS and BRAHMS as your SpineML
@@ -36,7 +36,7 @@ graphviz-devel, as well as SpineCreator and its components.
 Install Xcode from the App Store, assuming you have the latest Mac
 OS. If you're using an older Mac OS, you'll have to find the matching
 version of Xcode from:
-[https://developer.apple.com/downloads/](https://developer.apple.com/downloads/)
+[https://developer.apple.com/xcode/](https://developer.apple.com/xcode/)
 
 ### CMake
 
@@ -77,7 +77,7 @@ prerequisite libraries popt and graphviz like this (in a terminal):
 
 One more prerequisite is Qt, which is required by SpineCreator. You
 can install this with the Qt online installer from
-[https://www.qt.io/download/](https://www.qt.io/download/)
+[https://www.qt.io/download](https://www.qt.io/download)
 
 ## SpineML_PreFlight
 
@@ -186,7 +186,7 @@ so there's nothing to do to get it.
 Qt is a prerequisite of SpineCreator - SpineCreator is built with the Qt toolkit.
 
 Obtain the Qt online installer from
-[https://www.qt.io/download/](https://www.qt.io/download/)
+[https://www.qt.io/download](https://www.qt.io/download)
 
 This will install both the library and the QtCreator build tool.
 

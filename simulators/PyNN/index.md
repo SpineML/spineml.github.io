@@ -4,7 +4,7 @@ title: damson
 ---
 
 
-!["PyNN logo"](http://neuralensemble.org/trac/PyNN/chrome/site/pynn_header.png)
+!["PyNN logo"](http://neuralensemble.org/static/photos/pynn_logo.png)
 
 [PyNN] is described as a simulator independant language for building neuronal network models. It is based on the Python programming language and has simulator support for r range of simulation engines including NEST, NEURON, PCSIM and Brian.
 
@@ -64,11 +64,10 @@ Spike source inputs must be described within the network as populations (using t
 
 Details of specifying spike sources are listed within the [experimental layer section]. The only limitation is that time varying rates are not supported in PyNN.
 
-  [PyNNSpikeSource.xml]: http://bimpa.group.shef.ac.uk/SpineML/models/component/PyNNSpikeSource.xml
-  [experimental layer section]: /spineml/experiment
-  [PyNN]: http://neuralensemble.org/trac/PyNN
-  [PyNN installation process]: http://neuralensemble.org/trac/PyNN/wiki/Installation
-  [IF\_curr\_exp.xml]: http://bimpa.group.shef.ac.uk/SpineML/models/component/IF_curr_exp.xml
-  [PyNN\_WeightUpdate.xml]: http://bimpa.group.shef.ac.uk/SpineML/models/component/PyNN_WeightUpdate.xml
-  [PyNN\_PostSynapse.xml]: http://bimpa.group.shef.ac.uk/SpineML/models/component/PyNN_PostSynapse.xml
-  
+  [PyNNSpikeSource.xml]: /simulators/PyNN/spineml/PyNNSpikeSource.xml
+  [experimental layer section]: /spineml/experiment/
+  [PyNN]: http://neuralensemble.org/PyNN
+  [PyNN installation process]: https://pypi.org/project/PyNN/
+  [IF\_curr\_exp.xml]: /simulators/PyNN/spineml/IF_curr_exp.xml
+  [PyNN\_WeightUpdate.xml]: /simulators/PyNN/spineml/PyNN_WeightUpdate.xml
+  [PyNN\_PostSynapse.xml]: /simulators/PyNN/spineml/PyNN_PostSynapse.xml

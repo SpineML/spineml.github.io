@@ -13,13 +13,13 @@ connected together in a **network**. Once you have a network, you can
 then create an **experiment** which allows you to simulate the model
 for a given amount of time and with a given set of inputs.
 
-[Creating a component in the component editor](/spinecreator/createcomponent)
+[Creating a component in the component editor](/spinecreator/createcomponent/)
 
-[Creating a network in the network editor](/spinecreator/createnetwork)
+[Creating a network in the network editor](/spinecreator/createnetwork/)
 
-[Creating experiments and graphing](/spinecreator/createexpt)
+[Creating experiments and graphing](/spinecreator/createexpt/)
 
-[More about data input to a model](/spinecreator/datainput)
+[More about data input to a model](/spinecreator/datainput/)
 
 ## Creating a new connectivity using a Python Script
 

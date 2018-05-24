@@ -39,7 +39,7 @@ Downloads
 
 [**DAMSON program executable for debian based Linux 32 bit only**](/public/files/damson)
 
-[**XSLT scripts and directory structure for SpineML to DAMSON code generation**](/public/files/spineml_2_damson.tar)
+[**XSLT scripts and directory structure for SpineML to DAMSON code generation**](/public/files/spineml_to_damson.tar)
 
 Usage and Limitations
 ---------------------

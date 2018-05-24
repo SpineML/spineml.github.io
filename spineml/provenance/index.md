@@ -5,7 +5,7 @@ title: SpineML history
 
 # Development history of SpineML
 
-SpineML is an extension of a *Model Description Language* called [NineML](http://incf.github.io/nineml/)
+SpineML is an extension of a *Model Description Language* called [NineML](http://incf.github.io/nineml-spec/)
 for the specification of neural network models. NineML (aka 9ML) is published by the [INCF](https://www.incf.org/).
 
 Paul Richmond, Alex Cope, Dave Allerton and Kevin Gurney wished to implement a simulator toolchain
