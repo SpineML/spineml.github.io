@@ -94,7 +94,7 @@ This is the same as above however the synapse model is integrated into the neuro
 
 ### Network
 
-A network of two populations of Excitatory and Inhibitory neurons. Based upon the model described in; [Romain Brette et al. "Simulation of networks of spiking neurons: A review of tools and strategies", 2007.](http://www.ncbi.nlm.nih.gov/pubmed/17629781). Replicates the standard Brett Benchmark model however the PyNN_PostSynpases redirects any impulse events to the post synaptic neuron body which models the dynamics. PyNN uses separate synaptic currents for excitatory and inhibitory synapses and as such negative synaptic weights are not required.
+A network of two populations of Excitatory and Inhibitory neurons. Based upon the model described in; [Romain Brette et al. "Simulation of networks of spiking neurons: A review of tools and strategies", 2007.](https://www.ncbi.nlm.nih.gov/pubmed/17629781). Replicates the standard Brett Benchmark model however the PyNN_PostSynpases redirects any impulse events to the post synaptic neuron body which models the dynamics. PyNN uses separate synaptic currents for excitatory and inhibitory synapses and as such negative synaptic weights are not required.
 
 **High Level Network Layer Model**
 
