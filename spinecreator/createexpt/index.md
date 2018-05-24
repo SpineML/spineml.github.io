@@ -60,9 +60,10 @@ values in the model.
 # Loading up an example
 
 The following example model will be used to illustrate configuring an
-experiment.
+experiment: [Tutorial model](/spinecreator/createexpt/Tutorial.zip)
 
-** INSERT EXAMPLE LINKS HERE **
+Download this zip file and unpack it - it contains a folder called
+Tutorial, inside which is a SpineCreator project file Tutorial.proj.
 
 # Setting up the simulator
 
@@ -140,7 +141,7 @@ A new drop-down will appear, giving a choice of input types:
 
 * **External input:** Allows an external source to input values to the
     model via a TCP/IP connection. The network protocol is described
-    elsewhere on this site (well, will be). Fields are:
+    [elsewhere on this site](/spinecreator/datainput/). Fields are:
   * *Command*: The path of a command to launch if required to start
      the source.
   * *Port*: The TCP/IP Port to use to connect (**NOTE:** do not use

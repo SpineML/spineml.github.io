@@ -3,9 +3,13 @@ layout: default
 title: SpineCreator data input
 ---
 
-More about getting data into your model.
+More about getting data into your model. If you need either to: a) dynamically
+generate data or b) generate more complex static data input than is possible from
+within the SpineCreator experiments interface, you'll need to use one
+of the methods described here to get the data into your running
+SpineML model.
 
-# TCP/IP data input
+# SpineMLNet: TCP/IP data input
 
 You can write a program to send data via a network connection to your
 SpineML model. This is implemented both for the SpineML_2_BRAHMS
@@ -14,7 +18,10 @@ simulator backend and for SpineML_2_GeNN.
 The network protocol is described in the SpineCreator source code; see
 the file networkserver/protocol.txt.
 
-## SpineMLNet protocol
+
+```
+SpineMLNet protocol
+-------------------
 
 Here is the network protocol for communicating data with
 SpineCreator-generated SpineML models.
@@ -26,7 +33,6 @@ model. One extra feature was added to the protocol (a connection name
 is transferred during the handshake).
 
 Seb James, June 2014.
-
 
 ----------- Alex Cope's description -----------------
 
@@ -99,6 +105,7 @@ Here are the values of the codes that are sent:
 When the client connection is complete, it will simply hang up. This
 is seen at the server side by a fail to read any further data or
 responses.
+```
 
 ## c++ implementation of SpineMLNet
 
@@ -113,7 +120,9 @@ There's also a matlab/octave option, for which you can build a set of
 mex/oct files that allow your to write your data server in matlab
 code. See networkserver/matlab/readme.spinemlnet, reproduced here:
 
-### SpineMLNet
+```
+SpineMLNet on MATLAB and Octave
+-------------------------------
 
 This is a communication server which can be launched from your matlab
 (or octave) script. It can send data to and receive data from a
@@ -151,13 +160,14 @@ You can run the example:
 
 3) Open the SpineCreator project spinemlnet_test and run the experiment
    "Simple1"
+```
 
 # Data input with a BRAHMS component using external.xsl
 
 If you place an external.xsl file into your SpineCreator project, and
 you're using SpineML_2_BRAHMS as the simulator backend, and you've
-included external.xsl in the <AdditionalFiles> section of the
-[SpineCreator project file](spinecreator/annotations#spf)
+included external.xsl in the &lt;AdditionalFiles&gt; section of the
+[SpineCreator project file](/spinecreator/annotations#spf)
 SpineML_2_BRAHMS will read external.xsl. That means you can write a
 BRAHMS component to generate input data, and specify in external.xsl
 how to connect that data to inputs in your SpineML model. Contact Seb

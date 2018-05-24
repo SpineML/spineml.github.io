@@ -52,9 +52,9 @@ should look like in SpineCreator:
 
 | Name | Description | XML | PNG |
 | ---- | ----------- | --- | --- |
-| IAF  | Leaky Integrate and Fire Neuron Body | [IAF.xml](http://bimpa.group.shef.ac.uk/SpineML/models/component/IAF.xml)| [LIF.png](http://bimpa.group.shef.ac.uk/SpineML/models/component/LIF.png)|
-| FixedWeight  | Fixed Weight Synaptic Update | [FixedWeight.xml](http://bimpa.group.shef.ac.uk/SpineML/models/component/IAF.xml)| [FixedWeight.png](http://bimpa.group.shef.ac.uk/SpineML/models/component/FixedWeight.png)|
-| CUBA_exp  | Exponentially Decaying Post-Synaptic Current | [CUBA_exp.xml](http://bimpa.group.shef.ac.uk/SpineML/models/component/IAF.xml)| [Curr_exp.png](http://bimpa.group.shef.ac.uk/SpineML/models/component/Curr_exp.png)|
+| IAF  | Leaky Integrate and Fire Neuron Body | [IAF.xml](/spinecreator/createnetwork/examples/IAF.xml)| [IAF.png](/spinecreator/createnetwork/examples/IAF.png)|
+| FixedWeight  | Fixed Weight Synaptic Update | [FixedWeight.xml](/spinecreator/createnetwork/examples/FixedWeight.xml)| [FixedWeight.png](/spinecreator/createnetwork/examples/FixedWeight.png)|
+| CUBA_exp  | Exponentially Decaying Post-Synaptic Current | [CUBA_exp.xml](/spinecreator/createnetwork/examples/CUBA_exp.xml)| [CUBA_exp.png](/spinecreator/createnetwork/examples/CUBA_exp.png)|
 
 
 ## Introduction to Populations and Projections
