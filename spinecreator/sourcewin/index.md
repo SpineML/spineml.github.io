@@ -29,7 +29,7 @@ distribution to provide the bash shell and other Unixey utility
 programs, such as ssh, git and so on. So, the first task is to install
 it. Here are Microsoft's own instructions:
 
-[https://docs.microsoft.com/en-us/windows/wsl/install-win10]
+[https://docs.microsoft.com/en-us/windows/wsl/install-win10](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
 During this process, choose Ubuntu in the store (other Linux flavours
 may well work, but I've tested Ubuntu).
