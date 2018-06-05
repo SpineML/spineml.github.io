@@ -109,7 +109,8 @@ Build and install SpineML_PreFlight using cmake:
 ```
 mkdir SpineML_PreFlight-build && cd SpineML_PreFlight-build
 cmake -DCMAKE_INSTALL_PREFIX=/usr/local ../SpineML_PreFlight
-make -j4 sudo make install
+make -j4
+sudo make install
 ```
 
 ## Clone SpineML_2_BRAHMS on Linux
