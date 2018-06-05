@@ -61,11 +61,22 @@ Go to python.org and Find Downloads -> Windows.
 Download Python 2.7.x in as a Windows x86-64 MSI installer. Again,
 install in the normal way.
 
-### Install cmake
+### Install cmake and the mingw compiler environment
 
-From http://cmake.org you can obtain the Windows build of cmake. This
-is useful if building BRAHMS and SpineML_PreFlight outside the bash
-environment.
+This is useful if building BRAHMS and SpineML_PreFlight outside the
+bash environment.
+
+From http://cmake.org you can obtain the Windows build of cmake. CMake
+is a build tool which is required to build BRAHMS and
+SpineML_PreFlight.
+
+MinGW stands for Minimal GNU Compiler for Windows, this avoids any
+need to compile with Microsoft's Visual Studio. Of course, if you have
+Visual Studio, you could use that instead of MinGW.
+
+Assuming you need a compiler, then from
+https://sourceforge.net/downloads/mingw download the MinGW installer,
+which is called mingw-get-setup.exe
 
 ### Install git?
 
