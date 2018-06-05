@@ -39,8 +39,13 @@ Once you have Ubuntu installed (you should be able to run bash.exe),
 you can install some pre-requisites:
 
 ```
-sudo apt install build-essential cmake zlib1g-dev libpopt-dev
+sudo apt install build-essential cmake zlib1g-dev libpopt-dev xsltproc
 ```
+
+build-essential installs compilers, cmake is a development tool for
+directed compilation, zlib1g-dev is a library used by BRAHMS,
+SpineML_PreFlight uses libpopt-dev and xsltproc is a program for
+parsing XML files and is used by SpineML_2_BRAHMS.
 
 ### Install the Qt build environment
 
