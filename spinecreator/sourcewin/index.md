@@ -5,7 +5,7 @@ title: Building SpineCreator from source on Windows
 # Building on Windows
 
 SpineCreator is built using the Qt toolkit
-[https://www.qt.io](https://www.qt.io), a cross-platform library of C++ code for
+([https://www.qt.io](https://www.qt.io)), a cross-platform library of C++ code for
 building desktop apps. This means that SpineCreator can be compiled on
 Windows just as well as on Mac or Linux. Previously, we only supported Mac
 and Linux as "first class citizens", due to a lack of developer
@@ -29,7 +29,7 @@ distribution to provide the bash shell and other Unixey utility
 programs, such as ssh, git and so on. So, the first task is to install
 it. Here are Microsoft's own instructions:
 
-https://docs.microsoft.com/en-us/windows/wsl/install-win10
+[https://docs.microsoft.com/en-us/windows/wsl/install-win10]
 
 During this process, choose Ubuntu in the store (other Linux flavours
 may well work, but I've tested Ubuntu).
@@ -37,24 +37,13 @@ may well work, but I've tested Ubuntu).
 Once you have Ubuntu installed (you should be able to run bash.exe),
 you can install some pre-requisites:
 
-For everything, we need:
 ```
-sudo apt install build-essential cmake
-```
-
-For BRAHMS we need:
-```
-sudo apt install zlib1g-dev
-```
-
-For SpineML_PreFlight:
-```
-sudo apt install libpopt-dev
+sudo apt install build-essential cmake zlib1g-dev libpopt-dev
 ```
 
 ### Install the Qt build environment
 
-I installed Qt from https://www.qt.io choosing the open source
+I installed Qt from [https://www.qt.io], choosing the open source
 option. All the code in SpineCreator and friends is compatible with the
 requirements for using Qt under the free LGPL licence. In the
 Qt installer, I scrolled to Qt 5.8 and selected only the "MinGW 32 bit"
@@ -64,16 +53,15 @@ checkbox:
 
 ### Install graphviz
 
-Go to http://graphviz.org/ and find "Download". Download and install
+Go to [http://graphviz.org/] and find "Download". Download and install
 "Stable 2.38 Windows Install packages". Do the usual Windows install
 process with this.
 
 ### Install python
 
-Go to python.org and Find Downloads -> Windows.
+Go to [http://python.org] and Find Downloads -> Windows.
 Download Python 2.7.x in as a Windows x86-64 MSI installer. Again,
 install in the normal way.
-
 
 ## Building the software
 
@@ -82,8 +70,6 @@ installed. To open a bash shell, you can open a command line terminal
 and type bash.
 
 ## Compile BRAHMS on Windows
-
-### Inside bash shell
 
 Clone the official version of BRAHMS (which sports a
 nice cmake compile and install scheme and supercedes any code
@@ -106,10 +92,6 @@ cmake -DSTANDALONE_INSTALL=OFF -DCOMPILE_WITH_X11=OFF -DCMAKE_INSTALL_PREFIX=/us
 make -j4
 sudo make install
 ```
-
-### Outside bash shell
-
-Either clone brahms as above within the bash environment
 
 ## Compile SpineML_PreFlight on Linux
 
