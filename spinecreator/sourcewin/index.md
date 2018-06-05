@@ -43,7 +43,7 @@ sudo apt install build-essential cmake zlib1g-dev libpopt-dev
 
 ### Install the Qt build environment
 
-I installed Qt from [https://www.qt.io], choosing the open source
+I installed Qt from [https://www.qt.io](https://www.qt.io), choosing the open source
 option. All the code in SpineCreator and friends is compatible with the
 requirements for using Qt under the free LGPL licence. In the
 Qt installer, I scrolled to Qt 5.8 and selected only the "MinGW 32 bit"
@@ -53,13 +53,13 @@ checkbox:
 
 ### Install graphviz
 
-Go to [http://graphviz.org/] and find "Download". Download and install
+Go to [http://graphviz.org/](http://graphviz.org/) and find "Download". Download and install
 "Stable 2.38 Windows Install packages". Do the usual Windows install
 process with this.
 
 ### Install python
 
-Go to [http://python.org] and Find Downloads -> Windows.
+Go to [http://python.org](http://python.org]) and Find Downloads -> Windows.
 Download Python 2.7.x in as a Windows x86-64 MSI installer. Again,
 install in the normal way.
 
