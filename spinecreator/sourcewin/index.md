@@ -60,11 +60,13 @@ process with this.
 
 ### Install python
 
-Go to [http://python.org](http://python.org]) and Find Downloads -> Windows.
-Download Python 2.7.x in as a Windows x86-64 MSI installer. Again,
-install in the normal way.
+Go to [http://python.org](http://python.org]) and Find Downloads ->
+Windows.  Download Python 2.7.x in as a Windows x86 MSI
+installer. **Don't choose the 64 bit version!** We need the 32 bit python
+libraries, as this will match the 32 bit build of SpineCreator that
+we're going to make.
 
-## Building the software
+## Building the SpineML toolchain on Windows
 
 I'm going to make use of the bash shell, which should now be
 installed. To open a bash shell, you can open a command line terminal
@@ -78,8 +80,14 @@ available on sourceforce):
 
 Open a bash shell
 
+In the bash shell you have a Unixey home directory, but also a Windows home. I'm going to assume that you'll do your work in your Windows home. In the bash shell this will have the path
+
 ```
-mkdir scsrc
+/mnt/c/Users/[your name]/
+```
+
+```
+mkdir /mnt/c/Users/[your name]/scsrc
 git clone https://github.com/BRAHMS-SystemML/brahms.git
 ```
 
@@ -99,7 +107,7 @@ sudo make install
 Clone a copy of SpineML_PreFlight:
 
 ```
-cd ~/scsrc
+cd /mnt/c/Users/[your name]/scsrc
 git clone https://github.com/SpineML/SpineML_PreFlight.git
 ```
 
@@ -117,7 +125,7 @@ sudo make install
 Clone a copy of SpineML_2_BRAHMS into your home directory:
 
 ```
-cd ~
+cd /mnt/c/Users/[your name]/
 git clone https://github.com/SpineML/SpineML_2_BRAHMS.git
 ```
 
@@ -128,13 +136,13 @@ There is no need to build SpineML_2_BRAHMS, which is a set of scripts.
 Clone SpineCreator:
 
 ```
-cd ~/scsrc
+cd /mnt/c/Users/[your name]/scsrc
 git clone https://github.com/SpineML/SpineCreator.git
 ```
 
-Open QtCreator. Now open the SpineCreator project. The file to open is
-called spinecreator.pro (note that images are from the Linux version
-of QtCreator, and so will be slightly different):
+Open QtCreator from the Windows start menu. Now open the SpineCreator project. The file to open is
+called spinecreator.pro (note that some images are from the Linux version
+of QtCreator, and so may be slightly different to what you'll see):
 
 ![Open_SpineCreator](/public/images/Open_spinecreator_pro.png "Open spinecreator.pro"){: .center-image }
 
