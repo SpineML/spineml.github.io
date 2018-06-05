@@ -5,20 +5,21 @@ title: Building SpineCreator from source on Windows
 # Building on Windows
 
 SpineCreator is built using the Qt toolkit
-([https://www.qt.io](https://www.qt.io)), a cross-platform library of C++ code for
-building desktop apps. This means that SpineCreator can be compiled on
-Windows just as well as on Mac or Linux. Previously, we only supported Mac
-and Linux as "first class citizens", due to a lack of developer
-resource.
+([https://www.qt.io](https://www.qt.io)), a cross-platform library of
+C++ code for building desktop apps. This means that SpineCreator can
+be compiled on Windows just as well as on Mac or Linux. Previously, we
+only supported Mac and Linux as "first class citizens", due to a lack
+of developer resource. SpineML_2_BRAHMS in particular would have
+required a great deal of work to function on Windows, as it includes
+bash scripts.
 
-SpineML_2_BRAHMS in particular would have required much work to
-function on Windows, as it includes bash scripts. Luckily, Microsoft
-have recently added bash for Windows 10. Now that it's possible to
-install bash on Windows 10, it's possible to build and run
-SpineCreator and SpineML_2_BRAHMS on Windows. Here is a work in
-progress to describe how to build SpineCreator, SpineML_PreFlight and
-SpineML_2_BRAHMS on Windows 10, providing a fully-functional SpineML
-toolchain to develop and execute neural network models.
+Luckily, Microsoft have recently added bash for Windows
+10. Now that it's possible to install bash on Windows 10, it's
+possible to build and run SpineCreator and SpineML_2_BRAHMS on
+Windows. Here is a work in progress to describe how to build
+SpineCreator, SpineML_PreFlight and SpineML_2_BRAHMS on Windows 10,
+providing a fully-functional SpineML toolchain to develop and execute
+neural network models.
 
 ## Prerequisites
 
@@ -93,7 +94,7 @@ make -j4
 sudo make install
 ```
 
-## Compile SpineML_PreFlight on Linux
+## Compile SpineML_PreFlight on Windows
 
 Clone a copy of SpineML_PreFlight:
 
@@ -111,7 +112,7 @@ make -j4
 sudo make install
 ```
 
-## Clone SpineML_2_BRAHMS on Linux
+## Clone SpineML_2_BRAHMS on Windows
 
 Clone a copy of SpineML_2_BRAHMS into your home directory:
 
@@ -122,7 +123,7 @@ git clone https://github.com/SpineML/SpineML_2_BRAHMS.git
 
 There is no need to build SpineML_2_BRAHMS, which is a set of scripts.
 
-## Build SpineCreator on Linux
+## Build SpineCreator on Windows
 
 Clone SpineCreator:
 
@@ -179,3 +180,15 @@ BRAHMS, because these were installed system-wide into
 
 You should now be able to test your installation by running the GPR
 Basal Ganglia model.
+
+Clone the model like this (in the bash shell):
+
+```
+mkdir /some/path/to/models
+cd models
+git clone https://github.com/ABRG-Models/GPR-BasalGanglia.git
+```
+
+Now in SpineCreator, navigate to GPR-BasalGanglia/SpineML and open the
+project file GPR_BG.proj. If these instructions worked, you should be
+able to run one of the Experiments in that project.
