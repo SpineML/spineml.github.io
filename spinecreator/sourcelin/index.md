@@ -20,7 +20,8 @@ toolchain. On this page, we describe how you can compile
 SpineML_PreFlight, SpineML_2_BRAHMS and BRAHMS as your SpineML
 toolchain.
 
-These build instructions have been verified on Ubuntu 14.04. Other
+These build instructions have been verified on Ubuntu 14.04, 16.04 and
+18.04. Other
 Linux flavours should work just fine, but there may be slight
 differences in the names of some of the prerequisites. If your distro
 does not provide Qt 5.x, then you will need to install that separately
@@ -28,9 +29,7 @@ from
 [https://www.qt.io/download](https://www.qt.io/download). If
 your distro provides a version of Graphviz older than 2.32, then
 you'll have to install a more recent version of that (which is outside
-the scope of these instructions). If I recall correctly, Ubuntu 13.04+
-will provide an out-of-the-box working platform for SpineCreator, as
-will Debian 7+.
+the scope of these instructions).
 
 If the build process for any of the four components fails, please let
 us know by creating an issue on Github. For example, if you can't
@@ -49,7 +48,14 @@ sudo apt-get install build-essential qtcreator \
   libxt-dev zlib1g-dev
 ```
 
-Note that the Qt version needs to be 5.x; Qt 4.x is no longer supported. On Ubuntu 16.04 the default Desktop Kit uses Qt 4.x. This can be fixed by running QtCreatora nd openning the SpineCreator project as described below. Select 'Projects' from the left hand bar and the 'Manage Kits...' from the top left of the pane. Select the 'Desktop' kit from the top box, and scroll down in the bottom box to the value 'Qt Version' which has a drop down menu - make sure to select a Qt 5.x version from this menu.
+Note that the Qt version needs to be 5.x; Qt 4.x is no longer
+supported. On Ubuntu 16.04 the default Desktop Kit uses Qt 4.x. This
+can be fixed by running QtCreator and opening the SpineCreator project
+as described below. Select 'Projects' from the left hand bar and the
+'Manage Kits...' from the top left of the pane. Select the 'Desktop'
+kit from the top box, and scroll down in the bottom box to the value
+'Qt Version' which has a drop down menu - make sure to select a Qt 5.x
+version from this menu.
 
 Let's create a directory to keep the source code in one place:
 
