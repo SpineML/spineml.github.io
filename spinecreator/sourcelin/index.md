@@ -49,7 +49,7 @@ sudo apt-get install build-essential qtcreator \
   libxt-dev zlib1g-dev
 ```
 
-Note that the Qt version needs to be 5.x; Qt 4.x is no longer supported.
+Note that the Qt version needs to be 5.x; Qt 4.x is no longer supported. On Ubuntu 16.04 the default Desktop Kit uses Qt 4.x. This can be fixed by running QtCreatora nd openning the SpineCreator project as described below. Select 'Projects' from the left hand bar and the 'Manage Kits...' from the top left of the pane. Select the 'Desktop' kit from the top box, and scroll down in the bottom box to the value 'Qt Version' which has a drop down menu - make sure to select a Qt 5.x version from this menu.
 
 Let's create a directory to keep the source code in one place:
 
