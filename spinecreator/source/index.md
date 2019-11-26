@@ -158,7 +158,10 @@ We'll build the tools in SpineML_2_BRAHMS in-place (they don't have to
 be installed).
 
 Open CMake. For both "source" and "where to build" select the
-SpineML_2_BRAHMS directory. Press "configure" and "generate".
+SpineML_2_BRAHMS directory. Make sure that WARNINGS_AS_ERRORS is not selected, and 
+update the include and Namespace paths to point to your BRAHMS installation (locations
+should be "/Users/<your name>/SystemML/BRAHMS/include" and "/Users/<your name>/SystemML/Namespace").
+Press "configure" and "generate".
 
 (Ignore any Policy CMP0042 error you see).
 
