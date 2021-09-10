@@ -42,7 +42,7 @@ Clone the SpineML-group-maintained version of BRAHMS (which sports a nice cmake 
 
 ``` bash
 cd ~/scsrc
-git clone [`https://github.com/sebjameswml/brahms.git`]
+git clone https://github.com/BRAHMS-SystemML/brahms.git
 ```
 
 Build brahms with cmake:
@@ -62,7 +62,7 @@ Clone a copy of SpineML\_PreFlight:
 
 ``` bash
 cd ~/scsrc
-git clone [`https://github.com/SpineML/SpineML_PreFlight.git`]
+git clone https://github.com/SpineML/SpineML_PreFlight.git
 ```
 
 Build and install SpineML\_PreFlight using cmake:
@@ -80,7 +80,7 @@ Clone a copy of SpineML\_2\_BRAHMS into your home directory:
 
 ``` bash
 cd ~
-git clone [`https://github.com/SpineML/SpineML_2_BRAHMS.git`]
+git clone https://github.com/SpineML/SpineML_2_BRAHMS.git
 ```
 
 There is no need to build SpineML\_2\_BRAHMS, which is a set of scripts.
