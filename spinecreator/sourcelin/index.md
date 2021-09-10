@@ -107,7 +107,8 @@ sudo make install
 Clone a copy of SpineML_PreFlight:
 
 ```
-cd ~/scsrc git clone https://github.com/SpineML/SpineML_PreFlight.git
+cd ~/scsrc
+git clone https://github.com/SpineML/SpineML_PreFlight.git
 ```
 
 Build and install SpineML_PreFlight using cmake:
@@ -141,23 +142,23 @@ git clone https://github.com/SpineML/SpineCreator.git
 
 Open QtCreator:
 
-![Open_QtCreator](/public/images/Open_QtCreator.png "Open QtCreator"){: .center-image }
+![Open_QtCreator](/public/images/Open_QtCreator.png "Open QtCreator")
 
 Now open the SpineCreator project. The file to open is called
 spinecreator.pro (in older branches it was neuralNetworks.pro):
 
-![Open_SpineCreator](/public/images/Open_spinecreator_pro.png "Open spinecreator.pro"){: .center-image }
+![Open_SpineCreator](/public/images/Open_spinecreator_pro.png "Open spinecreator.pro")
 
 On opening spinecreator.pro, you'll be asked to "configure" the
 project. On Ubuntu you should be able to simply press the "Configure
 Project" button:
 
-![QtCreator_Configure_Project](/public/images/QtCreator_Configure_Project.png "Press Configure Project"){: .center-image }
+![QtCreator_Configure_Project](/public/images/QtCreator_Configure_Project.png "Press Configure Project")
 
 Compiling should now be as simple as pressing the "run" or "build"
 button in QtCreator:
 
-![Run_Button](/public/images/Run_Button.png "Press the green play button"){: .center-image }
+![Run_Button](/public/images/Run_Button.png "Press the green play button")
 
 ## Finishing up: Configuring SpineCreator on Linux
 
@@ -178,7 +179,7 @@ Change the value for "Working directory" to
 
 I set the settings like this for my home directory (/home/seb):
 
-![SC_Settings](/public/images/SC_Settings.png "SpineCreator Settings window"){: .center-image }
+![SC_Settings](/public/images/SC_Settings.png "SpineCreator Settings window")
 
 Click "Apply" then "Close".
 
